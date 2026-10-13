@@ -7,11 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --gold:#c9a84c;--ems:#0077b6;--law:#1b4332;--fire:#d62828;
-  --off:#f7f6f2;--ink:#111;--muted:#666;--border:#e2e0db;
-  --serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif;
-}
+:root{--gold:#c9a84c;--ems:#0077b6;--law:#1b4332;--fire:#d62828;--off:#f7f6f2;--ink:#111;--muted:#666;--border:#e2e0db;--serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
 body{font-family:var(--sans);background:var(--off);color:var(--ink)}
 a{text-decoration:none;color:inherit}
 header{background:#000;position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -26,7 +22,6 @@ header{background:#000;position:sticky;top:0;z-index:200;border-bottom:1px solid
 .sec-nav a:hover{color:rgba(255,255,255,.8)}
 .sec-nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
 .logo-txt{font-family:var(--serif);font-size:1.15rem;font-weight:800;color:#fff}
-
 .banner{background:#000;padding:56px 24px 48px;text-align:center;position:relative;overflow:hidden}
 .banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 100%,rgba(201,168,76,.14) 0%,transparent 70%);pointer-events:none}
 .banner-inner{position:relative;z-index:1;max-width:680px;margin:0 auto}
@@ -38,20 +33,39 @@ header{background:#000;position:sticky;top:0;z-index:200;border-bottom:1px solid
 .badge-ems{background:rgba(0,119,182,.2);color:#48cae4;border:1px solid rgba(0,119,182,.4)}
 .badge-law{background:rgba(27,67,50,.2);color:#52b788;border:1px solid rgba(27,67,50,.4)}
 .badge-fire{background:rgba(214,40,40,.2);color:#ff6b6b;border:1px solid rgba(214,40,40,.4)}
-
-.coming{max-width:1320px;margin:0 auto;padding:80px 24px;text-align:center}
-.coming-icon{font-size:3rem;margin-bottom:16px}
-.coming-title{font-family:var(--serif);font-size:1.6rem;font-weight:800;color:var(--ink);margin-bottom:10px}
-.coming-sub{font-size:.9rem;color:var(--muted);line-height:1.75;max-width:420px;margin:0 auto 32px}
-.coming-rule{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--gold)}
-
+.week-section{max-width:1320px;margin:0 auto;padding:48px 24px}
+.week-header{display:flex;align-items:center;gap:20px;margin-bottom:32px}
+.week-label{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);white-space:nowrap}
+.week-date{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--ink)}
+.week-line{flex:1;height:1px;background:var(--border)}
+.heroes-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:64px}
+@media(max-width:900px){.heroes-row{grid-template-columns:1fr}}
+.hero-card{background:#fff;border-radius:4px;overflow:hidden;border:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06);transition:.2s}
+.hero-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,0,0,.1)}
+.hc-photo{position:relative;aspect-ratio:4/3;overflow:hidden}
+.hc-photo img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.hero-card:hover .hc-photo img{transform:scale(1.04)}
+.hc-ribbon{position:absolute;top:16px;left:0;padding:6px 16px 6px 12px;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#fff;clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.ribbon-ems{background:var(--ems)}.ribbon-law{background:var(--law)}.ribbon-fire{background:var(--fire)}
+.hc-body{padding:20px 22px 22px}
+.hc-dept{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.hc-dept.ems{color:var(--ems)}.hc-dept.law{color:var(--law)}.hc-dept.fire{color:var(--fire)}
+.hc-name{font-family:var(--serif);font-size:1.25rem;font-weight:800;color:var(--ink);margin-bottom:4px;line-height:1.2}
+.hc-title{font-size:.75rem;color:var(--muted);margin-bottom:14px;font-weight:500}
+.hc-divider{height:2px;width:32px;margin-bottom:14px}
+.hc-divider.ems{background:var(--ems)}.hc-divider.law{background:var(--law)}.hc-divider.fire{background:var(--fire)}
+.hc-why{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.hc-why.ems{color:var(--ems)}.hc-why.law{color:var(--law)}.hc-why.fire{color:var(--fire)}
+.hc-desc{font-size:.85rem;line-height:1.75;color:#333;margin-bottom:14px}
+.hc-quote{font-family:var(--serif);font-style:italic;font-size:.9rem;line-height:1.6;color:var(--ink);border-left:3px solid var(--gold);padding-left:12px}
+.hc-source{font-size:.65rem;color:var(--muted);margin-top:12px}
+.hc-source a{color:var(--ems);text-decoration:underline}
 .nominate{background:#000;padding:56px 24px;text-align:center}
 .nom-inner{max-width:500px;margin:0 auto}
 .nom-title{font-family:var(--serif);font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:10px}
 .nom-sub{font-size:.88rem;color:rgba(255,255,255,.45);line-height:1.75;margin-bottom:24px}
 .nom-btn{display:inline-block;background:var(--gold);color:#000;padding:13px 32px;border-radius:3px;font-weight:800;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;transition:.15s}
 .nom-btn:hover{background:#b8913f}
-
 footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:28px 24px}
 .ft-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .ft-copy{font-size:.68rem;color:rgba(255,255,255,.22)}
@@ -98,12 +112,71 @@ footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:28px 2
   </div>
 </div>
 
-<div class="coming">
-  <div class="coming-icon">🏅</div>
-  <h2 class="coming-title">Heroes Added Every Monday</h2>
-  <p class="coming-sub">Each week we feature one Florida EMS worker, one law enforcement officer, and one firefighter who went above and beyond. Check back Monday.</p>
-  <div class="coming-rule">Florida First Responders Only</div>
-</div>
+<!-- ═══ WEEK 1 — October 13, 2026 ═══ -->
+<section class="week-section">
+  <div class="week-header">
+    <div class="week-line"></div>
+    <div>
+      <div class="week-label">Inaugural Heroes · Week of</div>
+      <div class="week-date">October 13, 2026</div>
+    </div>
+    <div class="week-line"></div>
+  </div>
+  <div class="heroes-row">
+
+    <div class="hero-card">
+      <div class="hc-photo">
+        <img src="https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=600&q=80" alt="Gulf County EMS">
+        <div class="hc-ribbon ribbon-ems">EMS</div>
+      </div>
+      <div class="hc-body">
+        <div class="hc-dept ems">Emergency Medical Services</div>
+        <div class="hc-name">Gulf County EMS Team</div>
+        <div class="hc-title">Paramedics · Gulf County, Florida</div>
+        <div class="hc-divider ems"></div>
+        <div class="hc-why ems">Why They're Heroes</div>
+        <p class="hc-desc">When Todd Hoffman's heart stopped for over 90 minutes after a cardiac arrest, Gulf County EMS crews responded alongside Sheriff's deputies and refused to quit. Working alongside Hoffman's wife — a nurse who started CPR immediately — they brought him back. Months later, Hoffman stood before them to say thank you in person.</p>
+        <blockquote class="hc-quote">"He didn't have a pulse, so I started CPR — shortly after the deputy came in with the AED." — Tannie Hoffman</blockquote>
+        <div class="hc-source">Source: <a href="https://www.wjhg.com/2026/02/05/gulf-county-man-thanks-those-who-saved-his-life-after-heart-attack/" target="_blank">WJHG News · Feb. 4, 2026</a></div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hc-photo">
+        <img src="https://images.unsplash.com/photo-1609743522653-52354461eb27?w=600&q=80" alt="Sgt. Brent Roberts BCSO">
+        <div class="hc-ribbon ribbon-law">Law Enforcement</div>
+      </div>
+      <div class="hc-body">
+        <div class="hc-dept law">Law Enforcement</div>
+        <div class="hc-name">Sgt. Brent Roberts</div>
+        <div class="hc-title">Bay County Sheriff's Office · Panama City, Florida</div>
+        <div class="hc-divider law"></div>
+        <div class="hc-why law">Why He's a Hero</div>
+        <p class="hc-desc">Sergeant Brent Roberts was on patrol near Deerpoint Lake when a call came in. He spotted a man floating in the water, another screaming for help — and jumped in without hesitation. He pulled the drowning man to safety. The U.S. Attorney for the Northern District of Florida awarded Roberts the 2026 Hometown Heroes Award for his bravery.</p>
+        <blockquote class="hc-quote">"When searching for candidates, articles depicting Roberts's bravery quickly came to mind." — U.S. Attorney Jack Heekin</blockquote>
+        <div class="hc-source">Source: <a href="https://www.mypanhandle.com/news/local-news/bcso-sergeant-awarded-hometown-hero-award" target="_blank">MyPanhandle / WMBB · 2026</a></div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hc-photo">
+        <img src="https://images.unsplash.com/photo-1617722141921-80d0e30fe33c?w=600&q=80" alt="Pasco County Fire Rescue">
+        <div class="hc-ribbon ribbon-fire">Fire &amp; Rescue</div>
+      </div>
+      <div class="hc-body">
+        <div class="hc-dept fire">Fire &amp; Rescue</div>
+        <div class="hc-name">Pasco Co. Fire Rescue Station 26</div>
+        <div class="hc-title">Firefighters Ryan Garrity &amp; Alexander Garcia · Pasco County, Florida</div>
+        <div class="hc-divider fire"></div>
+        <div class="hc-why fire">Why They're Heroes</div>
+        <p class="hc-desc">On June 5, 2026, a man collapsed on a pickleball court in Pasco County. Bystanders started CPR. When Station 26 arrived, firefighter-paramedics Ryan Garrity and Alexander Garcia took over and saved his life. In October 2026, Pasco County Fire Rescue honored the crew with Life Saving Awards for two extraordinary rescues in a single month.</p>
+        <blockquote class="hc-quote">"Two different emergencies. Two extraordinary rescues. One mission: saving lives." — Pasco County Fire Rescue</blockquote>
+        <div class="hc-source">Source: <a href="https://hernandosun.com/2026/10/09/pasco-firefighter-civilians-earn-life-saving-awards/" target="_blank">Hernando Sun · Oct. 9, 2026</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <section class="nominate">
   <div class="nom-inner">
@@ -117,12 +190,9 @@ footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:28px 2
   <div class="ft-inner">
     <p class="ft-copy">&copy; 2026 The Heron Report &nbsp;·&nbsp; Heron Media Group &nbsp;·&nbsp; Mexico Beach, Florida</p>
     <nav class="ft-links">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/privacy.html">Privacy</a>
+      <a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a>
     </nav>
   </div>
 </footer>
-
 </body>
 </html>
