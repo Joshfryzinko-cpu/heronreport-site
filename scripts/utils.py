@@ -20,6 +20,14 @@ HEADERS = {
 RUN_LOG_PATH = "scripts/run_log.json"
 PUBLISHED_IDS_PATH = "scripts/published_ids.json"
 
+# Import image store so every publish call downloads + stores images permanently
+try:
+    from image_store import download_and_store as _store_img, PLACEHOLDER
+    _USE_IMAGE_STORE = True
+except ImportError:
+    _USE_IMAGE_STORE = False
+    PLACEHOLDER = "/img/placeholder.svg"
+
 
 # ─── Deduplication ───────────────────────────────────────────────────────────
 
@@ -86,7 +94,7 @@ def search_news(query, limit=8):
 # ─── Image Finding ───────────────────────────────────────────────────────────
 
 def get_og_image(url, timeout=10):
-    """Get og:image meta tag from a URL. Returns URL string or None."""
+    """Get og:image meta tag from a URL, download it locally, return local path."""
     try:
         r = requests.get(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
         og = re.search(r'property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', r.text)
@@ -96,7 +104,12 @@ def get_og_image(url, timeout=10):
             img = og.group(1).strip()
             if img.startswith('//'):
                 img = 'https:' + img
-            if verify_image(img):
+            # Store locally for permanence
+            if _USE_IMAGE_STORE:
+                local = _store_img(img)
+                if local and local != PLACEHOLDER:
+                    return local
+            elif verify_image(img):
                 return img
     except Exception:
         pass
@@ -129,23 +142,30 @@ FALLBACK_IMGS = {
 }
 
 def get_topic_fallback(topic_hint):
-    """Return a verified fallback image for a topic."""
+    """Return a stored local path and credit for a topic."""
     hint = topic_hint.lower()
     if any(k in hint for k in ['energy','oil','fuel','gas']):
-        return FALLBACK_IMGS['energy'], 'CC0 / Unsplash (illustrative)'
-    if any(k in hint for k in ['military','war','defense','nato']):
-        return FALLBACK_IMGS['military'], 'CC0 / Unsplash (illustrative)'
-    if any(k in hint for k in ['economy','fed','inflation','budget','spending']):
-        return FALLBACK_IMGS['economy'], 'CC0 / Unsplash (illustrative)'
-    if any(k in hint for k in ['trump','white house','executive','president','biden']):
-        return FALLBACK_IMGS['whitehouse'], 'The White House (official)'
-    if any(k in hint for k in ['dhs','homeland','border','immigration']):
-        return FALLBACK_IMGS['dhs'], 'U.S. Dept. of Homeland Security (official)'
-    if any(k in hint for k in ['fdle','florida law enforcement']):
-        return FALLBACK_IMGS['fdle'], 'Florida Dept. of Law Enforcement (public domain)'
-    if any(k in hint for k in ['sheriff','county','bay county','gulf county','franklin']):
-        return FALLBACK_IMGS['bcso'], 'Bay County Sheriff\'s Office'
-    return FALLBACK_IMGS['dhs'], 'Official agency image (illustrative)'
+        url, credit = FALLBACK_IMGS['energy'], 'CC0 / Unsplash (illustrative)'
+    elif any(k in hint for k in ['military','war','defense','nato']):
+        url, credit = FALLBACK_IMGS['military'], 'CC0 / Unsplash (illustrative)'
+    elif any(k in hint for k in ['economy','fed','inflation','budget','spending']):
+        url, credit = FALLBACK_IMGS['economy'], 'CC0 / Unsplash (illustrative)'
+    elif any(k in hint for k in ['trump','white house','executive','president','biden']):
+        url, credit = FALLBACK_IMGS['whitehouse'], 'The White House (official)'
+    elif any(k in hint for k in ['dhs','homeland','border','immigration']):
+        url, credit = FALLBACK_IMGS['dhs'], 'U.S. Dept. of Homeland Security (official)'
+    elif any(k in hint for k in ['fdle','florida law enforcement']):
+        url, credit = FALLBACK_IMGS['fdle'], 'Florida Dept. of Law Enforcement (public domain)'
+    elif any(k in hint for k in ['sheriff','county','bay county','gulf county','franklin']):
+        url, credit = FALLBACK_IMGS['bcso'], 'Bay County Sheriff\'s Office'
+    else:
+        url, credit = FALLBACK_IMGS['dhs'], 'Official agency image (illustrative)'
+    # Store locally
+    if _USE_IMAGE_STORE:
+        local = _store_img(url)
+        if local and local != PLACEHOLDER:
+            return local, credit
+    return url, credit
 
 
 # ─── HTML card builder ────────────────────────────────────────────────────────
@@ -162,7 +182,7 @@ def build_card(story, css_class='biz-card'):
     return f'''    <article class="{css_class}">
       <a href="{story['url']}" target="_blank" rel="noopener" class="card-link">
         <div class="card-img-wrap">
-          <img src="{story['img']}" alt="{re.sub(r'&[a-z]+;', '', headline)[:55]}" class="card-img" style="{obj}" loading="lazy">
+          <img src="{story['img']}" alt="{re.sub(r'&[a-z]+;', '', headline)[:55]}" class="card-img" style="{obj}" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder.svg';this.style='object-fit:contain;padding:20px;background:#111'">
           <span class="card-badge" style="background:{cat_color}">{cat}</span>
           <span class="card-credit">{credit}</span>
         </div>

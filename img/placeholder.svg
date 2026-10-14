@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#111"/>
+  <rect x="0" y="0" width="4" height="500" fill="#c9a84c"/>
+  <text x="400" y="220" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="bold" fill="#c9a84c">THE HERON REPORT</text>
+  <text x="400" y="275" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="rgba(255,255,255,0.4)">Heron Media Group · Mexico Beach, Florida</text>
+  <text x="400" y="320" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="rgba(255,255,255,0.25)">Image unavailable</text>
+</svg>
