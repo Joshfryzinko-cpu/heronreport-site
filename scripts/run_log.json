@@ -71,5 +71,36 @@
       "law": "Florida Deputies Hailed As Heroes For Saving Drowning Woman At Beach - nationalenquirer.com",
       "fire": "Monroe County firefighters save girl trapped in Florida Keys house fire"
     }
+  },
+  {
+    "date": "2026-10-14",
+    "time_utc": "2026-10-14T10:25:05.488780+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.courant.com/2026/10/14/trump-administration-tries-again-to-stop-ct-offshore-wind-project/",
+          "https://www.baltimoresun.com/2026/10/13/trump-refugees-2/",
+          "https://www.boisestatepublicradio.org/2026-10-14/trumps-ambassador-to-greece-kimberly-guilfoyle-resigns-after-allegations-of-improper-conduct"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://finance.yahoo.com/small-business/articles/tampa-bay-wave-selects-13-164200387.html",
+          "https://finance.yahoo.com/small-business/articles/florida-high-tech-corridor-tampa-155000841.html",
+          "https://www.bizjournals.com/tampabay/news/2026/10/12/circuitry-ai-flf-investment.html"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/news/other/documents-levota-requests-dismissal-of-federal-charges-citing-conduct-as-political-logrolling/ar-AA2dUOd4",
+          "https://www.courthousenews.com/12-charged-in-10-million-childcare-fraud-scheme/",
+          "https://nypost.com/2026/08/26/us-news/democratic-officials-charged-with-fraud-due-to-alleged-covid-relief-funds-scam/"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
