@@ -30,13 +30,31 @@ TODAY_ISO = date.today().isoformat()
 # ─── Story Queries ────────────────────────────────────────────────────────────
 
 POLITICS_QUERIES = [
-    "Trump executive order policy October 2026",
+    # Trump administration — broad, not just Trump personally
+    "Trump administration policy decision October 2026",
+    "Trump cabinet secretary department action 2026",
+    "JD Vance administration White House 2026",
+    "Marco Rubio secretary state foreign policy 2026",
+    "Pete Hegseth defense Pentagon military 2026",
+    "Pam Bondi DOJ attorney general 2026",
+    "Kristi Noem DHS homeland security border 2026",
+    "Doug Burgum interior energy department 2026",
+    "Scott Bessent treasury department economy 2026",
+    "Robert F Kennedy HHS health 2026",
+    "Brooke Rollins USDA agriculture 2026",
+    # National security / military
     "US military war national security October 2026",
-    "oil gas energy prices economy October 2026",
-    "federal government spending fraud accountability 2026",
-    "Bay County Gulf County Franklin County Florida sheriff fire rescue 2026",
-    "Trump administration border immigration 2026",
     "Ukraine Russia war ceasefire 2026",
+    "Israel Iran Middle East 2026",
+    # Economy / energy
+    "oil gas energy prices economy October 2026",
+    "federal spending budget deficit 2026",
+    # Immigration / border
+    "border immigration enforcement deportation 2026",
+    # Florida local heroes
+    "Bay County Gulf County Franklin County Florida sheriff fire rescue 2026",
+    # Accountability
+    "federal government waste fraud accountability 2026",
 ]
 
 BUSINESS_QUERIES = [
@@ -61,9 +79,29 @@ INVESTIGATIONS_QUERIES = [
 
 def categorize_politics(title, url):
     t = title.lower()
-    if any(k in t for k in ['trump','executive order','white house','president']):
+    # Cabinet / administration officials
+    if any(k in t for k in ['hegseth','pentagon','defense department','secretary of defense']):
+        return 'Pentagon / Defense', '#7c2d12'
+    if any(k in t for k in ['rubio','secretary of state','state department','diplomacy','foreign policy']):
+        return 'Foreign Policy', '#374151'
+    if any(k in t for k in ['bondi','attorney general','doj','department of justice']):
+        return 'DOJ', '#7c2d12'
+    if any(k in t for k in ['noem','dhs','homeland security','ice','border patrol']):
+        return 'Border / DHS', '#b91c1c'
+    if any(k in t for k in ['bessent','treasury','tariff','trade','federal reserve']):
+        return 'Economy / Treasury', '#1e3a8a'
+    if any(k in t for k in ['kennedy','rfk','hhs','health','fda','cdc','vaccines']):
+        return 'Health / HHS', '#166534'
+    if any(k in t for k in ['burgum','interior','energy department','epa','natural resources']):
+        return 'Energy / Interior', '#166534'
+    if any(k in t for k in ['rollins','usda','agriculture','farm','food supply']):
+        return 'Agriculture', '#166534'
+    if any(k in t for k in ['vance','white house','administration','cabinet','executive']):
+        return 'Administration', '#b91c1c'
+    # Trump directly
+    if any(k in t for k in ['trump','executive order','president']):
         return 'Trump / Policy', '#b91c1c'
-    if any(k in t for k in ['war','military','ukraine','russia','nato','israel','defense']):
+    if any(k in t for k in ['war','military','ukraine','russia','nato','israel','iran','defense']):
         return 'War / Security', '#7c2d12'
     if any(k in t for k in ['oil','gas','energy','fuel','diesel']):
         return 'Energy', '#166534'
@@ -71,7 +109,7 @@ def categorize_politics(title, url):
         return 'Economy', '#1e3a8a'
     if any(k in t for k in ['sheriff','fire','ems','rescue','bay county','gulf county','franklin']):
         return 'Local Hero — FL Panhandle', '#0f766e'
-    if any(k in t for k in ['border','immigration','dhs','homeland']):
+    if any(k in t for k in ['border','immigration','deportation']):
         return 'Border / Immigration', '#b91c1c'
     return 'Politics', '#374151'
 

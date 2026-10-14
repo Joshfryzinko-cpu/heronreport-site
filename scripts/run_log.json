@@ -29,5 +29,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-13",
+    "time_utc": "2026-10-14T05:46:23.200011+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.pressdemocrat.com/2026/10/13/trump-refugees/",
+          "https://www.msn.com/en-ca/news/other/trump-administration-proposes-new-passenger-data-rules-for-canadians-crossing-the-us-border-by-train/ar-AA2ebIoB",
+          "https://www.msn.com/en-us/news/other/gift-to-our-adversary-more-republicans-balk-at-trumps-russia-diesel-deal/ar-AA2e9HYt"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://finance.yahoo.com/small-business/articles/celebrating-entrepreneurial-impact-central-florida-120000532.html",
+          "https://finance.yahoo.com/small-business/articles/american-industry-innovation-research-institutes-144500419.html",
+          "https://www.pr.com/press-release/980111"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaE82eEhvVW51ODc1bFVtNUM2Rl9Yekd4X2ZmdVBaUEVDVGVON2NkdnlPUVNnV3ZKV2xaMmZqN3VXd05JVEphdFYyM1hSV1Q3THFLeDJsMkxPN3VUVzFkdzVOWjJoVGd3X2IzOU9ZZTFFSk5OTWxVYzBJQXRHQi1NRFJGMC1qZWFyS0dFNG9BajJfUFZ4X3gtMHpXeVhfU2FUWTE4NGplWnRwdlRlczhybUV1QVg?oc=5",
+          "https://www.greenfieldreporter.com/2026/09/26/fortville-man-indicted-on-federal-fraud-charge/",
+          "https://www.newsday.com/news/nation/fraud-trump-homelessness-california-p11566"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
