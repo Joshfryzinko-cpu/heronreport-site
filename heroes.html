@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Heroes of the Week — The Heron Report</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--gold:#c9a84c;--ems:#0077b6;--law:#1b4332;--fire:#d62828;--off:#f7f6f2;--ink:#111;--muted:#666;--border:#e2e0db;--serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
-body{font-family:var(--sans);background:var(--off);color:var(--ink)}
+:root{
+  --gold:#c9a84c;
+  --ems:#0077b6;  --ems-bg:rgba(0,119,182,.1);
+  --law:#1a5c38;  --law-bg:rgba(26,92,56,.1);
+  --fire:#c0392b; --fire-bg:rgba(192,57,43,.1);
+  --ink:#111;--muted:#6b7280;--border:#e5e3de;
+  --card:#fff;--bg:#f5f4f0;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}
+
+/* ── HEADER (exact match index.html) ── */
 header{background:#000;position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,.08)}
 .hdr-top{max-width:1320px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
 .hdr-nav{display:flex;gap:2px}
@@ -22,55 +34,72 @@ header{background:#000;position:sticky;top:0;z-index:200;border-bottom:1px solid
 .sec-nav a:hover{color:rgba(255,255,255,.8)}
 .sec-nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
 .logo-txt{font-family:var(--serif);font-size:1.15rem;font-weight:800;color:#fff}
-.banner{background:#000;padding:56px 24px 48px;text-align:center;position:relative;overflow:hidden}
-.banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 100%,rgba(201,168,76,.14) 0%,transparent 70%);pointer-events:none}
-.banner-inner{position:relative;z-index:1;max-width:680px;margin:0 auto}
-.banner-rule{font-size:.6rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
-.banner-title{font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px}
-.banner-sub{font-size:.9rem;color:rgba(255,255,255,.48);line-height:1.75}
-.badges{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
-.badge{display:flex;align-items:center;gap:6px;padding:6px 16px;border-radius:20px;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
-.badge-ems{background:rgba(0,119,182,.2);color:#48cae4;border:1px solid rgba(0,119,182,.4)}
-.badge-law{background:rgba(27,67,50,.2);color:#52b788;border:1px solid rgba(27,67,50,.4)}
-.badge-fire{background:rgba(214,40,40,.2);color:#ff6b6b;border:1px solid rgba(214,40,40,.4)}
-.week-section{max-width:1320px;margin:0 auto;padding:48px 24px}
-.week-header{display:flex;align-items:center;gap:20px;margin-bottom:32px}
-.week-label{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);white-space:nowrap}
-.week-date{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--ink)}
+
+/* ── BANNER ── */
+.banner{background:#000;padding:52px 24px 44px;text-align:center;position:relative;overflow:hidden}
+.banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 120%,rgba(201,168,76,.12),transparent 70%);pointer-events:none}
+.banner-inner{position:relative;z-index:1;max-width:640px;margin:0 auto}
+.banner-title{font-family:var(--serif);font-size:clamp(2rem,5vw,3rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:10px;letter-spacing:-.01em}
+.banner-sub{font-size:.88rem;color:rgba(255,255,255,.45);line-height:1.75;max-width:480px;margin:0 auto 22px}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.badge{padding:5px 14px;border-radius:20px;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.badge-ems{background:var(--ems-bg);color:#48cae4;border:1px solid rgba(0,119,182,.3)}
+.badge-law{background:var(--law-bg);color:#52b788;border:1px solid rgba(26,92,56,.3)}
+.badge-fire{background:rgba(192,57,43,.1);color:#ff6b6b;border:1px solid rgba(192,57,43,.3)}
+
+/* ── WEEK SECTION ── */
+.weeks{max-width:1280px;margin:0 auto;padding:48px 24px 64px}
+.week-sep{display:flex;align-items:center;gap:16px;margin-bottom:28px;margin-top:56px}
+.week-sep:first-child{margin-top:0}
 .week-line{flex:1;height:1px;background:var(--border)}
-.heroes-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:64px}
-@media(max-width:900px){.heroes-row{grid-template-columns:1fr}}
-.hero-card{background:#fff;border-radius:4px;overflow:hidden;border:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06);transition:.2s}
-.hero-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,0,0,.1)}
-.hc-photo{position:relative;aspect-ratio:4/3;overflow:hidden}
-.hc-photo img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.hero-card:hover .hc-photo img{transform:scale(1.04)}
-.hc-ribbon{position:absolute;top:16px;left:0;padding:6px 16px 6px 12px;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#fff;clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%)}
-.ribbon-ems{background:var(--ems)}.ribbon-law{background:var(--law)}.ribbon-fire{background:var(--fire)}
-.hc-body{padding:20px 22px 22px}
-.hc-dept{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
-.hc-dept.ems{color:var(--ems)}.hc-dept.law{color:var(--law)}.hc-dept.fire{color:var(--fire)}
-.hc-name{font-family:var(--serif);font-size:1.25rem;font-weight:800;color:var(--ink);margin-bottom:4px;line-height:1.2}
-.hc-title{font-size:.75rem;color:var(--muted);margin-bottom:14px;font-weight:500}
-.hc-divider{height:2px;width:32px;margin-bottom:14px}
-.hc-divider.ems{background:var(--ems)}.hc-divider.law{background:var(--law)}.hc-divider.fire{background:var(--fire)}
-.hc-why{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
-.hc-why.ems{color:var(--ems)}.hc-why.law{color:var(--law)}.hc-why.fire{color:var(--fire)}
-.hc-desc{font-size:.85rem;line-height:1.75;color:#333;margin-bottom:14px}
-.hc-quote{font-family:var(--serif);font-style:italic;font-size:.9rem;line-height:1.6;color:var(--ink);border-left:3px solid var(--gold);padding-left:12px}
-.hc-source{font-size:.65rem;color:var(--muted);margin-top:12px}
+.week-label{font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);white-space:nowrap}
+.week-date{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--ink);white-space:nowrap}
+
+/* ── CARDS GRID ── */
+.heroes-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:960px){.heroes-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.heroes-row{grid-template-columns:1fr}}
+
+/* ── HERO CARD ── */
+.hero-card{background:var(--card);border-radius:6px;overflow:hidden;border:1px solid var(--border);box-shadow:0 1px 4px rgba(0,0,0,.06);display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.hero-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.1)}
+
+/* Photo frame — uniform 4:3 for all cards */
+.hc-photo{position:relative;width:100%;padding-top:75%;overflow:hidden;background:#111;flex-shrink:0}
+.hc-img{position:absolute;inset:0;width:100%;height:100%}
+.hc-ribbon{position:absolute;top:14px;left:0;padding:5px 14px 5px 10px;font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#fff;clip-path:polygon(0 0,100% 0,calc(100% - 7px) 100%,0 100%);z-index:2}
+.ribbon-ems{background:var(--ems)}
+.ribbon-law{background:var(--law)}
+.ribbon-fire{background:var(--fire)}
+.hc-credit{position:absolute;bottom:0;left:0;right:0;font-size:.55rem;color:rgba(255,255,255,.6);background:rgba(0,0,0,.45);padding:3px 8px;z-index:2}
+
+/* Card body */
+.hc-body{padding:18px 18px 20px;flex:1;display:flex;flex-direction:column}
+.hc-dept{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px}
+.hc-dept.ems{color:var(--ems)} .hc-dept.law{color:var(--law)} .hc-dept.fire{color:var(--fire)}
+.hc-name{font-family:var(--serif);font-size:1.15rem;font-weight:800;line-height:1.2;margin-bottom:3px}
+.hc-title{font-size:.72rem;color:var(--muted);margin-bottom:14px;font-weight:500}
+.hc-bar{height:2px;width:28px;margin-bottom:14px;flex-shrink:0}
+.hc-bar.ems{background:var(--ems)} .hc-bar.law{background:var(--law)} .hc-bar.fire{background:var(--fire)}
+.hc-desc{font-size:.82rem;line-height:1.72;color:#374151;flex:1;margin-bottom:14px}
+.hc-quote{font-family:var(--serif);font-style:italic;font-size:.88rem;line-height:1.6;border-left:2px solid var(--gold);padding-left:10px;color:var(--ink);margin-bottom:12px}
+.hc-source{font-size:.62rem;color:var(--muted);margin-top:auto}
 .hc-source a{color:var(--ems);text-decoration:underline}
-.nominate{background:#000;padding:56px 24px;text-align:center}
-.nom-inner{max-width:500px;margin:0 auto}
-.nom-title{font-family:var(--serif);font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:10px}
-.nom-sub{font-size:.88rem;color:rgba(255,255,255,.45);line-height:1.75;margin-bottom:24px}
-.nom-btn{display:inline-block;background:var(--gold);color:#000;padding:13px 32px;border-radius:3px;font-weight:800;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;transition:.15s}
+
+/* ── NOMINATE ── */
+.nominate{background:#000;padding:52px 24px;text-align:center}
+.nom-inner{max-width:480px;margin:0 auto}
+.nom-title{font-family:var(--serif);font-size:1.7rem;font-weight:800;color:#fff;margin-bottom:8px}
+.nom-sub{font-size:.85rem;color:rgba(255,255,255,.4);line-height:1.75;margin-bottom:22px}
+.nom-btn{display:inline-block;background:var(--gold);color:#000;padding:12px 30px;border-radius:3px;font-weight:800;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;transition:.15s}
 .nom-btn:hover{background:#b8913f}
-footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:28px 24px}
-.ft-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.ft-copy{font-size:.68rem;color:rgba(255,255,255,.22)}
-.ft-links{display:flex;gap:18px}
-.ft-links a{color:rgba(255,255,255,.4);font-size:.78rem;transition:.15s}
+
+/* ── FOOTER ── */
+footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:26px 24px}
+.ft-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.ft-copy{font-size:.66rem;color:rgba(255,255,255,.22)}
+.ft-links{display:flex;gap:16px}
+.ft-links a{color:rgba(255,255,255,.38);font-size:.75rem}
 .ft-links a:hover{color:#fff}
 @media(max-width:640px){.hdr-nav{display:none}}
 </style>
@@ -93,224 +122,212 @@ footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:28px 2
     <nav class="sec-nav">
       <a href="/section-politics.html">Politics</a>
       <a href="/section-business.html">Business</a>
-      <a href="/section-investigations.html">Investigations</a>
-      <a href="/heroes.html" class="active">Heroes of the Week</a>
+      <a href="/section-investigations.html" class="active">Investigations</a>
+      <a href="/heroes.html">Heroes of the Week</a>
     </nav>
   </div>
 </header>
 
+<!-- BANNER -->
 <div class="banner">
   <div class="banner-inner">
-    <div class="banner-rule"></div>
     <h1 class="banner-title">Heroes of the Week</h1>
-    <p class="banner-sub">Recognizing the men and women of Florida who serve, protect, and save lives — every single day. Three heroes, every Monday.</p>
+    <p class="banner-sub">Recognizing Florida EMS, Law Enforcement, and Fire Rescue professionals who go above and beyond.</p>
     <div class="badges">
-      <div class="badge badge-ems">🚑 EMS</div>
-      <div class="badge badge-law">🛡 Law Enforcement</div>
-      <div class="badge badge-fire">🔥 Fire &amp; Rescue</div>
+      <div class="badge badge-ems">&#x1F691; EMS</div>
+      <div class="badge badge-law">&#x1F6E1; Law Enforcement</div>
+      <div class="badge badge-fire">&#x1F525; Fire &amp; Rescue</div>
     </div>
   </div>
 </div>
 
+<div class="weeks">
 
-<!-- WEEK 2 — October 6, 2026 -->
-<section class="week-section">
-  <div class="week-header">
-    <div class="week-line"></div>
-    <div><div class="week-label">Week of</div><div class="week-date">October 6, 2026</div></div>
-    <div class="week-line"></div>
+<!-- ═══ WEEK 3 ─ Sep 29, 2026 ═══ -->
+<div class="week-sep">
+  <div class="week-line"></div>
+  <div class="week-label">Week of</div>
+  <div class="week-date">September 29, 2026</div>
+  <div class="week-line"></div>
+</div>
+<div class="heroes-row">
+
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="https://getthecoast.com/wp-content/uploads/2026/09/okaloosa-ems-kindle.jpg" alt="Andrew Kindle" class="hc-img" style="object-fit:cover;object-position:top center">
+      <div class="hc-ribbon ribbon-ems">EMS</div>
+      <div class="hc-credit">Photo: GetTheCoast.com / Okaloosa County EMS</div>
+    </div>
+    <div class="hc-body">
+      <div class="hc-dept ems">Emergency Medical Services</div>
+      <div class="hc-name">Paramedic Andrew Kindle</div>
+      <div class="hc-title">Okaloosa County EMS &middot; Fort Walton Beach, FL</div>
+      <div class="hc-bar ems"></div>
+      <p class="hc-desc">Andrew Kindle, Community Paramedic with Okaloosa County EMS in Northwest Florida, was named the 2026 NAEMT Community Paramedic of the Year &mdash; a national honor. He goes beyond emergency calls to build lasting health support for vulnerable residents across the Panhandle.</p>
+      <blockquote class="hc-quote">&ldquo;Meeting patients where they are and building a healthier community one person at a time.&rdquo; &mdash; NAEMT, 2026</blockquote>
+      <div class="hc-source">Source: <a href="https://niceville.com/okaloosa-ems-paramedic-earns-national-community-paramedic-award/" target="_blank">Niceville.com &middot; Aug. 28, 2026</a></div>
+    </div>
   </div>
-  <div class="heroes-row">
 
-    <!-- EMS: Phillip Cook, Escambia County -->
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://www.911patches.com/cdn/shop/files/Florida-EMT-v9-FLEr_large.jpg?v=1773207179" alt="Florida EMT EMS" style="object-fit:contain;padding:20px;background:#111">
-        <div class="hc-ribbon ribbon-ems">EMS</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept ems">Emergency Medical Services</div>
-        <div class="hc-name">Paramedic Phillip Cook</div>
-        <div class="hc-title">Escambia County EMS &middot; Pensacola, Florida</div>
-        <div class="hc-divider ems"></div>
-        <div class="hc-why ems">Why He's a Hero</div>
-        <p class="hc-desc">Paramedic Phillip Cook was named a 2026 Star of Life by the Florida Ambulance Association and honored at the Florida State Capitol in Tallahassee. Recognized for extraordinary service and unwavering commitment to patient care in Northwest Florida, Cook has gone above and beyond in every shift &mdash; embodying what it means to serve the Gulf Coast community.</p>
-        <blockquote class="hc-quote">&ldquo;When every second counts, you want Paramedic Cook on your side.&rdquo; &mdash; Local Pulse, Feb. 2026</blockquote>
-        <div class="hc-source">Source: <a href="https://localpulse.com/2026/02/when-every-second-counts-you-want-paramedic-cook-your-side" target="_blank">Local Pulse &middot; Feb. 8, 2026</a></div>
-      </div>
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Logo_of_Sarasota_County%2C_Florida.svg" alt="Sarasota County Sheriff" class="hc-img" style="object-fit:contain;padding:20px;background:#111">
+      <div class="hc-ribbon ribbon-law">Law Enforcement</div>
+      <div class="hc-credit">Sarasota County Sheriff&rsquo;s Office</div>
     </div>
-
-    <!-- LAW: Det. Robert Pence, Broward SO -->
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Seal_of_the_Broward_County_Sheriff%27s_Office.png" alt="Broward County" style="object-fit:contain;padding:24px;background:#111">
-        <div class="hc-ribbon ribbon-law">Law Enforcement</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept law">Law Enforcement</div>
-        <div class="hc-name">Det. Robert Pence</div>
-        <div class="hc-title">Broward Sheriff&rsquo;s Office &middot; Fort Lauderdale, Florida</div>
-        <div class="hc-divider law"></div>
-        <div class="hc-why law">Why He's a Hero</div>
-        <p class="hc-desc">Detective Robert Pence was named the Florida Sheriffs Association&rsquo;s 2026 Law Enforcement Officer of the Year &mdash; the state&rsquo;s highest law enforcement honor. In February 2026, he led the investigation into one of Broward County&rsquo;s most complex cases: a triple homicide and child kidnapping. His cross-agency coordination and investigative skill brought violent offenders to justice and recovered firearms off Florida streets.</p>
-        <blockquote class="hc-quote">&ldquo;Detective Pence delivered a year of service that stands apart from even the high standards expected of Florida law enforcement professionals.&rdquo; &mdash; Florida Sheriffs Association, 2026</blockquote>
-        <div class="hc-source">Source: <a href="https://flsheriffs.org/blog/entry/detective-robert-pence-of-broward-sheriffs-office-recognized-as-florida-sheriffs-associations-2026-law-enforcement-officer-of-the-year" target="_blank">Florida Sheriffs Association &middot; 2026</a></div>
-      </div>
+    <div class="hc-body">
+      <div class="hc-dept law">Law Enforcement</div>
+      <div class="hc-name">Deputies Wieczorek</div>
+      <div class="hc-title">Sarasota County Sheriff&rsquo;s Office &middot; Sarasota, FL</div>
+      <div class="hc-bar law"></div>
+      <p class="hc-desc">Deputies Michael and Christopher Wieczorek received Life Saving Awards after responding to a drowning at a Sarasota apartment complex. They found a person face-down in the deep end of a pool, entered the water, pulled the victim out, and administered CPR until EMS arrived. The victim survived.</p>
+      <blockquote class="hc-quote">&ldquo;The Sarasota County Sheriff&rsquo;s Office goes above and beyond &mdash; on and off duty.&rdquo; &mdash; Sheriff Kurt A. Hoffman</blockquote>
+      <div class="hc-source">Source: <a href="https://www.mysuncoast.com/2026/09/17/sarasota-county-deputies-honored-with-life-saving-awards/" target="_blank">MySuncoast / WWSB &middot; Sep. 17, 2026</a></div>
     </div>
-
-    <!-- FIRE: Capt. Joseph Falcone, Delray Beach FR -->
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://www.911patches.com/cdn/shop/files/Delray-Beach-v7-FLFr_large.jpg?v=1791249263" alt="Delray Beach Fire Dept" style="object-fit:contain;padding:20px;background:#111">
-        <div class="hc-ribbon ribbon-fire">Fire &amp; Rescue</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept fire">Fire &amp; Rescue</div>
-        <div class="hc-name">Capt. Joseph Falcone</div>
-        <div class="hc-title">Delray Beach Fire Rescue &middot; Delray Beach, Florida</div>
-        <div class="hc-divider fire"></div>
-        <div class="hc-why fire">Why He's a Hero</div>
-        <p class="hc-desc">Captain Joseph Falcone was awarded the 2026 Florida Fire Chiefs&rsquo; Association Safety and Health Award of Excellence. Over nearly 25 years, Falcone has led firefighter cancer prevention, fitness, behavioral health, and peer support programs &mdash; embedding wellness into department culture so that firefighters are encouraged to seek help before crisis strikes. He is a model for the entire state of Florida.</p>
-        <blockquote class="hc-quote">&ldquo;For nearly 25 years, he has been a leader in the truest sense &mdash; one who cares deeply about the people he serves alongside.&rdquo; &mdash; Chief Ronald Martin, Delray Beach FR</blockquote>
-        <div class="hc-source">Source: <a href="https://www.atlanticavemagazine.com/delray-beach-fire-rescue-captain-joseph-falcone-honored-with-2026-ffca-safety-and-health-award-of-excellence/" target="_blank">Atlantic Ave Magazine &middot; Sep. 2026</a></div>
-      </div>
-    </div>
-
   </div>
-</section>
 
-<!-- WEEK 3 — September 29, 2026 -->
-<section class="week-section">
-  <div class="week-header">
-    <div class="week-line"></div>
-    <div><div class="week-label">Week of</div><div class="week-date">September 29, 2026</div></div>
-    <div class="week-line"></div>
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="https://chambermaster.blob.core.windows.net/images/customers/2138/news/8364/200x200/Chris-Martin-1.jpg" alt="Chris Martin" class="hc-img" style="object-fit:cover;object-position:top center">
+      <div class="hc-ribbon ribbon-fire">Fire &amp; Rescue</div>
+      <div class="hc-credit">Photo: Seminole County Chamber / Red Cross</div>
+    </div>
+    <div class="hc-body">
+      <div class="hc-dept fire">Fire &amp; Rescue</div>
+      <div class="hc-name">FF/PM Chris Martin</div>
+      <div class="hc-title">Seminole County Fire Dept. &middot; Sanford, FL</div>
+      <div class="hc-bar fire"></div>
+      <p class="hc-desc">Seminole County Firefighter/Paramedic Chris Martin received the American Red Cross First Responder Hero Award at the 2026 Greater Orlando Salute to Heroes Breakfast. A former NFL player, Martin has dedicated his career to pediatric drowning prevention &mdash; one of Florida&rsquo;s leading causes of child death.</p>
+      <blockquote class="hc-quote">&ldquo;Martin&rsquo;s courage, compassion and dedication embody the mission of the Red Cross.&rdquo; &mdash; Red Cross Central FL, Jun. 2026</blockquote>
+      <div class="hc-source">Source: <a href="https://www.mysanfordherald.com/article/3114,red-cross-honors-seminole-county-firefighter-paramedic-chris-martin-as-first-responder-hero" target="_blank">My Sanford Herald &middot; Jun. 22, 2026</a></div>
+    </div>
   </div>
-  <div class="heroes-row">
+</div>
 
-    <!-- EMS: Andrew Kindle, Okaloosa County -->
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://www.911patches.com/cdn/shop/files/Florida-EMT-v9-FLEr_large.jpg?v=1773207179" alt="Florida EMT EMS" style="object-fit:contain;padding:20px;background:#111">
-        <div class="hc-ribbon ribbon-ems">EMS</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept ems">Emergency Medical Services</div>
-        <div class="hc-name">Paramedic Andrew Kindle</div>
-        <div class="hc-title">Okaloosa County EMS &middot; Fort Walton Beach, Florida</div>
-        <div class="hc-divider ems"></div>
-        <div class="hc-why ems">Why He's a Hero</div>
-        <p class="hc-desc">Andrew Kindle, Community Paramedic with Okaloosa County EMS in Northwest Florida, was named the 2026 NAEMT Community Paramedic of the Year &mdash; a national honor. Working along the Florida Panhandle, Kindle goes beyond emergency calls to build lasting health support systems for vulnerable residents. His work has made a measurable difference in community health outcomes across Okaloosa County.</p>
-        <blockquote class="hc-quote">&ldquo;Andrew Kindle exemplifies what it means to be a Community Paramedic &mdash; meeting patients where they are and building a healthier community one person at a time.&rdquo; &mdash; NAEMT, 2026</blockquote>
-        <div class="hc-source">Source: <a href="https://niceville.com/okaloosa-ems-paramedic-earns-national-community-paramedic-award/" target="_blank">Niceville.com &middot; Aug. 28, 2026</a></div>
-      </div>
+<!-- ═══ WEEK 2 ─ Oct 6, 2026 ═══ -->
+<div class="week-sep">
+  <div class="week-line"></div>
+  <div class="week-label">Week of</div>
+  <div class="week-date">October 6, 2026</div>
+  <div class="week-line"></div>
+</div>
+<div class="heroes-row">
+
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="http://www.northescambia.com/wp-content/uploads/2026/02/paramedica11.jpg" alt="Paramedic Phillip Cook" class="hc-img" style="object-fit:cover;object-position:top center">
+      <div class="hc-ribbon ribbon-ems">EMS</div>
+      <div class="hc-credit">Photo: NorthEscambia.com / Escambia County EMS</div>
     </div>
-
-    <!-- LAW: Deputies Wieczorek, Sarasota County SO -->
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Logo_of_Sarasota_County%2C_Florida.svg" alt="Sarasota County" style="object-fit:contain;padding:24px;background:#111">
-        <div class="hc-ribbon ribbon-law">Law Enforcement</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept law">Law Enforcement</div>
-        <div class="hc-name">Deputies Michael &amp; Christopher Wieczorek</div>
-        <div class="hc-title">Sarasota County Sheriff&rsquo;s Office &middot; Sarasota, Florida</div>
-        <div class="hc-divider law"></div>
-        <div class="hc-why law">Why They're Heroes</div>
-        <p class="hc-desc">Deputies Michael and Christopher Wieczorek received Life Saving Awards from Sheriff Kurt A. Hoffman after responding to a drowning at an apartment complex. They found a person face-down and unresponsive in the deep end of a pool. Christopher entered the water and pulled the victim out. Michael arrived seconds later and assisted with CPR until EMS arrived. The victim survived.</p>
-        <blockquote class="hc-quote">&ldquo;The men and women of the Sarasota County Sheriff&rsquo;s Office go above and beyond &mdash; on and off duty &mdash; to keep our community safe.&rdquo; &mdash; Sheriff Kurt A. Hoffman, Sep. 2026</blockquote>
-        <div class="hc-source">Source: <a href="https://www.mysuncoast.com/2026/09/17/sarasota-county-deputies-honored-with-life-saving-awards/" target="_blank">MySuncoast / WWSB &middot; Sep. 17, 2026</a></div>
-      </div>
+    <div class="hc-body">
+      <div class="hc-dept ems">Emergency Medical Services</div>
+      <div class="hc-name">Paramedic Phillip Cook</div>
+      <div class="hc-title">Escambia County EMS &middot; Pensacola, FL</div>
+      <div class="hc-bar ems"></div>
+      <p class="hc-desc">Paramedic Phillip Cook was named a 2026 Star of Life by the Florida Ambulance Association and honored at the Florida State Capitol. Recognized for extraordinary service and unwavering commitment to patient care across Northwest Florida, Cook exemplifies what it means to serve the Gulf Coast community.</p>
+      <blockquote class="hc-quote">&ldquo;When every second counts, you want Paramedic Cook on your side.&rdquo; &mdash; Local Pulse, Feb. 2026</blockquote>
+      <div class="hc-source">Source: <a href="https://localpulse.com/2026/02/when-every-second-counts-you-want-paramedic-cook-your-side/" target="_blank">Local Pulse &middot; Feb. 8, 2026</a></div>
     </div>
-
-    <!-- FIRE: Chris Martin, Seminole County Fire -->
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://www.patchgallery.com/albums/userpics/10001/Seminole-Co-DPS-FLFr.jpg" alt="Seminole County" style="object-fit:contain;padding:24px;background:#111">
-        <div class="hc-ribbon ribbon-fire">Fire &amp; Rescue</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept fire">Fire &amp; Rescue</div>
-        <div class="hc-name">FF/PM Chris Martin</div>
-        <div class="hc-title">Seminole County Fire Dept. &middot; Sanford, Florida</div>
-        <div class="hc-divider fire"></div>
-        <div class="hc-why fire">Why He's a Hero</div>
-        <p class="hc-desc">Seminole County Firefighter/Paramedic Chris Martin received the American Red Cross First Responder Hero Award at the 2026 Greater Orlando Salute to Heroes Breakfast. A former UCF and NFL athlete, Martin has dedicated his career to pediatric drowning prevention &mdash; one of Florida&rsquo;s leading causes of child death. He is also a recipient of the Florida Governor&rsquo;s Florida Heroes Award.</p>
-        <blockquote class="hc-quote">&ldquo;Martin&rsquo;s courage, compassion and dedication to pediatric drowning prevention embody the mission of the American Red Cross.&rdquo; &mdash; Red Cross Central Florida, Jun. 2026</blockquote>
-        <div class="hc-source">Source: <a href="https://www.mysanfordherald.com/article/3114,red-cross-honors-seminole-county-firefighter-paramedic-chris-martin-as-first-responder-hero" target="_blank">My Sanford Herald &middot; Jun. 22, 2026</a></div>
-      </div>
-    </div>
-
   </div>
-</section>
 
-<!-- ═══ WEEK 1 — October 13, 2026 ═══ -->
-<section class="week-section">
-  <div class="week-header">
-    <div class="week-line"></div>
-    <div>
-      <div class="week-label">Inaugural Heroes · Week of</div>
-      <div class="week-date">October 13, 2026</div>
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="https://flsheriffs.org/wp-content/uploads/2026/07/6C2A4516-1024x683.jpg" alt="Detective Robert Pence" class="hc-img" style="object-fit:cover;object-position:top center">
+      <div class="hc-ribbon ribbon-law">Law Enforcement</div>
+      <div class="hc-credit">Photo: Florida Sheriffs Association, 2026</div>
     </div>
-    <div class="week-line"></div>
+    <div class="hc-body">
+      <div class="hc-dept law">Law Enforcement</div>
+      <div class="hc-name">Det. Robert Pence</div>
+      <div class="hc-title">Broward Sheriff&rsquo;s Office &middot; Fort Lauderdale, FL</div>
+      <div class="hc-bar law"></div>
+      <p class="hc-desc">Detective Robert Pence was named the Florida Sheriffs Association&rsquo;s 2026 Law Enforcement Officer of the Year &mdash; the state&rsquo;s highest honor. He led the investigation into one of Broward County&rsquo;s most complex cases: a triple homicide and child kidnapping, bringing violent offenders to justice and recovering firearms across Florida.</p>
+      <blockquote class="hc-quote">&ldquo;Detective Pence delivered a year of service that stands apart from even the high standards expected of Florida law enforcement.&rdquo; &mdash; Florida Sheriffs Association</blockquote>
+      <div class="hc-source">Source: <a href="https://flsheriffs.org/blog/entry/detective-robert-pence-of-broward-sheriffs-office-recognized-as-florida-sheriffs-associations-2026-law-enforcement-officer-of-the-year" target="_blank">Florida Sheriffs Association &middot; 2026</a></div>
+    </div>
   </div>
-  <div class="heroes-row">
 
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_6500990/Templates/design-file/logo200.png" style="object-fit:contain;padding:24px;background:#111" alt="Gulf County EMS">
-        <div class="hc-ribbon ribbon-ems">EMS</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept ems">Emergency Medical Services</div>
-        <div class="hc-name">Gulf County EMS Team</div>
-        <div class="hc-title">Paramedics · Gulf County, Florida</div>
-        <div class="hc-divider ems"></div>
-        <div class="hc-why ems">Why They're Heroes</div>
-        <p class="hc-desc">When Todd Hoffman's heart stopped for over 90 minutes after a cardiac arrest, Gulf County EMS crews responded alongside Sheriff's deputies and refused to quit. Working alongside Hoffman's wife — a nurse who started CPR immediately — they brought him back. Months later, Hoffman stood before them to say thank you in person.</p>
-        <blockquote class="hc-quote">"He didn't have a pulse, so I started CPR — shortly after the deputy came in with the AED." — Tannie Hoffman</blockquote>
-        <div class="hc-source">Source: <a href="https://www.wjhg.com/2026/02/05/gulf-county-man-thanks-those-who-saved-his-life-after-heart-attack/" target="_blank">WJHG News · Feb. 4, 2026</a></div>
-      </div>
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="https://bocapost.com/wp-content/uploads/2026/09/Delray-Beach-Fire-Captain-Joseph-Falcone-Named-State-Firefighter-Safety-Award-Recipient.jpg" alt="Captain Joseph Falcone" class="hc-img" style="object-fit:cover;object-position:top center">
+      <div class="hc-ribbon ribbon-fire">Fire &amp; Rescue</div>
+      <div class="hc-credit">Photo: BocaPost / Delray Beach Fire Rescue</div>
     </div>
-
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://bayso.org/wp-content/uploads/2025/10/BCSO_Badge.png" style="object-fit:contain;padding:20px;background:#111" alt="Sgt. Brent Roberts BCSO">
-        <div class="hc-ribbon ribbon-law">Law Enforcement</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept law">Law Enforcement</div>
-        <div class="hc-name">Sgt. Brent Roberts</div>
-        <div class="hc-title">Bay County Sheriff's Office · Panama City, Florida</div>
-        <div class="hc-divider law"></div>
-        <div class="hc-why law">Why He's a Hero</div>
-        <p class="hc-desc">Sergeant Brent Roberts was on patrol near Deerpoint Lake when a call came in. He spotted a man floating in the water, another screaming for help — and jumped in without hesitation. He pulled the drowning man to safety. The U.S. Attorney for the Northern District of Florida awarded Roberts the 2026 Hometown Heroes Award for his bravery.</p>
-        <blockquote class="hc-quote">"When searching for candidates, articles depicting Roberts's bravery quickly came to mind." — U.S. Attorney Jack Heekin</blockquote>
-        <div class="hc-source">Source: <a href="https://www.mypanhandle.com/news/local-news/bcso-sergeant-awarded-hometown-hero-award" target="_blank">MyPanhandle / WMBB · 2026</a></div>
-      </div>
+    <div class="hc-body">
+      <div class="hc-dept fire">Fire &amp; Rescue</div>
+      <div class="hc-name">Capt. Joseph Falcone</div>
+      <div class="hc-title">Delray Beach Fire Rescue &middot; Delray Beach, FL</div>
+      <div class="hc-bar fire"></div>
+      <p class="hc-desc">Captain Joseph Falcone was awarded the 2026 Florida Fire Chiefs&rsquo; Association Safety and Health Award of Excellence. Over nearly 25 years, Falcone has led firefighter cancer prevention, fitness, behavioral health, and peer support programs &mdash; embedding wellness into department culture so every firefighter knows help is available.</p>
+      <blockquote class="hc-quote">&ldquo;For nearly 25 years, he has been a leader in the truest sense &mdash; one who cares deeply about the people he serves alongside.&rdquo; &mdash; Chief Ronald Martin</blockquote>
+      <div class="hc-source">Source: <a href="https://bocapost.com/delray-beach-news/delray-beach-captain-joseph-falcone-ffca-safety-health-award/" target="_blank">BocaPost &middot; Sep. 2026</a></div>
     </div>
-
-    <div class="hero-card">
-      <div class="hc-photo">
-        <img src="https://www.hernandosun.com/wp-content/uploads/2026/09/810182324_27397679796571919_1310168256410748695_n.jpg" alt="Pasco County Fire Rescue">
-        <div class="hc-ribbon ribbon-fire">Fire &amp; Rescue</div>
-      </div>
-      <div class="hc-body">
-        <div class="hc-dept fire">Fire &amp; Rescue</div>
-        <div class="hc-name">Pasco Co. Fire Rescue Station 26</div>
-        <div class="hc-title">Firefighters Ryan Garrity &amp; Alexander Garcia · Pasco County, Florida</div>
-        <div class="hc-divider fire"></div>
-        <div class="hc-why fire">Why They're Heroes</div>
-        <p class="hc-desc">On June 5, 2026, a man collapsed on a pickleball court in Pasco County. Bystanders started CPR. When Station 26 arrived, firefighter-paramedics Ryan Garrity and Alexander Garcia took over and saved his life. In October 2026, Pasco County Fire Rescue honored the crew with Life Saving Awards for two extraordinary rescues in a single month.</p>
-        <blockquote class="hc-quote">"Two different emergencies. Two extraordinary rescues. One mission: saving lives." — Pasco County Fire Rescue</blockquote>
-        <div class="hc-source">Source: <a href="https://hernandosun.com/2026/10/09/pasco-firefighter-civilians-earn-life-saving-awards/" target="_blank">Hernando Sun · Oct. 9, 2026</a></div>
-      </div>
-    </div>
-
   </div>
-</section>
+</div>
 
+<!-- ═══ WEEK 1 ─ Oct 13, 2026 (Inaugural) ═══ -->
+<div class="week-sep">
+  <div class="week-line"></div>
+  <div class="week-label">Inaugural Heroes &middot; Week of</div>
+  <div class="week-date">October 13, 2026</div>
+  <div class="week-line"></div>
+</div>
+<div class="heroes-row">
+
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_6500990/Templates/design-file/logo200.png" alt="Gulf County Seal" class="hc-img" style="object-fit:contain;padding:20px;background:#111">
+      <div class="hc-ribbon ribbon-ems">EMS</div>
+      <div class="hc-credit">Gulf County, Florida</div>
+    </div>
+    <div class="hc-body">
+      <div class="hc-dept ems">Emergency Medical Services</div>
+      <div class="hc-name">Gulf County EMS Team</div>
+      <div class="hc-title">Paramedics &middot; Gulf County, Florida</div>
+      <div class="hc-bar ems"></div>
+      <p class="hc-desc">When Todd Hoffman&rsquo;s heart stopped for over 90 minutes after a cardiac arrest, Gulf County EMS crews responded alongside Sheriff&rsquo;s deputies and refused to quit. Working with Hoffman&rsquo;s wife &mdash; a nurse who started CPR immediately &mdash; they brought him back. Months later, Hoffman stood before them to say thank you.</p>
+      <blockquote class="hc-quote">&ldquo;He didn&rsquo;t have a pulse, so I started CPR &mdash; shortly after the deputy came in with the AED.&rdquo; &mdash; Tannie Hoffman</blockquote>
+      <div class="hc-source">Source: <a href="https://www.wjhg.com/2026/02/05/gulf-county-man-thanks-those-who-saved-his-life-after-heart-attack/" target="_blank">WJHG News &middot; Feb. 4, 2026</a></div>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="https://bayso.org/wp-content/uploads/2025/10/BCSO_Badge.png" alt="BCSO Badge" class="hc-img" style="object-fit:contain;padding:20px;background:#111">
+      <div class="hc-ribbon ribbon-law">Law Enforcement</div>
+      <div class="hc-credit">Bay County Sheriff&rsquo;s Office</div>
+    </div>
+    <div class="hc-body">
+      <div class="hc-dept law">Law Enforcement</div>
+      <div class="hc-name">Sgt. Brent Roberts</div>
+      <div class="hc-title">Bay County Sheriff&rsquo;s Office &middot; Panama City, FL</div>
+      <div class="hc-bar law"></div>
+      <p class="hc-desc">Sergeant Brent Roberts was on patrol near Deerpoint Lake when a call came in. He spotted a man floating in the water and another screaming for help &mdash; and jumped in. He pulled the drowning man to safety. The U.S. Attorney for the Northern District of Florida awarded Roberts the 2026 Hometown Heroes Award for his bravery.</p>
+      <blockquote class="hc-quote">&ldquo;Articles depicting Roberts&rsquo;s bravery quickly came to mind &mdash; he was an obvious choice.&rdquo; &mdash; U.S. Attorney Jack Heekin</blockquote>
+      <div class="hc-source">Source: <a href="https://www.mypanhandle.com/news/local-news/bcso-sergeant-awarded-hometown-hero-award" target="_blank">MyPanhandle / WMBB &middot; 2026</a></div>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="hc-photo">
+      <img src="https://www.hernandosun.com/wp-content/uploads/2026/09/810182324_27397679796571919_1310168256410748695_n.jpg" alt="Ryan Garrity and Alexander Garcia receiving Life Saving Award" class="hc-img" style="object-fit:cover;object-position:top center">
+      <div class="hc-ribbon ribbon-fire">Fire &amp; Rescue</div>
+      <div class="hc-credit">Photo: Hernando Sun / Pasco County Fire Rescue</div>
+    </div>
+    <div class="hc-body">
+      <div class="hc-dept fire">Fire &amp; Rescue</div>
+      <div class="hc-name">Garrity &amp; Garcia &mdash; Station 26</div>
+      <div class="hc-title">Pasco County Fire Rescue &middot; Pasco County, FL</div>
+      <div class="hc-bar fire"></div>
+      <p class="hc-desc">On June 5, 2026, a man collapsed on a pickleball court in Pasco County. Bystanders started CPR. When Station 26 arrived, firefighter-paramedics Ryan Garrity and Alexander Garcia took over and saved his life. In October 2026, Pasco County Fire Rescue honored the crew with Life Saving Awards.</p>
+      <blockquote class="hc-quote">&ldquo;Two different emergencies. Two extraordinary rescues. One mission: saving lives.&rdquo; &mdash; Pasco County Fire Rescue</blockquote>
+      <div class="hc-source">Source: <a href="https://hernandosun.com/2026/10/09/pasco-firefighter-civilians-earn-life-saving-awards/" target="_blank">Hernando Sun &middot; Oct. 9, 2026</a></div>
+    </div>
+  </div>
+</div>
+</div><!-- /weeks -->
+
+<!-- NOMINATE -->
 <section class="nominate">
   <div class="nom-inner">
     <h2 class="nom-title">Know a Florida Hero?</h2>
@@ -321,7 +338,7 @@ footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:28px 2
 
 <footer>
   <div class="ft-inner">
-    <p class="ft-copy">&copy; 2026 The Heron Report &nbsp;·&nbsp; Heron Media Group &nbsp;·&nbsp; Mexico Beach, Florida</p>
+    <p class="ft-copy">&copy; 2026 The Heron Report &middot; Heron Media Group &middot; Mexico Beach, Florida</p>
     <nav class="ft-links">
       <a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a>
     </nav>
