@@ -60,5 +60,16 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-14",
+    "time_utc": "2026-10-14T10:22:14.315147+00:00",
+    "type": "heroes",
+    "count": 3,
+    "heroes": {
+      "ems": "Watch: Florida paramedic jumps from helicopter in attempt to save fisherman\u2019s life",
+      "law": "Florida Deputies Hailed As Heroes For Saving Drowning Woman At Beach - nationalenquirer.com",
+      "fire": "Monroe County firefighters save girl trapped in Florida Keys house fire"
+    }
   }
 ]
