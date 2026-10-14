@@ -538,8 +538,7 @@
       ],
       "story_context": "Sarasota County Sheriff",
       "added": "2026-10-14"
-    }
-  ,
+    },
     {
       "local_path": "/img/stories/a1d39a445f7dc956.png",
       "source_url": "https://img.einpresswire.com/large/1210756/meow-franchising.png",
@@ -572,6 +571,36 @@
       ],
       "story_title": "The RISE Collective St. Petersburg GrowFL 2026",
       "added": "2026-10-15"
+    },
+    {
+      "local_path": "/img/stories/662c42c20b4fc436.jpg",
+      "source_url": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-10/14/2026-10-14T140824Z_2_LYNXMPEM9D1H3_RTROPTP_3_USA-ELECTION-OBAMACARE.JPG",
+      "md5": "9d75ffdb55e717d74b1984ff1ed9559a",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_title": "Trump Admin Cuts $738M in Duplicate Obamacare Subsidies",
+      "added": "2026-10-14"
+    },
+    {
+      "local_path": "/img/stories/924e9a7316c9e4c0.jpg",
+      "source_url": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-09T100655Z_1620753654_RC2UUNAZA068_RTRMADP_3_IRAQ-SYRIA-BARRACK-1791615596.jpg",
+      "md5": "21d88e37789f7157d1d1693d1dc0fb06",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_title": "Iran Hormuz Tactics Crash Oil Flows to War-Low",
+      "added": "2026-10-14"
+    },
+    {
+      "local_path": "/img/stories/67a736f952222ea3.jpg",
+      "source_url": "https://hermes.media.transform.aol.com/b73b1858c9c02fb40376b7257a1a7193eeefbdfe/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/10/13/687dac0d-84df-3160-8a7b-2dba6c36d202/a8bd7da5-5f7e-4785-9655-aa97725ace72.png",
+      "md5": "8e37dcc1b3c993c5cccc6e2783332403",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_title": "Franklin County Sheriff Pushes for Emergency Upgrades After Hurricane Isaias",
+      "added": "2026-10-14"
     }
   ],
   "last_updated": "2026-10-15",
