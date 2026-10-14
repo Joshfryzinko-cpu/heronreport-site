@@ -539,7 +539,41 @@
       "story_context": "Sarasota County Sheriff",
       "added": "2026-10-14"
     }
+  ,
+    {
+      "local_path": "/img/stories/a1d39a445f7dc956.png",
+      "source_url": "https://img.einpresswire.com/large/1210756/meow-franchising.png",
+      "md5": "d0d373c660f212b382ee5429a4e28a7d",
+      "size_bytes": 116468,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_title": "Safety Harbor MEOW! A Cat Sitting Co. Franchise",
+      "added": "2026-10-15"
+    },
+    {
+      "local_path": "/img/stories/46d06bff02ddeb38.jpg",
+      "source_url": "https://symphony.cdn.tambourine.com/hotel-margot/media/4n4a8700-1-6aa7ffb132082.jpg",
+      "md5": "b387f77893e003a8c528f01dc5580aeb",
+      "size_bytes": 510002,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_title": "Hotel Margot Pensacola Boutique Hotel",
+      "added": "2026-10-15"
+    },
+    {
+      "local_path": "/img/stories/da5ea41b4fe70f58.jpg",
+      "source_url": "https://img.einpresswire.com/medium/1208498/the-rise-collective-logo.jpeg",
+      "md5": "e1aec0f31d4f4d9d31550c5254b9f376",
+      "size_bytes": 10237,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_title": "The RISE Collective St. Petersburg GrowFL 2026",
+      "added": "2026-10-15"
+    }
   ],
-  "last_updated": "2026-10-14",
-  "total": 54
+  "last_updated": "2026-10-15",
+  "total": 57
 }
