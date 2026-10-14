@@ -1,0 +1,100 @@
+# Daily publishing: Politics + Business + Investigations
+# Oct 14 2026 first run at 6 AM CT (CDT=UTC-5 → 11:00 UTC)
+# Daily after that at 5 AM CT
+# Uses two schedules to handle CDT→CST transition (Nov 1, 2026)
+# Dedup file prevents double-posting on overlap days
+
+name: Daily Publishing
+
+on:
+  schedule:
+    # 5 AM CDT = 10:00 UTC (Mar–Nov, during Daylight Saving Time)
+    - cron: '0 10 * * *'
+    # 5 AM CST = 11:00 UTC (Nov–Mar, during Standard Time)
+    - cron: '0 11 * * *'
+  # First run manually triggered Oct 14 at 6 AM CT
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: 'Force run even if already ran today'
+        required: false
+        default: 'false'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests feedparser beautifulsoup4
+
+      - name: Check if already ran today (DST dedup)
+        id: check_ran
+        run: |
+          python3 -c "
+          import json, os
+          from datetime import date
+          log_path = 'scripts/run_log.json'
+          today = date.today().isoformat()
+          if os.path.exists(log_path):
+              with open(log_path) as f:
+                  log = json.load(f)
+              recent = [e for e in log if e.get('date') == today and e.get('type') != 'heroes']
+              if recent:
+                  print('ALREADY_RAN=true')
+              else:
+                  print('ALREADY_RAN=false')
+          else:
+              print('ALREADY_RAN=false')
+          " >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Skip if already ran today
+        if: steps.check_ran.outputs.ALREADY_RAN == 'true' && github.event.inputs.force_run != 'true'
+        run: |
+          echo "Already ran today — skipping to prevent double-posting (DST overlap)."
+          exit 0
+
+      - name: Run daily publisher
+        if: steps.check_ran.outputs.ALREADY_RAN != 'true' || github.event.inputs.force_run == 'true'
+        run: |
+          cd $GITHUB_WORKSPACE
+          python3 scripts/publish_daily.py
+
+      - name: Commit and push
+        if: steps.check_ran.outputs.ALREADY_RAN != 'true' || github.event.inputs.force_run == 'true'
+        run: |
+          git config user.name  "Heron Report Bot"
+          git config user.email "news@heronreport.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-publish: Daily stories $(date -u +%Y-%m-%d)"
+            git push
+            echo "✅ Published and pushed to GitHub Pages"
+          fi
+
+      - name: Verify GitHub Pages
+        if: steps.check_ran.outputs.ALREADY_RAN != 'true' || github.event.inputs.force_run == 'true'
+        run: |
+          sleep 30
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://heronreport.com/section-politics.html)
+          echo "heronreport.com/section-politics.html → HTTP $STATUS"
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://heronreport.com/section-business.html)
+          echo "heronreport.com/section-business.html → HTTP $STATUS"
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://heronreport.com/section-investigations.html)
+          echo "heronreport.com/section-investigations.html → HTTP $STATUS"

@@ -1,0 +1,85 @@
+# Weekly Heroes of the Week publisher
+# Every Wednesday at 5 AM CT
+# First run: Oct 14 2026 (Tuesday — using workflow_dispatch for first run)
+# Then every Wednesday
+
+name: Weekly Heroes of the Week
+
+on:
+  schedule:
+    # Every Wednesday: 5 AM CDT = 10:00 UTC
+    - cron: '0 10 * * 3'
+    # Every Wednesday: 5 AM CST = 11:00 UTC (after Nov 1)
+    - cron: '0 11 * * 3'
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: 'Force heroes run'
+        required: false
+        default: 'false'
+
+jobs:
+  heroes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests feedparser beautifulsoup4
+
+      - name: Check if heroes already ran this week
+        id: check_heroes
+        run: |
+          python3 -c "
+          import json, os
+          from datetime import date, timedelta
+          log_path = 'scripts/run_log.json'
+          today = date.today()
+          # Look for a heroes run within the last 5 days
+          week_ago = (today - timedelta(days=5)).isoformat()
+          if os.path.exists(log_path):
+              with open(log_path) as f:
+                  log = json.load(f)
+              recent = [e for e in log if e.get('type') == 'heroes' and e.get('date', '') >= week_ago]
+              print('ALREADY_RAN=' + ('true' if recent else 'false'))
+          else:
+              print('ALREADY_RAN=false')
+          " >> $GITHUB_OUTPUT
+
+      - name: Run heroes publisher
+        if: steps.check_heroes.outputs.ALREADY_RAN != 'true' || github.event.inputs.force_run == 'true'
+        run: |
+          cd $GITHUB_WORKSPACE
+          python3 scripts/publish_heroes.py
+
+      - name: Commit and push
+        if: steps.check_heroes.outputs.ALREADY_RAN != 'true' || github.event.inputs.force_run == 'true'
+        run: |
+          git config user.name  "Heron Report Bot"
+          git config user.email "news@heronreport.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-publish: Heroes of the Week $(date -u +%Y-%m-%d)"
+            git push
+            echo "✅ Heroes published and pushed to GitHub Pages"
+          fi
+
+      - name: Verify Heroes page
+        if: steps.check_heroes.outputs.ALREADY_RAN != 'true' || github.event.inputs.force_run == 'true'
+        run: |
+          sleep 30
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://heronreport.com/heroes.html)
+          echo "heronreport.com/heroes.html → HTTP $STATUS"
