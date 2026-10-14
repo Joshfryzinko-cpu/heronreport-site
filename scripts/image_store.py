@@ -77,8 +77,8 @@ def download_and_store(url: str, timeout: int = 12) -> str:
             for chunk in r.iter_content(65536):
                 f.write(chunk)
 
-        # Sanity: must be at least 2 KB to be a real image
-        if dest.stat().st_size < 2048:
+        # Sanity: must be at least 8 KB to be a real image (Google logo is ~2KB)
+        if dest.stat().st_size < 8192:
             dest.unlink(missing_ok=True)
             return PLACEHOLDER
 

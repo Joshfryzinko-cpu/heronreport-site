@@ -71,23 +71,88 @@ def append_run_log(entry):
 # ─── News Search via Google News RSS ─────────────────────────────────────────
 
 def search_news(query, limit=8):
-    """Search Google News RSS — no API key needed."""
+    """
+    Search Bing News RSS — gives real article URLs (no Google redirect encoding).
+    Follows Bing's own redirect to get the final publisher URL.
+    Falls back to Google News RSS if Bing returns no results.
+    """
+    results = _search_bing_news(query, limit)
+    if not results:
+        results = _search_google_news(query, limit)
+    return results
+
+
+def _follow_redirect(url, timeout=6):
+    """Follow a redirect URL and return the final URL."""
+    try:
+        r = requests.head(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
+        return r.url if r.url != url else url
+    except Exception:
+        return url
+
+
+def _search_bing_news(query, limit=8):
+    """Bing News RSS — entries use redirect URLs that resolve to real article URLs."""
+    url = f"https://www.bing.com/news/search?q={quote_plus(query)}&format=rss"
+    try:
+        import feedparser as _fp
+        feed = _fp.parse(url)
+        results = []
+        for entry in feed.entries[:limit * 2]:  # fetch extra, some will fail
+            bing_url = entry.get('link', '')
+            if not bing_url:
+                continue
+            real_url = _follow_redirect(bing_url)
+            # Skip if still on Bing
+            if 'bing.com' in real_url:
+                continue
+            title = entry.get('title', '')
+            if not title:
+                continue
+            src_raw = entry.get('source', '')
+            src = src_raw.get('title', '') if isinstance(src_raw, dict) else entry.get('author', '')
+            results.append({
+                'title':  title,
+                'url':    real_url,
+                'date':   entry.get('published', ''),
+                'source': src,
+                'desc':   re.sub('<[^>]+>', '', entry.get('summary', '')),
+            })
+            if len(results) >= limit:
+                break
+        return results
+    except Exception as e:
+        print(f"  _search_bing_news error: {e}")
+        return []
+
+
+def _search_google_news(query, limit=8):
+    """
+    Google News RSS fallback — WARNING: article links are Google redirect URLs.
+    og:image from these redirects returns the Google News logo for every story.
+    This fallback is only used when Bing fails; caller MUST check image quality.
+    """
     url = f"https://news.google.com/rss/search?q={quote_plus(query)}&hl=en-US&gl=US&ceid=US:en"
     try:
-        feed = feedparser.parse(url)
+        import feedparser as _fp
+        feed = _fp.parse(url)
         results = []
         for entry in feed.entries[:limit]:
-            src = entry.get('source', {}).get('title', '')
+            src_raw = entry.get('source', {})
+            src = src_raw.get('title', '') if isinstance(src_raw, dict) else ''
+            src_href = src_raw.get('href', '') if isinstance(src_raw, dict) else ''
             results.append({
-                'title': entry.get('title', ''),
-                'url':   entry.get('link', ''),
-                'date':  entry.get('published', ''),
-                'source': src,
-                'desc':  entry.get('summary', ''),
+                'title':    entry.get('title', ''),
+                'url':      entry.get('link', ''),    # ← Google redirect, needs resolution
+                'date':     entry.get('published', ''),
+                'source':   src,
+                'src_href': src_href,   # actual publisher domain
+                'desc':     re.sub('<[^>]+>', '', entry.get('summary', '')),
+                '_from_gnews': True,
             })
         return results
     except Exception as e:
-        print(f"  search_news error: {e}")
+        print(f"  _search_google_news error: {e}")
         return []
 
 
@@ -95,6 +160,10 @@ def search_news(query, limit=8):
 
 def get_og_image(url, timeout=10):
     """Get og:image meta tag from a URL, download it locally, return local path."""
+    # Reject Google News redirect URLs immediately — they return the Google News logo
+    if 'news.google.com/rss/articles' in url:
+        print(f"    skip Google News redirect URL: {url[:50]}")
+        return None
     try:
         r = requests.get(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
         og = re.search(r'property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', r.text)
@@ -104,6 +173,10 @@ def get_og_image(url, timeout=10):
             img = og.group(1).strip()
             if img.startswith('//'):
                 img = 'https:' + img
+            # Reject Google logos, favicons, tracking pixels
+            if _is_bad_image_url(img):
+                print(f"    reject bad image: {img[:60]}")
+                return None
             # Store locally for permanence
             if _USE_IMAGE_STORE:
                 local = _store_img(img)
@@ -114,6 +187,23 @@ def get_og_image(url, timeout=10):
     except Exception:
         pass
     return None
+
+
+_BAD_URL_PATTERNS = [
+    'lh3.googleusercontent.com',
+    'news.google.com',
+    'encrypted-tbn0.gstatic.com',
+    '/favicon',
+    'favicon.ico',
+    'favicon.png',
+    '1x1.',
+    'doubleclick.net',
+    'googletagmanager.com',
+]
+
+def _is_bad_image_url(url: str) -> bool:
+    url_lower = url.lower()
+    return any(pat.lower() in url_lower for pat in _BAD_URL_PATTERNS)
 
 def verify_image(url, timeout=6):
     """Return True if URL is a valid, loadable image."""
