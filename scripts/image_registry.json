@@ -263,9 +263,7 @@
       "local_path": "/img/stories/966a68def4be0d3e.jpg",
       "md5": "0fb382c1e877d38775a03e4dff7b75a0",
       "size_bytes": 59656,
-      "used_on": [
-        "section-investigations.html"
-      ],
+      "used_on": [],
       "story_context": "12 charged in $10 million childcare fraud scheme",
       "added": "2026-10-14"
     },
@@ -293,9 +291,7 @@
       "local_path": "/img/stories/9e6af972b5a603c8.webp",
       "md5": "4975254b0bf81db75bf52b00fcdc8640",
       "size_bytes": 164408,
-      "used_on": [
-        "section-investigations.html"
-      ],
+      "used_on": [],
       "story_context": "Democratic officials charged with fraud due to alleged ",
       "added": "2026-10-14"
     },
@@ -600,6 +596,36 @@
         "section-politics.html"
       ],
       "story_title": "Franklin County Sheriff Pushes for Emergency Upgrades After Hurricane Isaias",
+      "added": "2026-10-14"
+    },
+    {
+      "local_path": "/img/stories/8a858379244b28f9.svg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Seal_of_the_Federal_Emergency_Management_Agency.svg",
+      "md5": "d9ef59c25aac05793dcbd0932f5affd2",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_title": "Federal Judge Rules Musk, Noem Spread False Info to Fire FEMA CFO",
+      "added": "2026-10-14"
+    },
+    {
+      "local_path": "/img/stories/44b8c1e01e38481c.svg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Seal_of_Florida.svg",
+      "md5": "e1a970a3f2571f6cc1e1b4faf7d250b7",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_title": "Florida Appeals Court Expunges Hope Florida Grand Jury Report",
+      "added": "2026-10-14"
+    },
+    {
+      "local_path": "/img/stories/7acc08b14d14730e.svg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Seal_of_the_United_States_Supreme_Court.svg",
+      "md5": "0430ff3708c8469cf84cbdbe6bd39655",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_title": "Supreme Court Agrees to Hear Whether DOGE Must Disclose Records",
       "added": "2026-10-14"
     }
   ],
