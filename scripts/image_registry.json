@@ -77,7 +77,7 @@
       "used_on": [
         "section-politics.html"
       ],
-      "story_context": "Trump administration cuts refugees’ deadline to contest",
+      "story_context": "Trump administration cuts refugees\u2019 deadline to contest",
       "added": "2026-10-14"
     },
     {
@@ -97,7 +97,7 @@
       "used_on": [
         "section-politics.html"
       ],
-      "story_context": "Trump administration cuts refugees’ deadline to contest",
+      "story_context": "Trump administration cuts refugees\u2019 deadline to contest",
       "added": "2026-10-14"
     },
     {
@@ -147,7 +147,7 @@
       "used_on": [
         "section-business.html"
       ],
-      "story_context": "Hispanic Unity of Florida's Entrepreneur Summit — One o",
+      "story_context": "Hispanic Unity of Florida's Entrepreneur Summit \u2014 One o",
       "added": "2026-10-14"
     },
     {
@@ -274,7 +274,7 @@
       "used_on": [
         "section-politics.html"
       ],
-      "story_context": "EIA: Winter Energy Costs to Vary Widely — Natural",
+      "story_context": "EIA: Winter Energy Costs to Vary Widely \u2014 Natural",
       "added": "2026-10-14"
     },
     {
@@ -372,7 +372,7 @@
         "section-investigations.html",
         "section-politics.html"
       ],
-      "story_context": "FAMU’s Small Business Week Connects Entrepreneurs with ",
+      "story_context": "FAMU\u2019s Small Business Week Connects Entrepreneurs with ",
       "added": "2026-10-14"
     },
     {
@@ -392,7 +392,7 @@
       "used_on": [
         "index.html"
       ],
-      "story_context": "As Trump’s Wall Closes in, DHS Intimidates a Border Tribe With Surveillance, Masked Agents and Drones",
+      "story_context": "As Trump\u2019s Wall Closes in, DHS Intimidates a Border Tribe With Surveillance, Masked Agents and Drones",
       "added": "2026-10-14"
     },
     {
@@ -627,61 +627,8 @@
       ],
       "story_title": "Supreme Court Agrees to Hear Whether DOGE Must Disclose Records",
       "added": "2026-10-14"
-    },
-    {
-      "local_path": "/img/stories/6ee9af426dffc106.jpg",
-      "source_url": "https://meduza.io/imgly/share/1792079150/en/feature/2026/10/15/we-re-done-zelensky-says-as-ukraine-resumes-strikes-on-russian-oil-refineries-the-kremlin-claims-the-attacks-never-stopped",
-      "md5": "29810620b9875693d3de0c27b578d28b",
-      "used_on": [
-        "section-politics.html"
-      ],
-      "story_title": "Ukraine Ends Refinery Pause, Drones Strike Moscow Fuel Hub",
-      "added": "2026-10-15"
-    },
-    {
-      "local_path": "/img/stories/290354e89035e052.jpg",
-      "source_url": "https://gray-wctv-prod.gtv-cdn.com/resizer/v2/U34TJCTWA5CZLMWB3OPDEQVZ6Q.png?auth=eeb53c8ac70f6c3c071cf954553f2debd6d80beb07574f6e27976232d8bb77f6&width=1200&height=600&smart=true",
-      "md5": "d2ea0b676ce175f258722a27272047bb",
-      "used_on": [
-        "section-politics.html"
-      ],
-      "story_title": "Franklin County Sheriff water rescue Isaias",
-      "added": "2026-10-15"
-    },
-    {
-      "local_path": "/img/stories/b47117206b1bb168.png",
-      "source_url": "https://img.einpresswire.com/large/1212417/bill-oxley.png",
-      "md5": "c09153751aa203d182f29a463d83eebf",
-      "size_bytes": 4853084,
-      "used_on": [
-        "section-business.html"
-      ],
-      "story_title": "Oxley Cabinets Bill Oxley Sanford FL",
-      "added": "2026-10-15"
-    },
-    {
-      "local_path": "/img/stories/59a82b6ca3c3b079.jpg",
-      "source_url": "https://sbdctampabay.com/wp-content/uploads/2026/09/KrazyKombucha_Posed2-2.jpg",
-      "md5": "12452de4fd1f198f87059b0bab9581f8",
-      "size_bytes": 210597,
-      "used_on": [
-        "section-business.html"
-      ],
-      "story_title": "Krazy Kombucha Wendy Johnson Lakeland FL",
-      "added": "2026-10-15"
-    },
-    {
-      "local_path": "/img/stories/7e184511e0e93172.jpg",
-      "source_url": "https://sbdctampabay.com/wp-content/uploads/2026/10/ArincInstruments_Candid4.jpg",
-      "md5": "1b163a092ded27344af60ce0e597172d",
-      "size_bytes": 551006,
-      "used_on": [
-        "section-business.html"
-      ],
-      "story_title": "Arinc Instruments Sammy Cartright Hillsborough County FL",
-      "added": "2026-10-15"
     }
   ],
   "last_updated": "2026-10-15",
-  "total": 68
+  "total": 57
 }
