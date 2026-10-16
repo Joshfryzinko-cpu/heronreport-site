@@ -133,5 +133,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-16",
+    "time_utc": "2026-10-16T10:24:50.624669+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.kjzz.org/npr-top-stories/2026-10-16/why-some-gen-z-voters-who-backed-trump-now-regret-their-decision",
+          "https://www.cfr.org/articles/trumps-diesel-deal-with-russia-was-just-the-start",
+          "https://www.msn.com/en-ca/news/other/trump-s-commerce-chief-opposes-cutting-25-auto-tariff-as-us-mexico-trade-talks-stall/ar-AA2em2Pj"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.news4jax.com/health/2026/09/17/casa-vive-its-home-hispanic-owned-wellness-space-in-san-marco-blends-culture-community-and-healing/",
+          "https://hoodline.com/2026/10/miami-gala-honors-hispanic-women-leaders-even-as-latina-founders-struggle-for-capital/",
+          "https://baynews9.com/fl/tampa/news/2026/09/12/hispanic-owned-businesses-continue-growing-in-tampa-bay"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/news/other/florida-attorney-general-a-voter-guide-to-the-2026-general-election/ar-AA2emJkg",
+          "https://www.clickorlando.com/news/local/2026/09/03/how-the-hope-florida-investigation-began-and-why-a-grand-jury-report-may-have-been-leaked/",
+          "https://www.jdsupra.com/legalnews/top-10-international-anti-corruption-7081542/"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
