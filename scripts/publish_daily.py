@@ -30,32 +30,36 @@ TODAY_ISO = date.today().isoformat()
 # ─── Story Queries ────────────────────────────────────────────────────────────
 
 POLITICS_QUERIES = [
-    # Trump administration — broad, not just Trump personally
-    "Trump administration policy decision October 2026",
-    "Trump cabinet secretary department action 2026",
-    "JD Vance administration White House 2026",
-    "Marco Rubio secretary state foreign policy 2026",
-    "Pete Hegseth defense Pentagon military 2026",
-    "Pam Bondi DOJ attorney general 2026",
-    "Kristi Noem DHS homeland security border 2026",
-    "Doug Burgum interior energy department 2026",
-    "Scott Bessent treasury department economy 2026",
-    "Robert F Kennedy HHS health 2026",
-    "Brooke Rollins USDA agriculture 2026",
+    # Top 10 administration figures — one query each
+    "JD Vance vice president news 2026",
+    "Marco Rubio secretary of state foreign policy news 2026",
+    "Pete Hegseth secretary defense Pentagon news 2026",
+    "Pam Bondi attorney general DOJ news 2026",
+    "Kristi Noem DHS homeland security border news 2026",
+    "Scott Bessent treasury secretary economy tariffs 2026",
+    "Robert F Kennedy RFK HHS health department news 2026",
+    "Doug Burgum interior energy department news 2026",
+    "Elon Musk DOGE government efficiency news 2026",
+    "Brooke Rollins USDA agriculture secretary news 2026",
     # National security / military
-    "US military war national security October 2026",
-    "Ukraine Russia war ceasefire 2026",
-    "Israel Iran Middle East 2026",
+    "US military national security war news 2026",
+    "Ukraine Russia war ceasefire news 2026",
+    "Israel Iran Middle East conflict 2026",
     # Economy / energy
-    "oil gas energy prices economy October 2026",
-    "federal spending budget deficit 2026",
-    # Immigration / border
-    "border immigration enforcement deportation 2026",
+    "oil gas energy prices economy news October 2026",
+    "federal spending budget deficit Congress 2026",
+    # Immigration
+    "border immigration enforcement deportation news 2026",
     # Florida local heroes
     "Bay County Gulf County Franklin County Florida sheriff fire rescue 2026",
-    # Accountability
-    "federal government waste fraud accountability 2026",
+    # Trump — limited (only 2 per day max, enforced in publish logic)
+    "Trump executive order White House policy news 2026",
 ]
+
+# Max Trump-specific articles per daily publish run
+MAX_TRUMP_PER_RUN = 2
+# Max total articles shown on Politics page at one time
+MAX_POLITICS_ARTICLES = 18
 
 BUSINESS_QUERIES = [
     "Florida entrepreneur small business success story 2026",
@@ -212,9 +216,31 @@ def detect_location(title):
 
 # ─── Per-page publishers ──────────────────────────────────────────────────────
 
+def prune_to_max_articles(html, max_articles, css_class):
+    """Remove oldest day-sections to keep total article count at max_articles."""
+    import re
+    cards = re.findall(rf'<article\b[^>]*class="{css_class}"[^>]*>.*?</article>', html, re.DOTALL)
+    if len(cards) <= max_articles:
+        return html
+    # Find and remove the oldest day-sections from the bottom
+    sections = re.findall(r'<div class="day-sep">.*?</div>\s*<div class="card-grid">.*?</div>', html, re.DOTALL)
+    excess = len(cards) - max_articles
+    removed = 0
+    for section in reversed(sections):
+        section_cards = re.findall(rf'<article\b[^>]*class="{css_class}"', section)
+        if removed >= excess:
+            break
+        html = html.replace(section, '', 1)
+        removed += len(section_cards)
+    return html
+
 def find_stories(queries, page_type, published_ids, target=3, max_per_query=4):
-    """Search queries until we have `target` new unique stories."""
+    """Search queries until we have `target` new unique stories.
+    For politics: caps Trump-named stories at MAX_TRUMP_PER_RUN.
+    """
     collected = []
+    trump_count = 0
+
     for query in queries:
         if len(collected) >= target:
             break
@@ -222,10 +248,22 @@ def find_stories(queries, page_type, published_ids, target=3, max_per_query=4):
         for raw in results:
             if len(collected) >= target:
                 break
-            story = process_story(raw, page_type, published_ids)
-            if story:
-                collected.append(story)
-        time.sleep(1)  # rate limit
+            # Cap Trump-specific articles
+            if page_type == 'politics':
+                title_l = raw.get('title','').lower()
+                is_trump = 'trump' in title_l
+                if is_trump and trump_count >= MAX_TRUMP_PER_RUN:
+                    continue
+                story = process_story(raw, page_type, published_ids)
+                if story:
+                    if is_trump:
+                        trump_count += 1
+                    collected.append(story)
+            else:
+                story = process_story(raw, page_type, published_ids)
+                if story:
+                    collected.append(story)
+        time.sleep(1)
     return collected[:target]
 
 def publish_page(filename, queries, page_type, css_class, categorizer, published_ids):
@@ -253,6 +291,10 @@ def publish_page(filename, queries, page_type, css_class, categorizer, published
 
     section = build_day_section(TODAY, stories, css_class)
     html = inject_section_before(html, section)
+
+    # Prune to MAX_POLITICS_ARTICLES total if this is the politics page
+    if page_type == 'politics':
+        html = prune_to_max_articles(html, MAX_POLITICS_ARTICLES, css_class)
 
     with open(path, 'w', encoding='utf-8') as f:
         f.write(html)

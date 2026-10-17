@@ -195,5 +195,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-17",
+    "time_utc": "2026-10-17T14:57:30.607023+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://leadstories.com/hoax-alert/2026/10/fact-check-no-evidence-jd-vance-is-scheduled-to-visit-pope-leo-after-cancer-diagnosis.html",
+          "https://www.msn.com/en-in/news/other/iran-war-tears-apart-white-house-unity-vance-openly-opposes-trump-s-military-action-watch/vi-AA2eqNWc",
+          "https://www.mlive.com/politics/2026/10/vice-president-jd-vance-supporters-queue-up-for-michigan-rally.html"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.cincinnati.com/press-release/story/137794/business-brokers-of-florida-announces-2026-service-award-recipients/",
+          "https://www.rutlandherald.com/news/business/sun-hydraulics-a-helios-technologies-operating-company-named-a-2026-florida-manufacturer-employer-of-choice/article_ec00460f-a793-5a23-83a7-11df7e4fcdd2.html",
+          "https://www.jsonline.com/press-release/story/234042/cal-the-bookkeeper-earns-best-of-florida-2026-regional-win/"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.crfb.org/blogs/gao-304-billion-tax-fraud-annually",
+          "https://finance.yahoo.com/economy/policy/articles/citizens-against-government-waste-releases-152900929.html",
+          "https://www.wfit.org/2026-10-07/government-report-calls-for-urgent-immigration-enforcement-plans-to-stop-wasting-taxpayer-money"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
