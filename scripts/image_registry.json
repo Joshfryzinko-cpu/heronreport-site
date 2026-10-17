@@ -627,8 +627,35 @@
       ],
       "story_title": "Supreme Court Agrees to Hear Whether DOGE Must Disclose Records",
       "added": "2026-10-14"
+    },
+    {
+      "local_path": "/img/stories/47fd8ab799f969e4.jpg",
+      "source_url": "https://s41951.pcdn.co/wp-content/uploads/2026/10/6931b23868b2db9a022a48a8_growtika-yGQmjh2uOTg-unsplash-1-scaled.jpg",
+      "md5": "14a78421986d5d80987e400b1701c77d",
+      "size_bytes": 223534,
+      "used_on": ["section-business.html"],
+      "story_title": "Clearwater Cybersecurity Startup Raises $5.6 Million Ahead of Series A",
+      "added": "2026-10-17"
+    },
+    {
+      "local_path": "/img/stories/7926b4f300051dfe.jpg",
+      "source_url": "https://flvoicenews.com/wp-content/uploads/2026/02/Untitled-design-2026-02-03T112900.005.jpg",
+      "md5": "17f84d356dde2173456aaccfc269d2a8",
+      "size_bytes": 34052,
+      "used_on": ["section-business.html"],
+      "story_title": "Florida Council of 100 Launches Statewide Accelerator for 46 Tech Startups",
+      "added": "2026-10-17"
+    },
+    {
+      "local_path": "/img/stories/d7a1237fec5a3ec5.jpg",
+      "source_url": "https://media.yourobserver.com/img/news/tease/2026/10/06/_K9A0736_r1080x720.jpg",
+      "md5": "c713b4a6ef283e37cd0bec81268ec384",
+      "size_bytes": 138373,
+      "used_on": ["section-business.html"],
+      "story_title": "Sarasota Rework Capital Alexander Ronzino 40 Under 40",
+      "added": "2026-10-17"
     }
   ],
-  "last_updated": "2026-10-15",
-  "total": 57
+  "last_updated": "2026-10-17",
+  "total": 60
 }
