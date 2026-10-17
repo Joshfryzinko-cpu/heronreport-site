@@ -164,5 +164,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-17",
+    "time_utc": "2026-10-17T10:18:22.449356+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.outlookindia.com/international/putin-envoy-dmitriev-trump-russia-sanctions-waiver",
+          "https://www.msn.com/en-in/news/other/us-midterm-elections-2026-trump-to-hold-michigan-rally-on-october-25-as-republicans-target-key-races/ar-AA2eq15x",
+          "https://www.firstpost.com/explainers/why-trump-waived-russia-sanctions-that-threatened-100-tariffs-on-india-14053543.html"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.bizjournals.com/southflorida/research/lists/2026/a-miami-ai-startup-ranks-as-the-fastest-growing-tech-company-by-percentage-growt.html",
+          "https://finance.yahoo.com/small-business/articles/microtech-receives-2026-corporation-award-130500490.html",
+          "https://latinheat.com/noticias-newswire/?l=miami-celebrated-the-top-entrepreneurs-of-usa-awards-2026"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/news/other/ex-healey-aide-and-alleged-cocaine-dealer-charged-with-snap-wire-fraud/ar-AA2edZp1",
+          "https://www.msn.com/en-us/news/other/lamar-cook-ex-healey-aide-accused-of-cocaine-trafficking-arrested-on-federal-snap-fraud-charges/ar-AA2efri7",
+          "https://www.bostonglobe.com/2026/10/14/metro/lamar-cook-arrest-snap-fraud-drug-trafficking-healey/"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
