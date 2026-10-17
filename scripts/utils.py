@@ -231,8 +231,12 @@ FALLBACK_IMGS = {
     'politics':    'https://www.whitehouse.gov/wp-content/uploads/2025/03/WH47-Social-Share-Card.jpg',
 }
 
+_USED_FALLBACKS = set()  # track which fallbacks were used this run
+
 def get_topic_fallback(topic_hint):
-    """Return a stored local path and credit for a topic."""
+    """Return a stored local path and credit for a topic.
+    Cycles through alternates so the same fallback is never used twice on one page.
+    """
     hint = topic_hint.lower()
     if any(k in hint for k in ['energy','oil','fuel','gas']):
         url, credit = FALLBACK_IMGS['energy'], 'CC0 / Unsplash (illustrative)'
@@ -250,6 +254,24 @@ def get_topic_fallback(topic_hint):
         url, credit = FALLBACK_IMGS['bcso'], 'Bay County Sheriff\'s Office'
     else:
         url, credit = FALLBACK_IMGS['dhs'], 'Official agency image (illustrative)'
+
+    # If this fallback was already used this run, rotate through alternate fallbacks
+    if url in _USED_FALLBACKS:
+        alternates = [
+            (FALLBACK_IMGS['dhs'],       'U.S. Dept. of Homeland Security (official)'),
+            (FALLBACK_IMGS['fdle'],      'Florida Dept. of Law Enforcement (public domain)'),
+            (FALLBACK_IMGS['bcso'],      'Bay County Sheriff\'s Office'),
+            (FALLBACK_IMGS['whitehouse'],'The White House (official)'),
+            (FALLBACK_IMGS['military'],  'CC0 / Unsplash (illustrative)'),
+            (FALLBACK_IMGS['energy'],    'CC0 / Unsplash (illustrative)'),
+            (FALLBACK_IMGS['economy'],   'CC0 / Unsplash (illustrative)'),
+        ]
+        for alt_url, alt_credit in alternates:
+            if alt_url not in _USED_FALLBACKS:
+                url, credit = alt_url, alt_credit
+                break
+
+    _USED_FALLBACKS.add(url)
     # Store locally
     if _USE_IMAGE_STORE:
         local = _store_img(url)
