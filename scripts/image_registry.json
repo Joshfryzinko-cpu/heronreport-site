@@ -693,6 +693,36 @@
       ],
       "story_context": "Trump Miami fundraiser GOP midterms rally",
       "added": "2026-10-17"
+    },
+    {
+      "local_path": "/img/stories/5f54aa9334f9ba12.jpg",
+      "md5": "3e2307fb4d0bca644d85ddc89793b3ec",
+      "size_bytes": 269443,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Gates Foundation $9.6M Bradenton Biotech HIV Research",
+      "added": "2026-10-18"
+    },
+    {
+      "local_path": "/img/stories/a34b4ea9c79a3aad.jpg",
+      "md5": "617bf69cf69286310e248f4568f6c189",
+      "size_bytes": 240654,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Tampa AtlasClear $24.5M investment banking acquisition",
+      "added": "2026-10-18"
+    },
+    {
+      "local_path": "/img/stories/29aec11a0089191e.png",
+      "md5": "4fd8dc6d20ab7fea1fb28d2f0518d1ae",
+      "size_bytes": 77060,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "SecureWon opens Sarasota FL office, aims for 50 employees by 2029",
+      "added": "2026-10-18"
     }
   ],
   "last_updated": "2026-10-17",
