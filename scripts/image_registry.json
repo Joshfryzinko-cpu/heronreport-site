@@ -729,8 +729,10 @@
       "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/10/VP20261008AH-0160.jpg?w=1200",
       "md5": "0bfc7483a75b8f39aea6da27c75220a1",
       "size_bytes": 179087,
-      "used_on": ["section-politics.html"],
-      "story_context": "1,296 Tren de Aragua gang members arrested — largest federal anti-crime operation",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "1,296 Tren de Aragua gang members arrested \u2014 largest federal anti-crime operation",
       "added": "2026-10-18"
     },
     {
@@ -738,8 +740,10 @@
       "source_url": "https://americanpress.com/wp-content/uploads/sites/65/2026/10/Fireside-chat-e1792000996825.jpg",
       "md5": "4526e3c752ebb07c7ecff110f151391d",
       "size_bytes": 401347,
-      "used_on": ["section-politics.html"],
-      "story_context": "Under Secretary Haustveit LNG Summit fireside chat — US energy dominance",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Under Secretary Haustveit LNG Summit fireside chat \u2014 US energy dominance",
       "added": "2026-10-18"
     },
     {
@@ -747,11 +751,46 @@
       "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/10/VP20261008AH-0049.jpg?w=1200",
       "md5": "b6a68c85a55ab221526b6fd543910579",
       "size_bytes": 156160,
-      "used_on": ["section-politics.html"],
-      "story_context": "VP Vance at anti-fraud press conference — War on Fraud coalition",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "VP Vance at anti-fraud press conference \u2014 War on Fraud coalition",
+      "added": "2026-10-18"
+    },
+    {
+      "local_path": "/img/stories/5c6341ecf3c81a1d.jpg",
+      "source_url": "https://media.nbcmiami.com/2019/09/1095723-1.jpg?quality=85&strip=all&resize=1200%2C675",
+      "md5": "b7115bd18ec4ac9ed74677bdeec20e4e",
+      "size_bytes": 99991,
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_title": "South FL Siblings Indicted in $80M Franchise Bribery Scheme",
+      "added": "2026-10-18"
+    },
+    {
+      "local_path": "/img/stories/cccaebf545df51fd.jpg",
+      "source_url": "https://tij.news/wp-content/uploads/sites/2/2026/05/us-capitol-cherfilus-investigation.jpg",
+      "md5": "b3819a6ec0e5a22dabba1c9d118bb393",
+      "size_bytes": 194344,
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_title": "FL Congresswoman Cherfilus-McCormick: 15-Count Federal Indictment",
+      "added": "2026-10-18"
+    },
+    {
+      "local_path": "/img/stories/2c07878230af4f9e.jpg",
+      "source_url": "https://castor.house.gov/images/facebook-meta.jpg",
+      "md5": "e715a56b3dca073e26b3563cef6eebd9",
+      "size_bytes": 92324,
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_title": "Congresswomen Demand Federal Probe of FL Medicaid $10M Diversion",
       "added": "2026-10-18"
     }
   ],
   "last_updated": "2026-10-18",
-  "total": 72
+  "total": 78
 }
