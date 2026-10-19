@@ -1082,8 +1082,28 @@
       ],
       "story_context": "FDLE Florida Law Enforcement Graduation",
       "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/f8b7fcb368a1794d.jpg",
+      "source_url": "https://www.myfloridalegal.com/sites/default/files/osceola-10.8.26.jpeg",
+      "md5": "3bc4ca13d376b894b9cb094b5fc8571f",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Florida AG Uthmeier Arrests 21 Child Predators in Osceola County Sting",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/f5b0e7d19f66f13e.jpg",
+      "source_url": "https://mustreadalaska.com/wp-content/uploads/2026/10/PXL_20261014_004910004-1-scaled.jpg",
+      "md5": "b5e785db6f64d8839f38d5c23ebfa980",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Visits Alaska: $150M Energy Grid, $200B South Korean Investment, Military ",
+      "added": "2026-10-19"
     }
   ],
   "last_updated": "2026-10-19",
-  "total": 107
+  "total": 109
 }
