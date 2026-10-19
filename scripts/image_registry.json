@@ -789,8 +789,41 @@
       ],
       "story_title": "Congresswomen Demand Federal Probe of FL Medicaid $10M Diversion",
       "added": "2026-10-18"
+    },
+    {
+      "local_path": "/img/stories/785c5478253e1d02.jpg",
+      "source_url": "https://media.yourobserver.com/img/photos/2026/10/09/Stefania_Pifferi_-_FISH_TALE_BOATS_-_38_r1080x720.jpg?a5a8e335434cfe3a93dc299de6ea435221e0bf0d",
+      "md5": "0edc1b9761413d5520d2e6e9c48f2d1e",
+      "size_bytes": 324690,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_title": "Fish Tale Boats SWFL",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/081c834049d36d42.jpg",
+      "source_url": "https://media.yourobserver.com/img/photos/2026/10/10/DSC_0003_r1080x720.JPG?a5a8e335434cfe3a93dc299de6ea435221e0bf0d",
+      "md5": "d76d8eeae8da107872e168ada5bb10d2",
+      "size_bytes": 288108,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_title": "East Manatee Renewable Gas Plant",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/9e4e61c8cb303483.jpg",
+      "source_url": "https://media.yourobserver.com/img/news/tease/2026/10/07/THAO_LE_r1080x720.jpg?a5a8e335434cfe3a93dc299de6ea435221e0bf0d",
+      "md5": "330b9c07fd52b5f5e8db17f6dda68ef5",
+      "size_bytes": 141069,
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_title": "Thao Le Tampa Entrepreneur",
+      "added": "2026-10-19"
     }
   ],
-  "last_updated": "2026-10-18",
-  "total": 78
+  "last_updated": "2026-10-19",
+  "total": 81
 }
