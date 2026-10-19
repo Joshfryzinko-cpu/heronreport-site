@@ -1102,8 +1102,38 @@
       ],
       "story_context": "Trump Visits Alaska: $150M Energy Grid, $200B South Korean Investment, Military ",
       "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/e101e0de187037b9.png",
+      "source_url": "https://cw34.com/resources/media2/16x9/959/1320/0x46/90/9417d406-ba36-48e6-b6c8-cbcc7c9cf869-Uthmeier.png",
+      "md5": "3d469942f26a3ab76feebe45dd8afcfd",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Fort Pierce City Manager Nick Mimms Convicted of Official Misconduct \u2014 AG Warns ",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/0aec0c277736d345.jpg",
+      "source_url": "https://narrative-news.com/j_content/uploads/2026/10/144723619.jpg",
+      "md5": "514794a62be4f74498aee80b974ea706",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Maduro-Linked Fugitive Alvaro Pulido Vargas Arrested \u2014 $1.6B Venezuelan Bribery ",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/72aa523a326d90f4.png",
+      "source_url": "https://fueltools-prod01-public.fuelmedia.io/850b1730-09d2-44a7-bb6a-504c205fd228/20261015/42150f2c-db08-4abc-b72b-b9d7e38d0a16/thumbnail.png",
+      "md5": "d553c59dfdcf9d650fdceee48c6adee0",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "DOJ National Tax Fraud Surge Exposes $490M in Losses \u2014 76 Defendants Charged Inc",
+      "added": "2026-10-19"
     }
   ],
   "last_updated": "2026-10-19",
-  "total": 109
+  "total": 112
 }
