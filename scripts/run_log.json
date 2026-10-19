@@ -257,5 +257,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-19",
+    "time_utc": "2026-10-19T10:27:00.745295+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMifEFVX3lxTFBuMzVPako0dEhkT1hvejhKY1BaMGRVRWVBakV6emx6Z2JwVzc5THFYbmI3SkpXZmlSQ2lDalBVdk9PSzdaTjBrZ2JheHR0OVJ1SW1aeFZCakNRUjhGTEdHUkhLSEZiOHBxRGppNEdISUlmY2NoazlJRkpZMDk?oc=5",
+          "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWk54c1gyRW5tcnRCem5yMUhUZkpTbk5kV1l5dklQWHpuQjBqQ1NJdVc4bTF5cUUtbnNuUWRrUV9IUWpuM0ozeEJKMTdveUM0MTFDUmROQzZtemJLb1JsdDVRdDhQbGVLZkw5b1MtVTRIOW9jb1ppU3FnT3FnZ05LZ0ItVl9qWHU4WndvcS1pTUI1TmhKZzFYQks4OE84RW1xZWlFMXM4MWNkVDRQdHJzUkNIYVpaaGdqMnZR0gG7AUFVX3lxTE5aTnhzWDJFbm1ydEJ6bnIxSFRmSlNuTmRXWXl2SVBYem5CMGpDU0l1VzhtMXlxRS1uc25RZGtRX0hRam4zSjN4QkoxN295QzQxMUNSZE5DNm16YktvUmx0NVF0OFBsZUtmTDlvUy1VNEg5b2NvWmlTcWdPcWdnTktnQi1WX2pYdThad29xLWlNQjVOaEpnMVhCSzg4TzhFbXFlaUUxczgxY2RUNFB0cnNSQ0hhWlpoZ2oydlE?oc=5",
+          "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRlpmdTRnb1ZROE1Yd0dISXBoT2YyaEtZRjJtRnFZelBYcHFkQlRkRGJWTmN6ckF1NHpzQ2J4VWhhNEdRN3RSRTZHNzFvY1NDa05RaDZaTGczR2NFOU9sSC1BYmo2X0JaN01tZm1uTzJTaEpuM0RsbEdPRzBHM19ZSHF2cGlKSHgxUzZpTFRmOXZ4eGFRVU9qYjdablY1RDF3eDY5UWxZVQ?oc=5"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYWU2SVBDQjJUbkdMVUg3U3VhaTZwN0UxeWpUUWVFYWRZbm9NaEJrRGhza192Z3otNlNOOUZDeFNPWGtadFhuTllQSFg4S2J3Q25CX1RONXZnQ1p2ZXJDMnhqZG1sWjVIVzFnSE9tOHc3SzhaTjBlUFN2MEVMX2pVUFowWUtvWDU1SkJxeVFLMTNCMUozV1pPb1A5LUs0bTFfV0x4VmxReU9xYnVZcDkxTUFzVVVTRHljd2hiQnV3OVAtckk?oc=5",
+          "https://news.google.com/rss/articles/CBMivAFBVV95cUxPXy1qQkMzTEZKYW5NZ3pKTkhhaXphS2pUX3R5dmpsZHdzZ0hQZVhQUDRNeTNpaXRJa1JiS0tNZnowbWRxdmdSeXVNWXl2dFlPNmEyNndKQ1FpWHZHRGR0a1JuN1ZDVVVxNzlZaWNteTNlbjliLWNQRzdwcFhXVzZTeXpETWc5TThVQ2VmS0FkUDZWT1ZZQ3MtZjAtamV2dGlTZXFLa1ZURTRzMlg1X2UySXFvbVhBYzY4Zks2Wg?oc=5",
+          "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbGVlekhnT2IwRGdjZFFOMGU1THpmTThZSlNrVnIyelZsX1lIUS1LbU1CNkQwWGo0WFBzc3hwNTZJMG5sTk1wZzdOWG5pQ2dUa2gwd3VHV1FZSWg5TTJYN2tCQ1VhclozakozSk5LRFVrT0tVX0VzOGNZZFZITTRzUVJYZDhDbl9iamxLU2FVYURxR2kwWHIwZmxVU1V0Z1o0djl0WVA0ejJ4bkxJRUNDSGVqX2lfLTJJZ1E3YmhDa1JuNlF6NjU0QUM3dUNPX2l3YkdrZHY1SERseVJQWmpvbA?oc=5"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNX3pJSDJzNW5US1Vrb01kdzVoN1FBSHpNM0k2ZHZIQVFzYjNCVVhBekRzN1pnc1FyaDB2VjlwQXoxdU5PVURTaHotWThYWG9FX19ieHIzdW9pZ0lMMlZzbkpQT2J2X2VIRDRlMGpUdVE3VUhuZEo1ZF91S25wbnhwOUdmYUlXUjF2NU9OTl9DYl82aVZZS2lOcDlXOWJuUTJPY0FYdndSbXZZNzFicnEwZFJ2LU5WaDVWaG5QS0E0QWE3N1I0ZnlXTw?oc=5",
+          "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOS1Z1VXZvcC1aZEhBMzc4ZnQyU2xLOVVTYVNyUDNOVzlhOGlSdV9OSE92SXBfNkhfdlZ5UTF4MXg1ZUZ6MmpHdE15LWttaWwydVMtQTRkbkNOeWxSeVNtNGlfOWJRel9OWk42ZlFCS3lVcGRfQldRY1NqZDFhb2hKdDAxVjQ1MEV1STFCXzVnUGNkcUdpdWpYZmRvM0tqczZiVUxlc3ptUUJsS3c?oc=5",
+          "https://www.msn.com/en-us/news/other/ice-wasted-millions-in-taxpayer-dollars-in-rush-to-expand-detention-capacity-watchdog-says/vi-AA2cYJHC"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
