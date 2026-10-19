@@ -992,8 +992,98 @@
       ],
       "story_context": "Prosecutor: \u2018Legitimacy of our elections\u2019 a reason for ",
       "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/50760bcbd600681e.jpg",
+      "source_url": "https://npr.brightspotcdn.com/dims4/default/16e926e/2147483647/strip/true/crop/950x499+0+18/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F20%2F6f%2Ff6b87a624f739700292e09ed52f2%2Femployment-jobless.jpg",
+      "md5": "7848e851bc89b849005ca67c9b3af836",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Florida Unemployment Rate Dips for Fourth Consecutive Month",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/9eec9c5a99fe4d40.jpg",
+      "source_url": "https://www.mcclatchy-wires.com/public/incoming/nyqpmm/picture317619685/alternates/LANDSCAPE_1200/7b234a83-ec04-4ccc-8a47-455f080742da",
+      "md5": "22a1539d8a51134427d1f75e6d1b3600",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Carnegie Mellon, Vanderbilt University Signal South Florida's Rise as Innovation",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/0f8c1421353ddeed.webp",
+      "source_url": "https://heritagereview.com/wp-content/uploads/2026/10/construction-wages-climb-as-deportations-shrink-migrant.webp",
+      "md5": "300d78b88517070d212a173d1a035d16",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Florida Construction Wages Double as Deportations Shrink Migrant Labor Pool",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/ed572f958a90375d.webp",
+      "source_url": "https://npr.brightspotcdn.com/dims4/default/a7b5565/2147483647/strip/true/crop/1600x840+0+30/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1600x900%200%200%2Fresize%2F1600x900%21%2F%3Furl%3Dhttp%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F36%2F7f%2F33e381224e42aa7753348d73cb26%2Futhmeier-lawsuit-visual.jpg",
+      "md5": "153094c56acf68f78ca035b70ff264d0",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "FL GOP Sues TV Stations to Silence Hope Florida Reporting",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/41cf760a8e86962d.jpg",
+      "source_url": "https://floridatrib.org/wp-content/uploads/2026/06/GettyImages-2276715392.jpg",
+      "md5": "009bd1a9bf9663a84cef8f731596fbb5",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "FL Taxpayers Paid $444K to Suppress Hope Florida Investigation",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/3c6c1fa2d6236a3f.jpg",
+      "source_url": "https://npr.brightspotcdn.com/dims4/default/e30928f/2147483647/strip/true/crop/1200x630+0+23/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faa%2F86%2Fe6726a184a68b6b34f4d11d07a5a%2Firs-whistleblower-hope-florida-featured-jpg.jpg",
+      "md5": "09fafd081a4193080437cfe679c1bf41",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "IRS Reviews Whistleblower Claim; State Atty Opens Criminal Probe of Hope Florida",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/6053ab1be04e0501.jpg",
+      "source_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261014-donald-trump-vl-359p-11b17c.jpg",
+      "md5": "eaf324d6d4e3637627d927a3b42817d0",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Russia Sanctions NBC",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/c0746f65a6de76bd.jpg",
+      "source_url": "https://www.overtdefense.com/wp-content/uploads/2023/10/US_Air_Force_USAF_MASTER_Sergeant_MSGT_Dennis_Katzur_left_Technical_Sergeant_TSGT_Roy_Garza_and_T.jpeg",
+      "md5": "06f7ca7e5f4ef546b82af4a0f546bff2",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Raytheon AMRAAM Deal Alt",
+      "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/064dac983aafa7d6.png",
+      "source_url": "https://www.flhouse.gov/Images/bronze-seal-250.png?cb=4.6.654350",
+      "md5": "103dcb0a3c007e9f1fbadba2c74c3a7a",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "FDLE Florida Law Enforcement Graduation",
+      "added": "2026-10-19"
     }
   ],
   "last_updated": "2026-10-19",
-  "total": 98
+  "total": 107
 }
