@@ -1132,8 +1132,98 @@
       ],
       "story_context": "DOJ National Tax Fraud Surge Exposes $490M in Losses \u2014 76 Defendants Charged Inc",
       "added": "2026-10-19"
+    },
+    {
+      "local_path": "/img/stories/2b676db7e3f903b2.jpg",
+      "source_url": "https://ichef.bbci.co.uk/news/1024/branded_news/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
+      "md5": "805a1355934b1694bcf8dec39f30f7e1",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Waives Russia Sanctions Days Before Deadline, Drawing Bipartisan Backlash",
+      "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/d8ff85596e730888.png",
+      "source_url": "https://floridaphoenix.com/wp-content/uploads/2019/05/Screenshot-779.png",
+      "md5": "887fba668d060d61b0bc64f8f9c46f86",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "ICE Denies Role in Florida Beach Roofer Confrontation \u2014 but State Officers Hold ",
+      "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/7a1bc0e89e52fc09.png",
+      "source_url": "https://www.energy.gov/sites/default/files/2025-04/white-fallback_0.png",
+      "md5": "08297f6b942da89493f1cf1c5b485f62",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Proclaims October National Energy Dominance Month, Cites Venezuela Oil Dea",
+      "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/2bf3e599a8ce1733.jpg",
+      "source_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/goldrush-e1791326607396.jpg?resize=1200,600",
+      "md5": "81e49e52c3663239fd3873dda4c14b65",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Former CIA Official David Rush Pleads Guilty 194 Million Gold Bars South Florida",
+      "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/5079194487fd4bcf.png",
+      "source_url": "https://static.toiimg.com/thumb/msid-135073856,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "md5": "bfbe248ab4c1992728b9c846669426fa",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Illinois Lab Owner Rajesh Patel Charged 66M COVID Testing Fraud Fake Tests",
+      "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/c87026ebec629ea1.jpg",
+      "source_url": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad655dc6e89-1792431580.jpg?resize=1920%2C1440",
+      "md5": "0fc306f8cac0e94d0b25e3846538d9e8",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Florida AG Uthmeier Secures State Arrest Warrant for Ra\u00fal Castro in 1996 Brother",
+      "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/ff5cd71e1674738b.jpg",
+      "source_url": "https://www.hhs.gov/sites/default/files/styles/og_image_style/public/news_release.png?itok=xKtXaFfw",
+      "md5": "c5f83e24d601678ec38608c193d04db6",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Signs Women's Health Executive Order, Creates New NIH Division and White H",
+      "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/1ed216e4c02caee6.jpg",
+      "source_url": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/742812",
+      "md5": "337f77ba85baa31650a248aeb25f12f7",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Administration Came 'Very Close' to Approving Iran Strike Before Pulling B",
+      "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/95d31daa44d9cb6b.jpg",
+      "source_url": "https://www.brooklynpaper.com/wp-content/uploads/2026/10/Sipa_VenezuelaMDC_010426-1.jpg?quality=51&w=1200&p=q",
+      "md5": "6b90169dfa1748f1b15f70c00c2489c8",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Federal Prison Guard Melissa Brooks Indicted Bribery Smuggling Contraband MDC Br",
+      "added": "2026-10-20"
     }
   ],
-  "last_updated": "2026-10-19",
-  "total": 112
+  "last_updated": "2026-10-20",
+  "total": 121
 }
