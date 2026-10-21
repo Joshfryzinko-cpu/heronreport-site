@@ -298,5 +298,36 @@
       "ems": "Watch: Florida Paramedic Jumps From Helicopter To Reach Man In Cardiac Arrest",
       "law": "Hurricane Isaias: Governor Ron DeSantis issues updates on Florida\u2019s preparedness efforts - 104.5 WOKV"
     }
+  },
+  {
+    "date": "2026-10-21",
+    "time_utc": "2026-10-21T10:25:44.385945+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.usatoday.com/story/news/politics/2026/10/19/jd-vance-presidential-run-2028/92327043007/",
+          "https://www.usatoday.com/story/news/politics/2026/10/21/vp-jd-vance-holds-midterm-rally-in-sharonville--live/92334274007/",
+          "https://apnews.com/article/vance-netanyahu-israel-trump-election-5ca9560eae42f49a703c851350afcd39"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://markets.businessinsider.com/news/stocks/airia-wins-two-2026-top-infosec-innovator-awards-for-ai-security-governance-and-agentic-ai-1036643384",
+          "https://www.palmbeachpost.com/press-release/story/251937/central-florida-lifestyle-magazine-announces-return-of-elite-awards-and-awards-gala/",
+          "https://www.detroitnews.com/story/entertainment/dining/2026/09/22/florida-restaurant-john-gs-coming-soon-port-st-lucie-palm-beach-breakfast-near-me-lunch/91799428007/"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/news/other/santacon-nyc-is-back-under-new-management-after-its-former-organizer-was-charged-with-fraud/ar-AA2fJksn",
+          "https://www.msn.com/en-us/news/other/federal-agents-smash-huge-voter-fraud-ring-in-california-days-after-state-issued-ultimatum/ar-AA2fAKM1",
+          "https://jetswire.usatoday.com/story/news/politics/2026/10/19/michael-perik-husband-of-liz-perik-ri-democratic-party-chair-indicted-on-24-charges-pell-grant-theft/92330381007/"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
