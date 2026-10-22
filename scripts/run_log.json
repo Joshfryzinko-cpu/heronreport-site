@@ -329,5 +329,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-22",
+    "time_utc": "2026-10-22T10:26:30.940155+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.yahoo.com/news/articles/vice-president-jd-vance-ohio-222812698.html",
+          "https://apnews.com/article/election-2026-ohio-governor-ramaswamy-acton-mother-93ab182c3e0a95d25ddb409ec0628231",
+          "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-with-shubhajit-roy-of-the-indian-express/"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/money/smallbusiness/when-the-job-market-tightens-startups-surge-here-s-why-2026-could-be-the-perfect-time-to-launch-your-business/ar-AA1XFBju",
+          "https://www.msn.com/en-us/money/startup/their-companies-made-the-inc-5000-here-s-what-these-entrepreneurs-organization-founders-learned-along-the-way/ar-AA2fLIKF",
+          "https://www.freep.com/press-release/story/259785/central-florida-lifestyle-magazine-announces-return-of-elite-awards-and-awards-gala/"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.clickorlando.com/voters-guide/2026/10/16/2026-voters-guide-florida-chief-financial-officer-race/",
+          "https://www.yahoo.com/news/us/articles/ga-social-media-influencer-arrested-193916217.html",
+          "https://apnews.com/article/marriage-fraud-immigration-federal-government-massachusetts-fad81a94e479fe5faf96ce377eb4c401"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
