@@ -1222,8 +1222,88 @@
       ],
       "story_context": "Federal Prison Guard Melissa Brooks Indicted Bribery Smuggling Contraband MDC Br",
       "added": "2026-10-20"
+    },
+    {
+      "local_path": "/img/stories/5751b160dc7ebb7a.jpg",
+      "source_url": "https://www.sun-sentinel.com/wp-content/uploads/2026/10/16x9_OCR-L-LESLIES-BANKRUPT-06.jpg?w=2000&#038;h=1124",
+      "md5": "51ec0edf7316fa787a3271856577e850",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Leslie's Pool Supplies Closing 19 Florida Stores in Chapter 11 Bankruptcy",
+      "added": "2026-10-22"
+    },
+    {
+      "local_path": "/img/stories/0c58454b0924f0cb.jpg",
+      "source_url": "https://www.miamitodaynews.com/wp-content/uploads/2026/10/Art-Basel.jpg",
+      "md5": "a1ea4f6b2dd4293e7bee4d16822f2e87",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Art Basel Miami Beach Deal Redesigned Through 2031",
+      "added": "2026-10-22"
+    },
+    {
+      "local_path": "/img/stories/c74803ce6e507700.jpg",
+      "source_url": "https://bc.gmg.io/image/upload/c_thumb,q_auto,w_700,f_jpg/media/video/wkmg/fd230142-3c7b-4dcc-ac7e-400e095ea6b9/image.jpg?api_key=clickorlando_488cff2bcc157b2e",
+      "md5": "1411a0ff5a720c641a1fc335eeabdb26",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Kissimmee Mayor Arrested for Grand Theft COVID Grant Fraud",
+      "added": "2026-10-22"
+    },
+    {
+      "local_path": "/img/stories/6e6f66d1fb660465.png",
+      "source_url": "https://cdn.govexec.com/media/img/cd/2026/10/16/doj_seal/open-graph.png",
+      "md5": "06ed4ea378694da61c246c50d8be5aab",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "DOJ First-Ever National Tax Fraud Surge 76 Defendants 490M",
+      "added": "2026-10-22"
+    },
+    {
+      "local_path": "/img/stories/6aa24a41137e10a9.jpg",
+      "source_url": "https://www.miamiherald.com/public/latest-news/oqwn72/picture316557389/alternates/LANDSCAPE_1200/handcuffs_approved.jpg",
+      "md5": "69d7c2134144e06f5ba5a042d7affc4f",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Florida Cop Arrested Stealing Dead Mans Identity and Home",
+      "added": "2026-10-22"
+    },
+    {
+      "local_path": "/img/stories/d2e9f33cc3e1b5cd.jpg",
+      "source_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2609/9938902/1000w_q95.jpg",
+      "md5": "8b3b383d1ba89b2c4d484dc5e7f5ee0f",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "NatGuard_DC_CourtCase",
+      "added": "2026-10-22"
+    },
+    {
+      "local_path": "/img/stories/73f7258a1f1bc363.jpg",
+      "source_url": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/20/05a2de4d-8413-41af-b188-374eddef59d0/thumbnail/1200x630/c1b2479bc97141f3339f78252abf6f94/snapshot-79.jpg",
+      "md5": "9abdf6e2adecd3f1f075e0fac771aa2f",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "G20_Doral_Security_2026",
+      "added": "2026-10-22"
+    },
+    {
+      "local_path": "/img/stories/d1b261cf5abf24ea.jpg",
+      "source_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2503/8928900/1000w_q95.jpg",
+      "md5": "95ec6761fe13d6cfa6d55f6d218c920b",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "ICE_Gang_Arrests_Oct2026_v2",
+      "added": "2026-10-22"
     }
   ],
-  "last_updated": "2026-10-20",
-  "total": 121
+  "last_updated": "2026-10-22",
+  "total": 129
 }
