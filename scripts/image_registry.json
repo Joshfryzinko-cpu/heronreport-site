@@ -1402,8 +1402,18 @@
       ],
       "story_context": "Fort Bend County Tax Assessor Indicted for Theft of Government Funds and Wire Fr",
       "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/b3045091f1ee86f8.png",
+      "source_url": "https://wltreport.com/wp-content/uploads/2026/10/david-rivera-official-congressional-portrait-1200x630.png",
+      "md5": "0009a175382093a48c92f3018ee236bc",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Former Florida Congressman David Rivera Sentenced 10 Years Federal Prison Venezu",
+      "added": "2026-10-23"
     }
   ],
   "last_updated": "2026-10-23",
-  "total": 139
+  "total": 140
 }
