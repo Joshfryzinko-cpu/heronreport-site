@@ -1362,8 +1362,48 @@
       ],
       "story_context": "Man Attempts to Firebomb ICE Facility in Atlanta; FBI Offers $20K Reward",
       "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/f0b60e5851d0fb33.jpg",
+      "source_url": "https://coveringkaty.com/downloads/5645/download/Screenshot%202026-10-23%20at%206.19.51%E2%80%AFAM.png?cb=3ac557ba7cdb85acc61c3d150fef0b56&amp;w=1200",
+      "md5": "db37c5678053b7bfdb07766f883603af",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Fort Bend County Tax Assessor Indicted for Theft of Government Funds and Wire Fr",
+      "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/2a5219d8fdb04f23.png",
+      "source_url": "http://soto.house.gov/sites/evo-subsites/soto-evo.house.gov/files/evo-media-image/Screenshot%202024-05-21%20at%202.52.35%E2%80%AFPM.png",
+      "md5": "58ddfe5baf1c3c3d8311253969a4b3db",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Congress Demands Federal Probe of Hope Florida $10M Medicaid Diversion After Gra",
+      "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/3fba8a9bb70c731c.jpg",
+      "source_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261022-l-louise-rs-253d78.jpg",
+      "md5": "6a327eced1a1338258ef22632d7c2588",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Virginia State Senator Louise Lucas Indicted for Racketeering, Drug Trafficking ",
+      "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/2405811ccca398cc.jpg",
+      "source_url": "https://i0.wp.com/www.texastribune.org/wp-content/uploads/2026/10/20260217-RAGA-Debate-ST-30-SOCIAL.jpg?fit=1200%2C675&ssl=1&quality=100&w=1200&h=630",
+      "md5": "0258b38856a9b86a41a4eb2f6e78d657",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Fort Bend County Tax Assessor Indicted for Theft of Government Funds and Wire Fr",
+      "added": "2026-10-23"
     }
   ],
   "last_updated": "2026-10-23",
-  "total": 135
+  "total": 139
 }

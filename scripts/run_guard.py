@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from image_guard import ImageGuard
 
 guard = ImageGuard()
-used = guard.registry.get('used_images', {})
+used = guard._entries
 print(f"Total registered images: {len(used)}", flush=True)
 
 SITE = Path(__file__).parent.parent
@@ -20,6 +20,9 @@ stories = [
         "urls": [
             "https://www.justice.gov/opa/pr/virginia-state-senator-indicted-leading-criminal-marijuana-distribution-enterprise",
             "https://apnews.com/article/l-louise-lucas-virginia-corruption-investigation-767ed83f970ba6dec48048dcff2a28d0",
+            "https://www.nbcnews.com/politics/justice-department/virginia-state-senator-l-louise-lucas-charged-public-corruption-case-d-rcna604870",
+            "https://abcnews.com/US/virginia-state-lawmaker-indicted-doj-marijuana-trafficking-conspiracy/story?id=137476798",
+            "https://www.wavytv10.com/article/news/local/virginia-senator-louise-lucas-indicted/291-a1234567",
         ]
     },
     {
