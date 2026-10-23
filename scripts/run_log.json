@@ -360,5 +360,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-23",
+    "time_utc": "2026-10-23T10:24:05.574635+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/news/other/vice-president-jd-vance-of-ohio-backs-vivek-ramaswamy-amid-attack-ad-blowback/ar-AA2fR0lj",
+          "https://www.msn.com/en-us/news/other/vice-president-jd-vance-goes-into-the-crowd-to-check-on-woman-who-had-a-medical-emergency-at-nebraska-rally/vi-AA2fRueZ",
+          "https://sports.yahoo.com/articles/video-shows-humiliating-scene-nfl-105032045.html"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://news.fsu.edu/news/business-law-policy/2026/10/13/53-entrepreneurs-graduate-from-florida-state-universitys-west-palm-beach-community-bootcamp/",
+          "https://www.bizjournals.com/orlando/news/2026/09/24/see-the-regions-top-hispanic-and-latino-owned-businesses.html",
+          "https://www.northjersey.com/press-release/story/256942/florida-garage-door-pros-named-2026-best-of-florida-award-winner/"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://redstate.com/wardclark/2026/10/21/florida-ag-kissimmee-mayor-arrested-for-theft-fraud-n2208424",
+          "https://www.staradvertiser.com/2026/10/23/hawaii-news/ex-army-official-charged-in-federal-bribery-case/",
+          "https://lamag.com/crimeinla/15-charged-in-1-8-billion-healthcare-fraud-scheme/"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
