@@ -1302,8 +1302,68 @@
       ],
       "story_context": "ICE_Gang_Arrests_Oct2026_v2",
       "added": "2026-10-22"
+    },
+    {
+      "local_path": "/img/stories/abf40a52cab767af.jpg",
+      "source_url": "https://image.cnbcfm.com/api/v1/image/108225730-1763067706718-gettyimages-2245967709-AFP_83YK7TT.jpeg?v=1763067757&amp;w=1920&amp;h=1080",
+      "md5": "9228611192bbb465b72929ecc542a852",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Blue Origin Plans $330M Florida Expansion to Boost New Glenn Rocket Production",
+      "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/c71b05a99aa52d97.jpg",
+      "source_url": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2026/10/0/0/florida-flag-industrial-construction.jpg?ve=1&amp;tl=1",
+      "md5": "56800ed7cdebd7e58e504874f8ebe407",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Florida Manufacturing Output Hits $87.4B as State Eyes Top-5 Ranking for Jobs",
+      "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/0450c11ad9a76d5e.png",
+      "source_url": "https://www.energy.gov/sites/default/files/2025-02/DOE%20Full%20Seal%20on%20white%20gray%20background%20-%201250x785_1.png",
+      "md5": "22762dc7b3b3cc07b80f76c847b58a7a",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Invokes Defense Production Act to Boost Oil Refinery Capacity",
+      "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/2bbce3356ce4da31.jpg",
+      "source_url": "https://www.insurancejournal.com/app/uploads/2026/10/wind-energy-wind-turbines-Bloomberg-scaled.jpg",
+      "md5": "1818ae025e5cfbef80739152b332168a",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Declares Wind Turbine Imports a Threat to National Security",
+      "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/aa012fff394692c5.jpg",
+      "source_url": "https://www.sun-sentinel.com/wp-content/uploads/2026/10/tfl-l-Bob-Swindell-2-101226.jpg?w=6000&#038;h=4000",
+      "md5": "0538250840362fb169cc670ef4ed57c6",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Broward County Lands $318 Million in Business Investment and 1,116 New Jobs",
+      "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/76c380ad7d06905a.jpg",
+      "source_url": "https://www.washingtonexaminer.com/wp-content/uploads/2026/10/AP26294615775313.jpg?resize=1200,683",
+      "md5": "305adeb43930d127b640939d14ab436e",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Man Attempts to Firebomb ICE Facility in Atlanta; FBI Offers $20K Reward",
+      "added": "2026-10-23"
     }
   ],
-  "last_updated": "2026-10-22",
-  "total": 129
+  "last_updated": "2026-10-23",
+  "total": 135
 }
