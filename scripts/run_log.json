@@ -391,5 +391,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-24",
+    "time_utc": "2026-10-24T10:20:10.282767+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www2.ljworld.com/news/state-region/2026/oct/23/jd-vance-is-coming-to-kansas-to-support-roger-marshall-for-the-second-time-in-2-months/",
+          "https://www.usatoday.com/story/news/politics/elections/2026/10/24/vance-trump-expand-kansas-push-for-roger-marshall-to-beat-adam-hamilton/92397910007/",
+          "https://www.msn.com/en-ca/news/other/marco-rubio-calls-on-cubans-to-partner-with-cia-as-trump-promises-to-take-care-of-cuba/ar-AA2fXUVj"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.detroitnews.com/press-release/story/190507/hers-his-plumbing-named-2026-best-of-florida-award-winner/",
+          "https://chargerswire.usatoday.com/story/entertainment/dining/2026/10/23/florida-mexican-restaurant-papichulo-tacos-opens-in-palm-city-jupiter-royal-palm-beach-tacos-near-me/92117181007/",
+          "https://coltswire.usatoday.com/story/entertainment/dining/2026/10/23/florida-cuban-restaurant-havana-george-cafe-fort-pierce-expands-stuart-cuban-near-me-cuban-sandwich/92361806007/"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-chief-financial-officer-race-democratic-primary/",
+          "https://www.msn.com/en-us/news/other/shawty-dred-hit-with-63-federal-charges-in-alleged-46-million-snap-fraud-scheme/ar-AA2fXsLi",
+          "https://www.yahoo.com/news/us/articles/atlanta-influencer-shawty-dred-indicted-191042586.html"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
