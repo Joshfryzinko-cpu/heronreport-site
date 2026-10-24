@@ -1442,8 +1442,38 @@
       ],
       "story_context": "Carnegie Mellon, Vanderbilt Campuses Signal South Florida Rise as National Innov",
       "added": "2026-10-24"
+    },
+    {
+      "local_path": "/img/stories/bbfe1589052ca749.jpg",
+      "source_url": "https://www.fbi.gov/investigate/complex-financial-crime/@@images/image",
+      "md5": "08a34c8d9dd71777bf7496d230b13270",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "COVID Unemployment Fraud: Government Contractor Employee Indicted for $4.6M Pand",
+      "added": "2026-10-24"
+    },
+    {
+      "local_path": "/img/stories/d9626ccedf9b1b09.jpg",
+      "source_url": "https://cyberscoop.com/wp-content/uploads/sites/3/2026/09/GettyImages-2169763675.jpg",
+      "md5": "f6f5f413fc3df64a5e4ffb1332b34c3d",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Philippines-Based American Pleads Guilty to Identity Theft Scheme Targeting Thou",
+      "added": "2026-10-24"
+    },
+    {
+      "local_path": "/img/stories/84a64ab0cac9db1f.jpg",
+      "source_url": "https://i0.wp.com/nwlaborpress.org/wp-content/uploads/2026/10/PortlandVAaerial.jpg?fit=1200%2C898&amp;ssl=1",
+      "md5": "ffca9636d481dd7b3e8ff8085db8ae3a",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Federal Indictment: Doctor and Postal Union Official Charged in $19M Scheme to S",
+      "added": "2026-10-24"
     }
   ],
   "last_updated": "2026-10-24",
-  "total": 143
+  "total": 146
 }
