@@ -1412,8 +1412,38 @@
       ],
       "story_context": "Former Florida Congressman David Rivera Sentenced 10 Years Federal Prison Venezu",
       "added": "2026-10-23"
+    },
+    {
+      "local_path": "/img/stories/1a0c85345ecdfd0e.png",
+      "source_url": "https://floridianpress.com/wp-content/uploads/2025/03/Screenshot-2025-03-04-at-6.01.41-PM-e1741129788660.png",
+      "md5": "17d32b473a51c42e75858ad8c73c7a36",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "DeSantis Announces $4.5 Million in Bridge Loans for Panhandle Businesses Hit by ",
+      "added": "2026-10-24"
+    },
+    {
+      "local_path": "/img/stories/ea2ecc5f502fcba7.jpg",
+      "source_url": "https://hermes.media.static.aol.com/media/2026/10/23/72e5b958-8c3e-36b2-a5f7-2f5988c541bb/10431d44-84d1-4f74-aeeb-855a16d9f213.jpg",
+      "md5": "3a83ee36570bb44b3ccde72281b55ae4",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Blue Origin Tops $3 Billion in Florida Investment, Eyes 150 New Glenn Rockets Pe",
+      "added": "2026-10-24"
+    },
+    {
+      "local_path": "/img/stories/ed8b920b4b8aee06.jpg",
+      "source_url": "https://www.sun-sentinel.com/wp-content/uploads/2025/07/TFL-L-FAT-village-update-5-070825.jpg?w=3000&#038;h=2000",
+      "md5": "aed181660dfdaacdee6bd7fd5326beae",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Carnegie Mellon, Vanderbilt Campuses Signal South Florida Rise as National Innov",
+      "added": "2026-10-24"
     }
   ],
-  "last_updated": "2026-10-23",
-  "total": 140
+  "last_updated": "2026-10-24",
+  "total": 143
 }
