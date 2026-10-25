@@ -55,7 +55,7 @@ header{background:#000;position:sticky;top:0;z-index:200;border-bottom:1px solid
 .sec-nav a:hover{color:rgba(255,255,255,.8)}
 .sec-nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
 .logo-txt{font-family:var(--serif);font-size:1.15rem;font-weight:800;color:#fff}
-.page-header{background:#0d1520;background:#000;padding:48px 24px 40px;position:relative;overflow:hiddenbackground:#0d1520;position:relative;z-index:1}
+.page-header{background:#0d1520;padding:48px 24px 40px;position:relative;overflow:hidden;z-index:1}
 .page-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 100% at 50% 120%,rgba(185,28,28,.15),transparent 70%);pointer-events:none}
 .ph-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
 .ph-label{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.18em;color:var(--pol-lt);margin-bottom:10px}
@@ -126,9 +126,10 @@ footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:26px 2
   </div>
 </header>
 
-    <h1 class="ph-title">Leaders, Laws &amp; Your Future</h1>
+<div class="page-header"><div class="ph-inner">    <h1 class="ph-title">Leaders, Laws &amp; Your Future</h1>
     <p class="ph-sub">Covering national policy, state legislation, elections, and the issues that shape life across Franklin, Gulf, and Bay counties. Balanced reporting. Updated daily.</p>
     <div class="ph-meta">Stories updated daily &middot; Balanced reporting &middot; Local &amp; national coverage &middot; Facts first</div>
+</div></div>
   </div>
 </div>
 <div class="grid-wrap">
