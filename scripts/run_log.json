@@ -422,5 +422,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-25",
+    "time_utc": "2026-10-25T10:19:31.639626+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://apnews.com/article/hurricane-vance-name-mexico-948eb3e36f1cd131e4c91cba089fe007",
+          "https://www.usatoday.com/story/news/politics/2026/10/19/why-vice-president-jd-vance-in-north-carolina-where-he-will-be-speaking/92330423007/",
+          "https://www.cnn.com/2026/10/19/politics/trump-vance-iran-war-economy-challenge"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.greenbaypressgazette.com/press-release/story/197304/jn-install-and-pioneer-stone-win-national-hardscape-award-for-babcock-ranch-b-street-commercial-project/",
+          "https://warriorswire.usatoday.com/story/entertainment/dining/2026/10/23/florida-mexican-restaurant-papichulo-tacos-opens-in-palm-city-jupiter-royal-palm-beach-tacos-near-me/92117181007/",
+          "https://chargerswire.usatoday.com/story/entertainment/dining/2026/10/23/florida-cuban-restaurant-havana-george-cafe-fort-pierce-expands-stuart-cuban-near-me-cuban-sandwich/92361806007/"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.whitehouse.gov/releases/2026/08/fraud-gov-track-the-trump-administrations-relentless-war-on-fraud/",
+          "https://www.usatoday.com/story/news/crime/2026/10/21/feds-arrest-charge-georgia-influencer-in-snap-fraud-investigation/92366381007/",
+          "https://www.yahoo.com/news/us/articles/california-latest-target-department-justice-185611645.html"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
