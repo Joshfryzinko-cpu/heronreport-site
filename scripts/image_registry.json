@@ -1542,8 +1542,48 @@
       ],
       "story_context": "Accountability Group Challenges Court Ruling That Erased Hope Florida Grand Jury",
       "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/bcb6b2449d693222.jpg",
+      "source_url": "https://www.orlandosentinel.com/wp-content/uploads/2025/04/202504251152MCT_____PHOTO____US-NEWS-FLA-IMMIGRATION-AG-OS-e1745612605631.jpg?w=1847&#038;h=1390",
+      "md5": "b7f1985be292478257e9dbd2f471b4f9",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Accountability Group Challenges Court Ruling That Erased Hope Florida Grand Jury",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/c78c2fca68765dfa.jpg",
+      "source_url": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/09/30/aeb78719-2f3d-44b7-a12c-0e27f1a05b60/thumbnail/1200x630/3148e833c52c03073650ad61bd596359/gettyimages-2288940563.jpg",
+      "md5": "88aece217e15a8a69d196f0416bb29ba",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Maryland Lab Owner Convicted of 18.7M Medicare Fraud Targeting COVID-Desperate N",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/a1729a17b37dbd90.jpg",
+      "source_url": "https://npr.brightspotcdn.com/dims4/default/fc8e1c5/2147483647/strip/true/crop/2048x1075+0+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8f%2F0d%2Faab96f05421dbea9c7ec4b6a6fd3%2Futhmeier-voter-fraud.jpeg",
+      "md5": "a47aaf852ca432e1baa9d81b45b16444",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Accountability Group Challenges Court Ruling That Erased Hope Florida Grand Jury",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/c1f4d8e7cafb3e68.jpg",
+      "source_url": "https://s.yimg.com/lo/mysterio/api/d1726fd35bffa427bc01505d639ffad193d39ca96f8960e86c50c9207f7bd462/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fwfla_article_174%2F02254d9b5515e457e39d394e515c48a0.jpg",
+      "md5": "1dd24e99b53fb23f212537b82779cc7c",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "DOJ SNAP Fraud Surge 40 Defendants 42M in Stolen Food Benefits Exposed Nationwid",
+      "added": "2026-10-25"
     }
   ],
   "last_updated": "2026-10-25",
-  "total": 153
+  "total": 157
 }

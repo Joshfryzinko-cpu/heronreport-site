@@ -6,11 +6,10 @@ guard = ImageGuard()
 stories = [
     {
         'title': 'Maryland Lab Owner Convicted of 18.7M Medicare Fraud Targeting COVID-Desperate Nursing Homes',
-        'url': 'https://www.justice.gov/opa/pr/maryland-man-convicted-187m-medicare-fraud-respiratory-testing-scheme-targeting-nursing',
+        'url': 'https://www.justice.gov/usao-md/pr/maryland-felon-convicted-187-million-medicare-fraud',
         'alts': [
-            'https://apnews.com/article/medicare-fraud-nursing-home-lab-convicted-2026',
-            'https://www.cbsnews.com/news/maryland-lab-medicare-fraud-nursing-home-covid-convicted/',
-            'https://www.msn.com/en-us/money/news/maryland-man-convicted-187m-medicare-fraud',
+            'https://www.cbsnews.com/baltimore/news/maryland-man-guilty-18-million-medicare-fraud/',
+            'https://wfla.com/news/florida/nearly-42m-in-snap-benefit-fraud-uncovered-in-operation-doj',
         ]
     },
     {
@@ -23,11 +22,10 @@ stories = [
     },
     {
         'title': 'DOJ SNAP Fraud Surge 40 Defendants 42M in Stolen Food Benefits Exposed Nationwide',
-        'url': 'https://www.justice.gov/opa/pr/dojs-fraud-division-department-agriculture-and-usda-oig-uncover-nearly-42m-snap-benefit',
+        'url': 'https://wfla.com/news/florida/nearly-42m-in-snap-benefit-fraud-uncovered-in-operation-doj',
         'alts': [
-            'https://thehill.com/policy/healthcare/snap-fraud-enforcement-doj-2026',
-            'https://apnews.com/article/snap-fraud-enforcement-nationwide-2026',
-            'https://www.usatoday.com/story/news/crime/2026/10/21/snap-food-benefits-fraud-doj',
+            'https://yahoo.com/news/us/articles/nearly-42m-snap-benefit-fraud-105318372.html',
+            'https://oann.com/newsroom/trump-admin-announces-enforcement-actions-against-over-40-defendants-accused-of-nearly-42m-in-snap-fraud',
         ]
     }
 ]
