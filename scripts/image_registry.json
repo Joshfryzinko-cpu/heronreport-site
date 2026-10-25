@@ -1472,8 +1472,78 @@
       ],
       "story_context": "Federal Indictment: Doctor and Postal Union Official Charged in $19M Scheme to S",
       "added": "2026-10-24"
+    },
+    {
+      "local_path": "/img/stories/d05a23e00b3f8ddb.jpg",
+      "source_url": "https://www.webpronews.com/wp-content/uploads/2026/10/article-28298-1792394964.jpeg",
+      "md5": "23237083a9e880baffef29ce83d32264",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Blue Origin $330M Florida Expansion",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/4528b25e1f27699f.jpg",
+      "source_url": "https://www.orlandosentinel.com/wp-content/uploads/2026/10/US-NEWS-FLORIDA-UTILITY-REGULATORS-ATTENDED-RETREAT-1-PT.jpg?w=4032&#038;h=3024",
+      "md5": "bb1a3ae1220c5775f66f012a16f3f414",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Florida utility regulators industry-paid retreat ethics",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/a91d73dc29ccd4d3.jpg",
+      "source_url": "https://img.hoodline.com/2026/10/walmart-grabs-22-acres-in-palm-bay-s-emerald-lakes-first-big-anchor-lands.webp",
+      "md5": "1ea83048863bcfa72ca4f087b116eab0",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Walmart buys 22 acres in Palm Bay Emerald Lakes",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/01a62cf1f222951d.jpg",
+      "source_url": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-10/22/2026-10-22T200347Z_3_LYNXMPEM9L1WX_RTROPTP_3_USA-ENERGY.JPG",
+      "md5": "3cffc0ce1da5628ac0da0986fc0ac3d9",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Declares Wind Turbine Imports a National Security Threat",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/31a007e1b343e073.jpg",
+      "source_url": "https://media.cnn.com/api/v1/images/stellar/prod/2026-10-16t203723z-549741652-rc2k4oaux5cf-rtrmadp-3-usa-trump-georgia.JPG?c=16x9&q=w_800,c_fill",
+      "md5": "32342c419e1680bfee1877b886a26865",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump Waives Russia Sanctions, Ukraine Condemns Decision",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/e5747c19785973aa.png",
+      "source_url": "https://kubrick.htvapps.com/htv-prod/images/ffe2e0e2-d219-44b2-8ff9-196c1fe4890d.png?crop=0.992xw%3A1.00xh%3B0.00489xw%2C0&amp;resize=1200%3A*",
+      "md5": "8e9a1a6b49c897116aad9713cd782960",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Florida Surpasses 25,000 Immigration Arrests as DeSantis Expands Federal Enforce",
+      "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/2a8cce54a28aa4a8.gif",
+      "source_url": "https://floridatrident.org/wp-content/uploads/2024/01/Florida_Trident_Logo_banner.gif",
+      "md5": "4e4d0b0173bc3a24931605c55e524c0b",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Accountability Group Challenges Court Ruling That Erased Hope Florida Grand Jury",
+      "added": "2026-10-25"
     }
   ],
-  "last_updated": "2026-10-24",
-  "total": 146
+  "last_updated": "2026-10-25",
+  "total": 153
 }
