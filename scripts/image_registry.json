@@ -1582,8 +1582,18 @@
       ],
       "story_context": "DOJ SNAP Fraud Surge 40 Defendants 42M in Stolen Food Benefits Exposed Nationwid",
       "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/7a8bac57b36f3ac5.jpg",
+      "source_url": "https://cdn.sanity.io/images/1xutx3rm/production/cd032adaa10f9a4de913271dd314261ca193ce0c-1600x900.jpg?w=1200&amp;h=630&amp;fit=crop&amp;crop=center&amp;fm=jpg&amp;q=85",
+      "md5": "b8c33a7c42cb8dde9630568938ca845f",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "October Capital West Palm Beach private equity launch Takkion",
+      "added": "2026-10-25"
     }
   ],
   "last_updated": "2026-10-25",
-  "total": 157
+  "total": 158
 }
