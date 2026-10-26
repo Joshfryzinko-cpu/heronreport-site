@@ -1592,8 +1592,88 @@
       ],
       "story_context": "October Capital West Palm Beach private equity launch Takkion",
       "added": "2026-10-25"
+    },
+    {
+      "local_path": "/img/stories/d05a23e00b3f8ddb.jpg",
+      "source_url": "https://www.webpronews.com/wp-content/uploads/2026/10/article-28298-1792394964.jpeg",
+      "md5": "555991aaf951ed2d5572774d5f59aba0",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Blue Origin Announces $330 Million Florida Expansion to Boost New Glenn Producti",
+      "added": "2026-10-26"
+    },
+    {
+      "local_path": "/img/stories/c8df88bb972be982.jpg",
+      "source_url": "https://d1io3yog0oux5.cloudfront.net/_d144f61c1086d162fddb8ec646076da0/dreamfindershomes/db/2921/26523/social_image_resized.jpg",
+      "md5": "c6d69ed0c54a38ce32b552d8939151b8",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Dream Finders Homes Completes $915 Million Beazer Acquisition, Becomes Sixth-Lar",
+      "added": "2026-10-26"
+    },
+    {
+      "local_path": "/img/stories/dd31a0fe210093c8.jpg",
+      "source_url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/10/2026-10-23T203040Z_773339325_RC289OAZNW2S_RTRMADP_3_USA-TRUMP-1024x683.jpg",
+      "md5": "00d30816650a835d6bc9a0426a0785a4",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Trump at Florida Rally Vows U.S. Warships Will Stop Off Cuba After Iran War",
+      "added": "2026-10-26"
+    },
+    {
+      "local_path": "/img/stories/31f3b4788568f77e.jpg",
+      "source_url": "https://www.miamiherald.com/public/latest-news/ncust6/picture317635501/alternates/LANDSCAPE_1200/Coast%20Guard%20cocaine.jpeg",
+      "md5": "af65c2d68f5feb220edcc58ca54d46b5",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "Coast Guard Offloads 30,000 Pounds of Cocaine and Marijuana at Port Everglades",
+      "added": "2026-10-26"
+    },
+    {
+      "local_path": "/img/stories/55331c4fe2e38e05.png",
+      "source_url": "https://npr.brightspotcdn.com/dims4/default/1e7e03a/2147483647/strip/true/crop/1760x924+0+125/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe4%2Fac%2Fde14286343879193e7c6f5537e5a%2Fmoney-istock-051923-1.png",
+      "md5": "ccc1ff28a95a690dd8ee14a8f0c63b65",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Florida Minimum Wage Hits $15 an Hour, Completing Six-Year Phase-In",
+      "added": "2026-10-26"
+    },
+    {
+      "local_path": "/img/stories/1189bce5b4bfd054.jpg",
+      "source_url": "https://media.breitbart.com/media/2018/06/BB-logo-highres.jpg",
+      "md5": "011578d428968be8007de71290f369b1",
+      "used_on": [
+        "section-politics.html"
+      ],
+      "story_context": "DHS Announces Lowest Fiscal Year Border Crossings in American History",
+      "added": "2026-10-26"
+    },
+    {
+      "local_path": "/img/stories/bf3fd1b208b04531.jpg",
+      "source_url": "https://www.miamiherald.com/public/latest-news/eikb0h/picture317685586/alternates/LANDSCAPE_1200/4_FIU_Presser_MJO.jpg",
+      "md5": "a5486d270b505b79b7b8b57476d9d7d0",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "IRS Reviews Whistleblower Claim as State Spent $444K in Public Money to Bury Hop",
+      "added": "2026-10-26"
+    },
+    {
+      "local_path": "/img/stories/7eca25e16be9d27d.jpg",
+      "source_url": "https://media.cnn.com/api/v1/images/stellar/prod/ap26279735319721.jpg?c=16x9&q=w_800,c_fill",
+      "md5": "932b869c5d4b845d885e6c3901ad145f",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Federal Official Pleads Guilty to $194M Fraud Scheme \u2014 Bought Gold Bars and Flor",
+      "added": "2026-10-26"
     }
   ],
-  "last_updated": "2026-10-25",
-  "total": 158
+  "last_updated": "2026-10-26",
+  "total": 166
 }
