@@ -1675,5 +1675,19 @@
     }
   ],
   "last_updated": "2026-10-26",
-  "total": 166
+  "total": 166,
+  "banned": [
+    "80a54cc24c5d5711",
+    "fa3b8256b814b7ac",
+    "8429afab3aa1a829",
+    "e784600ef0754f0f",
+    "2ab8e1e20d5e2918",
+    "fb5fe9a2217ed004",
+    "f024c847e358e3e3",
+    "8574e38bd76d7c0d",
+    "bc6dc8af3e22b40e",
+    "064dac983aafa7d6",
+    "7594627c794cf8f5",
+    "9c88cf990fe41746"
+  ]
 }
