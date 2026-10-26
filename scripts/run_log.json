@@ -453,5 +453,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-26",
+    "time_utc": "2026-10-26T10:32:31.660922+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/news/other/fact-check-vice-president-jd-vance-blames-joe-biden-policy-for-high-gas-prices/ar-AA2g4xtw",
+          "https://www.msn.com/en-us/news/other/vice-president-jd-vance-returns-to-kansas-for-rally-as-senate-race-remains-tight/ar-AA2g4ycE",
+          "https://www.msn.com/en-us/news/other/political-expert-explains-what-vice-president-jd-vance-s-upcoming-visit-means-for-kansas/ar-AA2g3hvp"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://uk.finance.yahoo.com/news/sun-hydraulics-helios-technologies-operating-130000894.html",
+          "https://www.freep.com/story/entertainment/dining/2026/09/22/florida-restaurant-john-gs-coming-soon-port-st-lucie-palm-beach-breakfast-near-me-lunch/91799428007/",
+          "https://sixerswire.usatoday.com/story/entertainment/dining/2026/10/15/gastrosubs-jacksonville-opens-philips-highway-southside/92230594007/"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://townhall.com/news/scott-mcclallen/2026/10/02/air-force-reservist-pleads-guilty-to-20k-ppp-loan-fraud-in-florida-n2684042",
+          "https://www.msn.com/en-us/news/other/katie-miller-s-prosecution-fear-puts-federal-charges-in-2026-spotlight/ar-AA2g1AS6",
+          "https://www.ajc.com/news/2026/10/social-media-influencer-snap-fraud-charges/"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
