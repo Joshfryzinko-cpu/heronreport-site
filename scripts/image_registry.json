@@ -1742,8 +1742,48 @@
       ],
       "story_context": "JTA Downgrade Oct23",
       "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/9c316ebe1f6a98a2.jpg",
+      "source_url": "https://images.foxtv.com/static.fox13news.com/www.fox13news.com/content/uploads/2026/10/1200/630/vlcsnap-2026-10-21-08h00m01s579.jpg?ve=1&amp;tl=1",
+      "md5": "476feb5698a4f796a7042efd8440fc71",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "FL AG Insurance Probe",
+      "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/440cd6cce323dac4.jpg",
+      "source_url": "https://images.foxtv.com/static.fox13news.com/www.fox13news.com/content/uploads/2026/10/1200/630/vlcsnap-2026-10-21-18h20m06s933.jpg?ve=1&amp;tl=1",
+      "md5": "36a55866e1677fdb6f055aae10bb7206",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Tampa Selmon Expressway",
+      "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/93780ee90951d6de.png",
+      "source_url": "https://images.foxtv.com/static.fox13news.com/www.fox13news.com/content/uploads/2026/10/1200/630/vlcsnap-2026-10-20-22h20m34s001.png?ve=1&amp;tl=1",
+      "md5": "e65ebedf7bff5e8b3006c56ebfcddd5c",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "FrankCrum Cemetery",
+      "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/1c2b42f122360818.jpg",
+      "source_url": "https://bc.gmg.io/image/upload/c_thumb,q_auto,w_700,f_jpg/media/gmg/UYRDA2YBDVAH5G7TDT5EJ5DQFM.jpg?api_key=news4jax_3f10b25586458189",
+      "md5": "909875a1b65067370ad9c40a85c57f0b",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Kissimmee Mayor Arrest",
+      "added": "2026-10-27"
     }
   ],
   "last_updated": "2026-10-27",
-  "total": 173
+  "total": 177
 }
