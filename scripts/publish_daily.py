@@ -332,20 +332,11 @@ def main():
     )
     run_entry['pages']['politics'] = {'count': n, 'urls': urls}
 
-    # Business
-    n, urls = publish_page(
-        'section-business.html', BUSINESS_QUERIES, 'business',
-        'biz-card', lambda t: (categorize_business(t), '#166534'), published_ids
-    )
-    # Fix: categorize_business returns just the category string, not a tuple
-    run_entry['pages']['business'] = {'count': n, 'urls': urls}
+    # Business — MANUAL ONLY. John Watts or Lisa add stories. No auto-publish.
+    run_entry['pages']['business'] = {'count': 0, 'urls': []}
 
-    # Investigations
-    n, urls = publish_page(
-        'section-investigations.html', INVESTIGATIONS_QUERIES, 'investigations',
-        'inv-card', lambda t: categorize_investigation(t), published_ids
-    )
-    run_entry['pages']['investigations'] = {'count': n, 'urls': urls}
+    # Local News (Investigations) — MANUAL ONLY. John Watts or Lisa add stories. No auto-publish.
+    run_entry['pages']['investigations'] = {'count': 0, 'urls': []}
 
     # Save dedup state and log
     save_published_ids(published_ids)
