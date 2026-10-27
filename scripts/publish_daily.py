@@ -163,7 +163,7 @@ def process_story(raw, page_type, published_ids):
     if not img:
         topic_hint = f"{page_type} {title}"
         img, img_credit = get_topic_fallback(topic_hint)
-        img_fit = 'contain' if any(k in img for k in ['seal','badge','svg','logo']) else 'cover'
+        img_fit = 'cover'  # always cover — never contain (no badges/logos as thumbnails)
 
     # Build summary from RSS description
     desc = raw.get('desc', '')
