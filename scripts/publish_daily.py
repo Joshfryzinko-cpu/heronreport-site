@@ -332,8 +332,12 @@ def main():
     )
     run_entry['pages']['politics'] = {'count': n, 'urls': urls}
 
-    # Business — MANUAL ONLY. John Watts or Lisa add stories. No auto-publish.
-    run_entry['pages']['business'] = {'count': 0, 'urls': []}
+    # Business — auto-publish Florida business stories daily
+    n, urls = publish_page(
+        'section-business.html', BUSINESS_QUERIES, 'business',
+        'pol-card', lambda t: categorize_business(t), published_ids
+    )
+    run_entry['pages']['business'] = {'count': n, 'urls': urls}
 
     # Local News (Investigations) — MANUAL ONLY. John Watts or Lisa add stories. No auto-publish.
     run_entry['pages']['investigations'] = {'count': 0, 'urls': []}
