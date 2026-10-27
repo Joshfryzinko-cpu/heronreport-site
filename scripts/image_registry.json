@@ -1722,8 +1722,28 @@
       ],
       "story_context": "Denver Firm Birdon Plans $275M Shipyard at Port of Pensacola, 2,000 Jobs",
       "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/3a7266887589dbad.jpg",
+      "source_url": "https://bc.gmg.io/image/upload/c_thumb,q_auto,w_700,f_jpg/media/gmg/SVKY6ETOE5H4FGRTTVFBP2AGXE.jpg?api_key=clickorlando_488cff2bcc157b2e",
+      "md5": "f697b4581b2609a43b2a0b0c78824848",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "KSC Layoffs Oct21",
+      "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/773425d6d113762d.jpg",
+      "source_url": "https://bc.gmg.io/image/upload/c_thumb,q_auto,w_700,f_jpg/media/gmg/IQH2EID23JAMFPMLM2EZYECEKI.png?api_key=news4jax_3f10b25586458189",
+      "md5": "e3abfa59a232a85fc95e245941b7a90e",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "JTA Downgrade Oct23",
+      "added": "2026-10-27"
     }
   ],
   "last_updated": "2026-10-27",
-  "total": 171
+  "total": 173
 }
