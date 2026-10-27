@@ -484,5 +484,36 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-27",
+    "time_utc": "2026-10-27T10:30:06.592189+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.foxnews.com/press/2026/10/fox-news-channels-jesse-watters-to-host-town-hall-with-vice-president-jd-vance-on-thursday-october-29",
+          "https://www.msn.com/en-us/news/news/jd-vance-in-kansas-live-updates-vice-president-rallies-in-topeka/ar-AA2g7eXc",
+          "https://www.msn.com/en-us/news/other/vice-president-jd-vance-to-visit-kinston-as-gop-props-up-candidates-ahead-of-election-day/ar-AA2g70cP"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://markets.businessinsider.com/news/stocks/tampa-bay-wave-selects-13-u-s-and-u-k-startups-for-2026-fintech-x-accelerator-1036598087",
+          "https://www.desmoinesregister.com/press-release/story/144046/sandberg-phoenix-named-2026-best-of-florida-regional-award-winner/",
+          "https://cardswire.usatoday.com/story/entertainment/dining/2026/10/23/florida-cuban-restaurant-havana-george-cafe-fort-pierce-expands-stuart-cuban-near-me-cuban-sandwich/92361806007/"
+        ]
+      },
+      "investigations": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/crime/general/katie-miller-s-prosecution-fear-puts-federal-charges-in-2026-spotlight/ar-AA2g1AS6",
+          "https://www.kten.com/news/report-taxpayers-lose-500b-annually-to-fraud-as-states-resist-oversight/article_e09030ab-070f-57cd-890d-062a5ee2228c.html",
+          "https://www.msn.com/en-us/news/other/florida-cop-finds-dead-man-during-welfare-check-allegedly-tried-to-take-over-his-home-officials-say/ar-AA2fLYYA"
+        ]
+      }
+    },
+    "errors": []
   }
 ]
