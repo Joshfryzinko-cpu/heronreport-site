@@ -1,0 +1,47 @@
+{
+  "stories": [
+    {
+      "id": "broward-318m",
+      "title": "Broward Lands $318M in Business Investment, 1,100 New Jobs",
+      "article_url": "https://sun-sentinel.com/2026/10/15/business-is-booming-broward-welcomed-many-employers-expansions-greater-fort-lauderdale-alliance-says",
+      "alt_urls": [
+        "https://thesouthfloridabusinessowner.news/browards-318m-investment-wave-has-a-hiring-signal-inside-it",
+        "https://www.gflalliance.org/news/2026/10/20/in-the-news/business-is-booming-broward-welcomed-many-employers-expansions-greater-fort-lauderdale-alliance-says/",
+        "https://www.bizjournals.com/southflorida/news/2026/10/15/greater-fort-lauderdale-alliance-lures.html"
+      ],
+      "img": "/img/placeholder.svg",
+      "tried": [
+        "https://sun-sentinel.com/2026/10/15/business-is-booming-broward-welcomed-many-employers-expansions-greater-fort-lauderdale-alliance-says",
+        "https://thesouthfloridabusinessowner.news/browards-318m-investment-wave-has-a-hiring-signal-inside-it",
+        "https://www.gflalliance.org/news/2026/10/20/in-the-news/business-is-booming-broward-welcomed-many-employers-expansions-greater-fort-lauderdale-alliance-says/",
+        "https://www.bizjournals.com/southflorida/news/2026/10/15/greater-fort-lauderdale-alliance-lures.html"
+      ]
+    },
+    {
+      "id": "vology-pinellas",
+      "title": "Vology to Expand in Pinellas County, 200 High-Paying Jobs Projected",
+      "article_url": "https://www.floridatrend.com/article/22093/vology-to-expand-in-pinellas-county--200-high-paying-jobs-projected-in-the-next-2-4-years/",
+      "alt_urls": [
+        "https://floridacorporatenews.com/fl-corp-news-release/florida-hiring-trends-for-fall-2026/"
+      ],
+      "img": "/img/stories/9edf8c58377023a7.jpg",
+      "tried": [
+        "https://www.floridatrend.com/article/22093/vology-to-expand-in-pinellas-county--200-high-paying-jobs-projected-in-the-next-2-4-years/",
+        "https://floridacorporatenews.com/fl-corp-news-release/florida-hiring-trends-for-fall-2026/"
+      ]
+    },
+    {
+      "id": "birdon-pensacola",
+      "title": "Denver Firm Birdon Plans $275M Shipyard at Port of Pensacola, 2,000 Jobs",
+      "article_url": "https://www.floridatrend.com/articles/2026/10/15/maritime-jobs/",
+      "alt_urls": [
+        "https://www.wjhg.com/2026/10/21/northwest-florida-maritime-aviation-growth-driving-thousands-jobs/"
+      ],
+      "img": "/img/stories/29e4422c586d3649.jpg",
+      "tried": [
+        "https://www.floridatrend.com/articles/2026/10/15/maritime-jobs/"
+      ]
+    }
+  ],
+  "duplicates_rejected": 1
+}

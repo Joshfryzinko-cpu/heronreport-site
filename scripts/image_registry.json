@@ -1682,8 +1682,48 @@
       ],
       "story_context": "DHS Announces Lowest Fiscal Year Border Crossings in American History",
       "added": "2026-10-26"
+    },
+    {
+      "local_path": "/img/stories/1c02e6f81b6c008d.png",
+      "source_url": "https://files.tampabay.com/resources/florida-trend/logo-florida-trend-fallback.png",
+      "md5": "b23df7d1235056ce64f8ffd8488c819d",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Vology to Expand in Pinellas County, 200 High-Paying Jobs Projected",
+      "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/cc83efff2964ee6e.jpg",
+      "source_url": "https://npr.brightspotcdn.com/dims4/default/c27ca45/2147483647/strip/true/crop/1002x526+0+307/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F22%2F75%2F7a3fb0664f5d91bd464136417004%2Fpbso-police-cars.jpg",
+      "md5": "292ad1f99984348974816c47fbe08371",
+      "used_on": [
+        "section-investigations.html"
+      ],
+      "story_context": "Audit Slams $54M Palm Beach Sheriff HQ Renovation: Missing Receipts, Overcharges",
+      "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/9edf8c58377023a7.jpg",
+      "source_url": "https://floridacorporatenews.com/wp-content/uploads/2026/10/3664e8af-3ebf-4e1e-bfa5-ea86a2edc8e1.jpg",
+      "md5": "3b531a924d9dc6349260df6214a45d10",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Vology to Expand in Pinellas County, 200 High-Paying Jobs Projected",
+      "added": "2026-10-27"
+    },
+    {
+      "local_path": "/img/stories/29e4422c586d3649.jpg",
+      "source_url": "https://cloudfront-us-east-1.images.arcpublishing.com/tbt/RU3QAY7BBRGI5ECNCTLJPTP6OM.jpg",
+      "md5": "8fb869bdfec1b61aade9dcb7b7fc44e8",
+      "used_on": [
+        "section-business.html"
+      ],
+      "story_context": "Denver Firm Birdon Plans $275M Shipyard at Port of Pensacola, 2,000 Jobs",
+      "added": "2026-10-27"
     }
   ],
-  "last_updated": "2026-10-26",
-  "total": 167
+  "last_updated": "2026-10-27",
+  "total": 171
 }
