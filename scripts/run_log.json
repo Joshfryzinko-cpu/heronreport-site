@@ -525,5 +525,32 @@
       "ems": "Florida Keys officials seek tough sentence for convicted fire-rescue captain - Miami Herald",
       "law": "Delegation for 10.9.26: Killer storm \u2014 farm aid \u2014 Medicare fight \u2014 pumps and pearls \u2014 AI guardrails - Florida Politics"
     }
+  },
+  {
+    "date": "2026-10-28",
+    "time_utc": "2026-10-28T10:36:35.465346+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.yahoo.com/news/politics/articles/vice-president-vance-hold-michigan-110141449.html",
+          "https://www.msn.com/en-us/news/news/vice-president-jd-vance-visits-michigan-one-week-ahead-of-midterms-here-s-what-he-had-to-say/ar-AA2gbGIV",
+          "https://cdapress.com/news/2026/oct/27/vice-president-jd-vance-rallies-montana-republican/"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://finance.yahoo.com/small-business/articles/showcasing-small-business-growth-community-163000942.html",
+          "https://www.bizjournals.com/tampabay/news/2026/10/27/rolari-founder-startup-protein-drink.html",
+          "https://www.greenbaypressgazette.com/press-release/story/197975/black-gold-coffee-roasters-named-2026-best-of-florida-award-winner/"
+        ]
+      },
+      "investigations": {
+        "count": 0,
+        "urls": []
+      }
+    },
+    "errors": []
   }
 ]
