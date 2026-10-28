@@ -52,6 +52,22 @@ DEPT_BADGES = {
              'Seminole County Fire/EMS Patch', 'cover'),
 }
 
+# Stories that must NEVER appear on Heroes of the Week
+EXCLUDE_KEYWORDS = [
+    'convicted','sentenced','arrested','indicted','charged with','found guilty',
+    'prison','jail','prosecution','plea','pleaded','delegation','roundup',
+    'killed','died','death','fatal','murdered','lawsuit','fired','suspended',
+    'killer storm','farm aid','Medicare','pearls','AI guardrails',
+]
+
+def is_valid_hero_story(title, desc=''):
+    """Return False if story is about crime, punishment, politics, or other non-hero content."""
+    combined = (title + ' ' + desc).lower()
+    for kw in EXCLUDE_KEYWORDS:
+        if kw.lower() in combined:
+            return False
+    return True
+
 
 def find_hero(role, published_ids):
     for query in HERO_QUERIES[role]:
@@ -62,6 +78,9 @@ def find_hero(role, published_ids):
                 continue
             title = raw.get('title', '').strip()
             if not title:
+                continue
+            # Exclude crime, politics, and non-hero content
+            if not is_valid_hero_story(title, raw.get('desc', '')):
                 continue
             # Verify it mentions Florida
             t = (title + raw.get('desc', '')).lower()
