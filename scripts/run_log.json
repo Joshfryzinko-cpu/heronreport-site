@@ -515,5 +515,15 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-28",
+    "time_utc": "2026-10-28T10:33:28.603325+00:00",
+    "type": "heroes",
+    "count": 2,
+    "heroes": {
+      "ems": "Florida Keys officials seek tough sentence for convicted fire-rescue captain - Miami Herald",
+      "law": "Delegation for 10.9.26: Killer storm \u2014 farm aid \u2014 Medicare fight \u2014 pumps and pearls \u2014 AI guardrails - Florida Politics"
+    }
   }
 ]
