@@ -30,30 +30,26 @@ TODAY_ISO = date.today().isoformat()
 # ─── Story Queries ────────────────────────────────────────────────────────────
 
 POLITICS_QUERIES = [
-    # Top 10 administration figures — one query each
-    "JD Vance vice president news 2026",
-    "Marco Rubio secretary of state foreign policy news 2026",
-    "Pete Hegseth secretary defense Pentagon news 2026",
-    "Pam Bondi attorney general DOJ news 2026",
-    "Kristi Noem DHS homeland security border news 2026",
-    "Scott Bessent treasury secretary economy tariffs 2026",
-    "Robert F Kennedy RFK HHS health department news 2026",
-    "Doug Burgum interior energy department news 2026",
-    "Elon Musk DOGE government efficiency news 2026",
-    "Brooke Rollins USDA agriculture secretary news 2026",
-    # National security / military
-    "US military national security war news 2026",
-    "Ukraine Russia war ceasefire news 2026",
-    "Israel Iran Middle East conflict 2026",
-    # Economy / energy
-    "oil gas energy prices economy news October 2026",
-    "federal spending budget deficit Congress 2026",
-    # Immigration
-    "border immigration enforcement deportation news 2026",
-    # Florida local heroes
-    "Bay County Gulf County Franklin County Florida sheriff fire rescue 2026",
-    # Trump — limited (only 2 per day max, enforced in publish logic)
-    "Trump executive order White House policy news 2026",
+    # Florida local — always first
+    "Gulf County Franklin County Bay County Florida government news 2026",
+    "Florida legislature law policy news 2026",
+    "Florida governor DeSantis state government 2026",
+    # National — broad balanced coverage
+    "US Congress Senate House legislation news 2026",
+    "US economy jobs inflation consumer prices 2026",
+    "US military defense national security 2026",
+    "Marco Rubio secretary of state foreign policy 2026",
+    "Pete Hegseth Pentagon defense department 2026",
+    "JD Vance administration policy news 2026",
+    "US Supreme Court ruling decision 2026",
+    "Ukraine Russia war ceasefire diplomacy 2026",
+    "Israel Middle East foreign policy 2026",
+    "border immigration policy enforcement 2026",
+    "federal budget spending Congress 2026",
+    "US energy oil gas prices 2026",
+    "healthcare Medicare Medicaid policy 2026",
+    # Trump — 1 query max, enforced at 2/day
+    "White House executive order policy news 2026",
 ]
 
 # Max Trump-specific articles per daily publish run

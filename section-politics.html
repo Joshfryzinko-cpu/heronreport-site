@@ -98,6 +98,15 @@ footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:26px 2
 
     .sponsored-card { border: 1px solid rgba(201,168,76,.25) !important; position: relative; }
     .sponsored-card::before { content: "SPONSORED"; position: absolute; top: 10px; left: 10px; background: #c9a84c; color: #0d1520; font-size: .5rem; font-weight: 700; letter-spacing: .12em; padding: 3px 7px; border-radius: 3px; z-index: 10; }
+
+/* Media centering */
+.grid-wrap, .card-grid, .pol-wrap, .biz-wrap, .inv-wrap {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+img { display: block; margin-left: auto; margin-right: auto; }
+.card-img { margin: 0; }
+
 </style>
 </head>
 <body>
@@ -126,13 +135,13 @@ footer{background:#000;border-top:1px solid rgba(255,255,255,.07);padding:26px 2
   </div>
 </header>
 
-<div class="page-header"><div class="ph-inner">    <h1 class="ph-title">Leaders, Laws &amp; Your Future</h1>
+<div class="page-header"><div class="ph-inner">    <h1 class="ph-title" style="text-align:center">Leaders, Laws &amp; Your Future</h1>
     <p class="ph-sub">Covering national policy, state legislation, elections, and the issues that shape life across Franklin, Gulf, and Bay counties. Balanced reporting. Updated daily.</p>
     <div class="ph-meta">Stories updated daily &middot; Balanced reporting &middot; Local &amp; national coverage &middot; Facts first</div>
 </div></div>
   </div>
 </div>
-<div class="grid-wrap">
+<div class="grid-wrap" style="margin:0 auto">
 
     <article class="pol-card">
       <a href="/st-joseph-bay-unity.html" class="card-link">
