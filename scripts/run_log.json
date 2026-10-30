@@ -579,5 +579,32 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-30",
+    "time_utc": "2026-10-30T10:39:37.524787+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMiwAFBVV95cUxON3EwS1hUMEg0Y3dQakhiVUFCeU1OMGlFZUEzNFRXR01BOVMtMFBXbW1BenlhR19EOENMWDFWNS1SYnI4RVRFb1ROdTJ0bUEzVVhubWxnV2xqZDUyZTdMcTF2VHRTa3JJaGEyRDNxMmZLZEh1am0wODVPNUx1VWhUT3RqRGJCbUpaRmEtTFRGbXdSbFlZUUxONkxwRlBwQVJsTVR1dWtvSUo1bWVQdkdwbFRCTG9vRG9HMFE3UDFtU2s?oc=5",
+          "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTlY2SEdSanRJcTRuNHZwVEJDRFhybkJWSnJNNHJGY3ZaZkMtakdJTU4wVDZYS0hKSnVaa28ybzg3WFRReW42RG45ZlhDMklzSDhOaTZWTGpob2VGYU9BTzZrc2xpMXZndDFUbUlickpXb05wMnE5VVZQTTZGSUNrZF9NWS16UzdnVjZrdjhlc2ZTWWpLQmdwVUNmclRMaGVjWVBpUUNzdDI4RDBiOFZqUFhvNlY3Q2xo0gHMAUFVX3lxTE83NERycV9xZTl3TUo0dWJrR2tPMWZfVFpPdzFwclpjMG5ZcFpERmZpbE1NWUprMTVPMk9WQlZvWUFRWFpfczAxYzJEa3p2UVB0bGdHVF94S3RJWXUybWI0cy1RcXE0R2pDOHFxZzFUbzd3aGJTNmRZS2dQSU5uLUVYdDZUeHQwWGIyVDFDcmllazZ1ZEpYTUc2UnR0am95NmRfcEpHUFROc1hJNHZxWXk0S01ZM1VxcTJ2a0JmemZBZW5UMHdoeG1PUVJiSw?oc=5",
+          "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTW9aTF9aWklXME9DMWZnY192TmJ0RGpnSFFzbC1lNjk5ZGN5SFowdHVHTzNQY2NrV3BCcmpVVlRQaGd1WFVIb3hZaFdQclhPYmNkZHk5ZjJtRk00MUZsLWtkUHpGNXVXS2RjSmMtYnpJUUNuaUtOOXNONWNyVnI1aTdKdXNnRWRXY2gtdVk3RnhscDkyaUNBdkFyYkZTYnNCSzh4Z3BVS2JpLUt5UFFKZXJ3WW5xQ1NfX3NDdTV5TQ?oc=5"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.usatoday.com/press-release/story/52702/south-florida-seawall-named-a-top-marine-construction-services-company-of-2026-by-construction-business-review/",
+          "https://www.msn.com/en-us/news/other/gainesville-businesses-celebrated-at-community-s-choice-awards-gala/ar-AA2ef8IA",
+          "https://www.msn.com/en-us/money/general/ocala-and-marion-county-businesses-honored-at-2026-community-s-choice-awards/ar-AA2ekcz4"
+        ]
+      },
+      "investigations": {
+        "count": 0,
+        "urls": []
+      }
+    },
+    "errors": []
   }
 ]
