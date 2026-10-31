@@ -606,5 +606,32 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-10-31",
+    "time_utc": "2026-10-31T10:26:43.332591+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMivwFBVV95cUxPejdId0J6cGhmRkt4VGpYUDgxNllwRC02NmJqQUpEb3JqbzNGZFM2dGFrZlFXdFA3MTR3V01RVkxmaEhYQnZnb3c5S0lmSHAyRzd2WjliMzFjdGV1T0ItZ0lKTGJKaTB6WllZSHB2Vk1veUxrOTJ1ZlFrY3hXVGtiMVVPaEZlUUJVaEQ2NGd0TXFHYUdkOVdMRDNKUXBCX1FEX21pZUx6UTJJRzhfU19UU284Ml9qVXAzM0VrWU5KRQ?oc=5",
+          "https://www.msn.com/en-in/news/other/florida-supreme-court-rules-water-damage-notice-law-cannot-apply-retroactively/ar-AA2gtbLV",
+          "https://www.msn.com/en-us/news/other/what-supporters-and-opponents-say-about-floridas-2026-amendments/ar-AA2grkXi"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://markets.businessinsider.com/news/stocks/miami-finance-forum-and-florida-venture-forum-to-host-2026-venture-capital-summit-on-november-12-1036694382",
+          "https://markets.businessinsider.com/news/stocks/startup-club-endorses-byron-donalds-for-governor-of-florida-1036546601",
+          "https://www.inc.com/entrepreneurs-organization/their-companies-made-the-inc-5000-heres-what-these-entrepreneurs-organization-founders-learned-along-the-way/91422337"
+        ]
+      },
+      "investigations": {
+        "count": 0,
+        "urls": []
+      }
+    },
+    "errors": []
   }
 ]
