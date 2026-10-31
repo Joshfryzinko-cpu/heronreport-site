@@ -69,6 +69,18 @@ img { display: block; margin-left: auto; margin-right: auto; }
     </nav>
   </div>
 </header>
+<div class="site-search" style="background:#111;padding:12px 24px;border-bottom:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto">
+    <form action="https://www.google.com/search" method="get" style="display:flex;gap:8px;align-items:center">
+      <input type="hidden" name="q" value="site:heronreport.com ">
+      <input name="q" id="site-search-q" type="search" placeholder="Search The Heron Report..."
+             oninput="this.form.elements[0].value='site:heronreport.com '+this.value"
+             style="flex:1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;padding:8px 14px;border-radius:6px;font-size:.88rem;outline:none;font-family:Inter,sans-serif"
+             onfocus="this.style.borderColor='#c0392b'" onblur="this.style.borderColor='rgba(255,255,255,.15)'">
+      <button type="submit" style="background:#c0392b;color:#fff;border:none;padding:8px 18px;border-radius:6px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:Inter,sans-serif">Search</button>
+    </form>
+  </div>
+</div>
 
 <main class="article-wrap">
   <div class="kicker">Local &middot; Dining &middot; Port St. Joe</div>
