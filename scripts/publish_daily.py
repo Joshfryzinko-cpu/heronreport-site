@@ -286,7 +286,8 @@ def publish_page(filename, queries, page_type, css_class, categorizer, published
         html = f.read()
 
     section = build_day_section(TODAY, stories, css_class)
-    html = inject_section_before(html, section)
+    if stories:
+        html = inject_section_before(html, section)
 
     # Prune to MAX_POLITICS_ARTICLES total if this is the politics page
     if page_type == 'politics':
