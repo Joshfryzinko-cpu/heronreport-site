@@ -37,13 +37,13 @@ body{background:#f9f7f4;font-family:'Inter',sans-serif;color:#1a1a1a}
 .caption{font-size:.72rem;color:#999;margin-bottom:24px;font-style:italic;text-align:center}
 .body p{font-family:'Source Serif 4',Georgia,serif;font-size:1.07rem;line-height:1.78;color:#1a1a1a;margin-bottom:1.5em}
 .photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:2em 0}
-.photo-grid img{width:100%;border-radius:6px;display:block;object-fit:cover;object-position:top center;height:320px}
+.photo-grid img{width:100%;border-radius:6px;display:block;object-fit:contain;background:#f0ede8;max-height:420px}
 .photo-grid .caption{margin-top:6px;margin-bottom:0;text-align:left}
 .photo-full{margin:2em 0}
 .photo-full img{width:100%;border-radius:6px;display:block;object-fit:contain;max-height:600px}
 footer{background:#0d1520;color:rgba(255,255,255,.5);text-align:center;padding:24px;font-size:.78rem;margin-top:48px}
 footer a{color:rgba(255,255,255,.4);text-decoration:none}
-@media(max-width:580px){.photo-grid{grid-template-columns:1fr}.photo-grid img{height:260px;object-position:top center}}
+@media(max-width:580px){.photo-grid{grid-template-columns:1fr}.photo-grid img{max-height:360px}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NY8DDSYLG"></script>
