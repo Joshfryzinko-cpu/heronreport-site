@@ -633,5 +633,32 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-11-01",
+    "time_utc": "2026-11-01T10:29:40.448994+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQd2hXLUtWX2FlcHl2MEY0YmZzOUJuU3IyU1FlRmdyby0yYlVBTU9ybExiN09pazBNNzdLLVRkTlYtYkQ3N0YwOUp0S3k5ZldzTy03dDRNa2c4RFRFSVhaMUY5eElQS05uRElUMGFUQ2t1d25UaEtDcWZsMElqbTJnLWM3OHBiVEg2ckNB?oc=5",
+          "https://www.msn.com/en-in/news/world/florida-supreme-court-rules-water-damage-notice-law-cannot-apply-retroactively/ar-AA2gtbLV",
+          "https://www.usatoday.com/story/news/politics/elections/2026/10/30/arguments-for-against-florida-2026-amendments-guide/92513554007/"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/money/technology/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/ar-AA2gpwlc",
+          "https://www.snntv.com/news/9-florida-companies-make-fortunes-best-workplaces-for-women-2026/",
+          "https://dolphinswire.usatoday.com/story/entertainment/dining/2026/10/23/florida-mexican-restaurant-papichulo-tacos-opens-in-palm-city-jupiter-royal-palm-beach-tacos-near-me/92117181007/"
+        ]
+      },
+      "investigations": {
+        "count": 0,
+        "urls": []
+      }
+    },
+    "errors": []
   }
 ]
