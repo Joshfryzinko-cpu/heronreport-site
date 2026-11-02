@@ -660,5 +660,32 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-11-02",
+    "time_utc": "2026-11-02T10:50:23.539209+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNcUcxakVIWEJycFpfMXI0cURDUVgtSkUyajJLbmJZeFd1OG0ySl9yOV9wWk9ueGpUaS1PYmFMU0RxMnFaN3QwZzVQaVlLOUlpajUwZVRPMlV2cWc2cmoyWTVuRmtBQ3M0TDJJR21qRllJQ0prWEtqWnBTQlhZOFp2emVETUhlQW1Tby1zRjI2OWNKOWpyYmZOYW1obm54cUFwZ3FVZjFlSjduckxMaDdidFNvenkxMzZObzB5T3FwaXhVeGFLdkttZjhrM1RBRHR6eHdjNUIxbE9zNDhFeW4wNXdRbS1wN3VBTXc?oc=5",
+          "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRUl4UEI3c2hkUkkzSzFVZzBzOWdJVjF5RWhSblBnaWZOSXFaUE5VbmpYV1ZiUlRua25HYXlEMEYwM1dKd0ZNSXRKdWx5Um1wbzRGZ0dsVThBMDA5M21jbldYNFZyLVZKOHpvQ3c2RTBqOGVhTmY4MUlNMEZ6OWgxSjBLMzN4eWhMVXhRRDJ3UHdhZzlSWnh0MTgwR0c4S3R4N19zWnpUY0lWSjJmOEhmOA?oc=5",
+          "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZ1lWdGZ5RTNxeUJ3SVpYT2IwdlpNMTg1SFg1OGNkWDNRYTFuZEJjTEplUGd0UmwtSFZjVUNtVzFqOFBfdTI1Z3VZYjFySVVYX0p6eDJSUC1wZDBMME9aSlM5aGlJQjUySV80LXUxOVNuZmk4Vm1QZE1HLUVkb0ZjTG1LenRiZHpYWkpoRg?oc=5"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOGRpNi0zSVVLZ193SWY5Q0ZDMEROUVBycE5OLTFKaWVFamFUWTB2UXgyRlBCUGFkM01nb2Z1YlJ6VW1BOWFQUm1PaTlKNFF6V3B6SndualRQcnZNMnplcVI0TEpvUFN4TEV4MG5EMFdrVzlCUWwxRDdWS0ItNjJTWVpWVXB4eXBKWG5hWUV4b01TTHZ1djZTc3FZN012MVp1dnVzOU51dlpsWHd6RjRnVHJwZVV6NjI2eE5SVnBjRUdCUQ?oc=5",
+          "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5MZ0xESmV5bGtrcGtxdXBScFNyU1FnMkJMLTFjRlhDc2Z0a1pVR09Vcl9DM0pyWVZKZDlTS1gxMVhiQ2EtVUxlendGRlJRUzRsXzVuWg?oc=5",
+          "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQm9qc3l6R21leGhibDZTcGs2Z0FKcXFDY0ZCLTJRV3RQRnNSUVFBek9CYjVqOXJOcjlabzhTMjEwd2tsbHU0V2Nkd3pkQm9rSlVMWk5fdnpwaTZnaDhCMzdHYlFnS0xoTXNTTFRleFBKcXFFUmNGVmxoaVhkZkFqZy1zNm9yNkpHdnZ3SFA2TW1pVTg1bTMwMVhPaUg3UWJXbHVoaXZMMUl4NzM5UXNaZktDeEE1dTNGd1ZralpobmlpNVpKWGk4aFNDSGF5V2R3U1pQOGpNbi0xdkFyMUZN?oc=5"
+        ]
+      },
+      "investigations": {
+        "count": 0,
+        "urls": []
+      }
+    },
+    "errors": []
   }
 ]
