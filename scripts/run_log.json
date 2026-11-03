@@ -687,5 +687,32 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-11-03",
+    "time_utc": "2026-11-03T10:48:00.692739+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYUpkSk53bXk0UUJRdmVDNExsaG01RUktMFBPbGZBdVI0NzFMcllBRzNkczk0MTVISmRWMWJOcHZzLWV3aUUyd19Cdk5Uc1owM2dDSWkyc0tLTlY5TmNEV3lzS0Y2VDBreVQ1eTMxVXVVY2pleWthWnB4RERiS054OGNJNERYYWRNa05DeQ?oc=5",
+          "https://news.google.com/rss/articles/CBMilgFBVV95cUxOOWxsZDNlVXB1cHpWR19UQ2hyQjRDZmNfbHRPVVNHT05Tb2tFeWxuVzNGTS1GUlJ2eGJrc1ozSk5ackkzN3FYRnBTelZBZlJleFNIN0k4UTV5T29sOWJMOVh0QTBRMnc2RXZ6MjYyS0xUV0xOTXNhQ2QwVGhRTXVoeUhjWGpueHZIOFdiQ2tWV1U5Z1JDZ1E?oc=5",
+          "https://www.nbcmiami.com/elections/these-are-the-florida-amendments-on-the-november-2026-ballot/3877785/"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/news/other/northwest-florida-state-college-veterans-florida-launch-entrepreneur-program-for-vets/ar-AA2gBKMj",
+          "https://news.fsu.edu/news/business-law-policy/2026/10/29/jim-moran-college-of-entrepreneurship-hosts-global-leaders-at-2026-gcec-conference-wins-top-international-award/",
+          "https://www.knoxnews.com/press-release/story/256275/sagacity-legal-named-2026-best-of-florida-award-winner/"
+        ]
+      },
+      "investigations": {
+        "count": 0,
+        "urls": []
+      }
+    },
+    "errors": []
   }
 ]
