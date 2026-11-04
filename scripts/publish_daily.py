@@ -157,9 +157,22 @@ def process_story(raw, page_type, published_ids):
     img_credit = raw.get('source', '')
 
     if not img:
-        topic_hint = f"{page_type} {title}"
-        img, img_credit = get_topic_fallback(topic_hint)
-        img_fit = 'cover'  # always cover — never contain (no badges/logos as thumbnails)
+        # Try harder — search for og:image with longer timeout
+        time.sleep(0.5)
+        try:
+            import urllib.request
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                html2 = resp.read().decode('utf-8', errors='ignore')
+                import re as re2
+                m2 = re2.search(r'<meta[^>]*og:image[^>]*content=["\'\']([^\"\'']+)', html2, re2.IGNORECASE)
+                if m2 and m2.group(1).startswith('http'):
+                    img = get_og_image(m2.group(1))
+        except: pass
+    if not img:
+        # No real image found — skip this story entirely rather than use placeholder
+        return None
+    img_fit = 'cover'  # always cover
 
     # Build summary from RSS description
     desc = raw.get('desc', '')
@@ -276,7 +289,8 @@ def publish_page(filename, queries, page_type, css_class, categorizer, published
         if not stories:
             return 0, []
 
-    # Apply category colors
+    # Apply category colors — filter out None (stories with no image)
+    stories = [s for s in stories if s is not None]
     for s in stories:
         cat, color = categorizer(s['headline'])
         s['category'] = cat
