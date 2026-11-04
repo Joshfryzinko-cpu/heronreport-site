@@ -724,5 +724,32 @@
       "ems": "Watch: Florida paramedic jumps from helicopter in attempt to save fisherman\u2019s life",
       "fire": "UCF Alum Finds Calling in Giving Voice to Heroes of Public Service - University of Central Florida"
     }
+  },
+  {
+    "date": "2026-11-04",
+    "time_utc": "2026-11-04T11:00:08.042325+00:00",
+    "pages": {
+      "politics": {
+        "count": 3,
+        "urls": [
+          "https://www.usatoday.com/story/news/politics/elections/2026/11/03/florida-amendment-3-property-tax-cut-results--live/92217474007/",
+          "https://www.msn.com/en-us/news/other/byron-donalds-wins-florida-governor-s-race-becoming-the-state-s-first-black-governor/ar-AA2gHb29",
+          "https://www.msn.com/en-us/news/other/gop-rep-byron-donalds-wins-florida-governor-s-race-will-succeed-ron-desantis/ar-AA2gGuCT"
+        ]
+      },
+      "business": {
+        "count": 3,
+        "urls": [
+          "https://www.msn.com/en-us/money/other/northwest-florida-state-college-veterans-florida-launch-entrepreneur-program-for-vets/ar-AA2gBKMj",
+          "https://finance.yahoo.com/small-business/articles/realbooks-present-gatorpitch-miami-2026-133800699.html",
+          "https://www.northjersey.com/press-release/story/261667/employer-payroll-solutions-inc-named-2026-best-of-florida-regional-award-winner/"
+        ]
+      },
+      "investigations": {
+        "count": 0,
+        "urls": []
+      }
+    },
+    "errors": []
   }
 ]
