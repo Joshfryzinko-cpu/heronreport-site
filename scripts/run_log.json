@@ -714,5 +714,15 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-11-04",
+    "time_utc": "2026-11-04T10:57:15.160864+00:00",
+    "type": "heroes",
+    "count": 2,
+    "heroes": {
+      "ems": "Watch: Florida paramedic jumps from helicopter in attempt to save fisherman\u2019s life",
+      "fire": "UCF Alum Finds Calling in Giving Voice to Heroes of Public Service - University of Central Florida"
+    }
   }
 ]
