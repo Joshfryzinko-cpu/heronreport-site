@@ -751,5 +751,15 @@
       }
     },
     "errors": []
+  },
+  {
+    "date": "2026-11-11",
+    "time_utc": "2026-11-11T10:48:49.842567+00:00",
+    "type": "heroes",
+    "count": 2,
+    "heroes": {
+      "ems": "Orlando Health Melbourne Hospital Honors Melbourne Firefighters - City of Melbourne, Florida",
+      "law": "Florida scallop season 2026: Here\u2019s what to know - FOX 13 Tampa Bay"
+    }
   }
 ]
