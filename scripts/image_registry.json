@@ -1882,8 +1882,29 @@
       ],
       "story_context": "Vice President JD Vance \u2014 Kinston rally Oct 2026",
       "added": "2026-11-13"
+    },
+    {
+      "local_path": "/img/stories/6509b1559070a6ba.png",
+      "source_url": "user_upload:highland_view_overlook_denied",
+      "md5": "7eef76393f8c8a05621c7ef1612d4f8c",
+      "used_on": [
+        "highland-view-rehab-center-permit-denied.html",
+        "section-politics.html"
+      ],
+      "story_context": "City Denies Highland View Rehabilitation Center Permit",
+      "added": "2026-11-17"
+    },
+    {
+      "local_path": "/img/stories/961e471120232195.png",
+      "source_url": "user_upload:novak_smallwood_bocc_meeting",
+      "md5": "17302df9b420dee0c28abad8a642baa1",
+      "used_on": [
+        "highland-view-rehab-center-permit-denied.html"
+      ],
+      "story_context": "City Denies Highland View Rehabilitation Center Permit",
+      "added": "2026-11-17"
     }
   ],
-  "last_updated": "2026-11-13",
-  "total": 187
+  "last_updated": "2026-11-17",
+  "total": 189
 }
