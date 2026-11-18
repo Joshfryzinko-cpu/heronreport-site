@@ -1937,8 +1937,19 @@
       ],
       "story_context": "Two Port St. Joe Firefighters Help Save Two Children During Apartment Fire",
       "added": "2026-11-18"
+    },
+    {
+      "local_path": "/img/stories/a6152abe24ee5cc3.jpg",
+      "md5": "e09344d7cb4140bbf033fb5f8f43b858",
+      "size_bytes": 25672,
+      "used_on": [
+        "gulf-county-bocc-special-meeting-nov-2026.html",
+        "section-investigations.html"
+      ],
+      "story_context": "Gulf County BOCC Special Meeting Nov 12 2026 - frame grabbed from Heron Report OBS recording",
+      "added": "2026-11-18"
     }
   ],
   "last_updated": "2026-11-18",
-  "total": 189
+  "total": 193
 }
