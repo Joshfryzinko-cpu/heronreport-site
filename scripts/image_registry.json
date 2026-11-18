@@ -1903,8 +1903,31 @@
       ],
       "story_context": "City Denies Highland View Rehabilitation Center Permit",
       "added": "2026-11-17"
+    },
+    {
+      "local_path": "/img/stories/0911804b5e336d69.webp",
+      "source_url": "user_upload:desantis_portrait",
+      "md5": "9adda93af3ec38c4e1e2db3e34ac7cce",
+      "size_bytes": 29726,
+      "used_on": [
+        "desantis-communism-curriculum.html",
+        "section-politics.html"
+      ],
+      "story_context": "Governor DeSantis Makes History of Communism Required Education in Florida Public Schools",
+      "added": "2026-11-18"
+    },
+    {
+      "local_path": "/img/stories/1f017fe49dd7f69f.jpg",
+      "source_url": "user_upload:classroom_empty",
+      "md5": "55b96b02004703460d257dc89a8f94b0",
+      "size_bytes": 45731,
+      "used_on": [
+        "desantis-communism-curriculum.html"
+      ],
+      "story_context": "Governor DeSantis Makes History of Communism Required Education in Florida Public Schools",
+      "added": "2026-11-18"
     }
   ],
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
   "total": 189
 }
