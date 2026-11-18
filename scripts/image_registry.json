@@ -1948,8 +1948,19 @@
       ],
       "story_context": "Gulf County BOCC Special Meeting Nov 12 2026 - frame grabbed from Heron Report OBS recording",
       "added": "2026-11-18"
+    },
+    {
+      "local_path": "/img/stories/0c8e346be938cfec.png",
+      "md5": "948888771443603468cce5d102c8c818",
+      "size_bytes": 2257601,
+      "used_on": [
+        "baysavers-rock-the-bay-fundraiser.html",
+        "section-investigations.html"
+      ],
+      "story_context": "BaySavers Florida - Rock the Bay fundraiser Nov 21 2026",
+      "added": "2026-11-18"
     }
   ],
   "last_updated": "2026-11-18",
-  "total": 193
+  "total": 194
 }
