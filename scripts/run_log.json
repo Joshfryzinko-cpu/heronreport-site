@@ -761,5 +761,16 @@
       "ems": "Orlando Health Melbourne Hospital Honors Melbourne Firefighters - City of Melbourne, Florida",
       "law": "Florida scallop season 2026: Here\u2019s what to know - FOX 13 Tampa Bay"
     }
+  },
+  {
+    "date": "2026-11-18",
+    "time_utc": "2026-11-18T18:34:49.054061+00:00",
+    "type": "heroes",
+    "count": 3,
+    "heroes": {
+      "ems": "Watch: Florida Paramedic Jumps From Helicopter To Reach Man In Cardiac Arrest - KWWL",
+      "law": "PHOTOS: On National First Responders Day, Senator Moody Recognizes Seven of Florida\u2019s Finest - Senator Moody (.gov)",
+      "fire": "Chief Financial Officer Blaise Ingoglia Awards Over $1.4 Million to Support Florida Fire Departments - The Florida Department of Financial Services"
+    }
   }
 ]
