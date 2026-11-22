@@ -45,11 +45,12 @@ HERO_QUERIES = {
     ],
 }
 
-DEPT_BADGES = {
-    'ems':  (FALLBACK_IMGS['gulf_county'], 'Gulf County, FL (official)', 'contain'),
-    'law':  (FALLBACK_IMGS['bcso'],        'Bay County Sheriff\'s Office (official)', 'contain'),
-    'fire': ('https://www.patchgallery.com/albums/userpics/10001/Seminole-Co-DPS-FLFr.jpg',
-             'Seminole County Fire/EMS Patch', 'cover'),
+# Known Florida counties/agencies we can confidently badge IF the story text
+# actually names them. Never used as a blind per-category default any more --
+# see find_hero(). Each entry: logo URL, display credit, image-fit mode.
+COUNTY_BADGES = {
+    'gulf county':    (FALLBACK_IMGS['gulf_county'], 'Gulf County, FL (official)', 'contain'),
+    'bay county':     (FALLBACK_IMGS['bcso'],        "Bay County Sheriff's Office (official)", 'contain'),
 }
 
 # Stories that must NEVER appear on Heroes of the Week
@@ -60,13 +61,38 @@ EXCLUDE_KEYWORDS = [
     'killer storm','farm aid','Medicare','pearls','AI guardrails',
 ]
 
+# A real "Hero of the Week" story must be about ONE identifiable person doing a
+# specific documented act -- not a statewide press release recognizing a group,
+# an agency announcement, or a funding/budget item. These phrases mark exactly
+# that kind of bare, un-narratived stub -- reject them outright rather than
+# patch a mismatched badge onto them (this was the actual root cause of the
+# recurring county/badge mismatches: these stubs have no real subject to badge).
+STUB_PATTERNS = [
+    'recognizes seven', 'recognizes multiple', 'awards over', 'awards more than',
+    'announces funding', 'million to support', 'photos:', 'watch:',
+]
+
 def is_valid_hero_story(title, desc=''):
     """Return False if story is about crime, punishment, politics, or other non-hero content."""
     combined = (title + ' ' + desc).lower()
     for kw in EXCLUDE_KEYWORDS:
         if kw.lower() in combined:
             return False
+    for stub in STUB_PATTERNS:
+        if stub in combined:
+            return False
     return True
+
+
+def detect_named_county(text):
+    """Return the lowercase county key if the story text actually names one we
+    have a real badge for. Returns None otherwise -- caller must then require
+    a verified person photo or skip the story, never guess a county."""
+    t = text.lower()
+    for key in COUNTY_BADGES:
+        if key in t:
+            return key
+    return None
 
 
 def find_hero(role, published_ids):
@@ -79,7 +105,7 @@ def find_hero(role, published_ids):
             title = raw.get('title', '').strip()
             if not title:
                 continue
-            # Exclude crime, politics, and non-hero content
+            # Exclude crime, politics, and non-hero content, and bare stub headlines
             if not is_valid_hero_story(title, raw.get('desc', '')):
                 continue
             # Verify it mentions Florida
@@ -90,21 +116,19 @@ def find_hero(role, published_ids):
             img = get_og_image(url)
             img_fit = 'cover'
 
-            # RULE: Only use person photo if the article names them —
-            # if og:image is a generic stock photo or unclear, fall back to badge
             if img:
-                # Check if the image is from the article's own domain (likely the named person)
-                from urllib.parse import urlparse
-                article_domain = urlparse(url).netloc
-                img_domain = urlparse(img).netloc
-                if article_domain not in img_domain and 'patchgallery' not in img_domain:
-                    # Different domain = likely a CDN, which is fine if the source article
-                    # names the person. We'll use it but could be wrong.
-                    pass
                 img_credit = raw.get('source', '')
                 img_note = 'Photo from source article — confirm person identity before publishing.'
             else:
-                img, img_credit, img_fit = DEPT_BADGES[role]
+                # No verified person photo. Only use a specific county/agency badge
+                # if the story text actually names that county -- never a blind
+                # per-category default (that was the root cause of county/badge
+                # mismatches). If no county is named, skip this story entirely
+                # rather than publish an ungrounded image.
+                named_county = detect_named_county(t)
+                if not named_county:
+                    continue
+                img, img_credit, img_fit = COUNTY_BADGES[named_county]
                 img_note = 'Official department badge used — no confirmed person photo found.'
 
             desc = raw.get('desc', '')
