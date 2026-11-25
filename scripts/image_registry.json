@@ -1959,8 +1959,28 @@
       ],
       "story_context": "BaySavers Florida - Rock the Bay fundraiser Nov 21 2026",
       "added": "2026-11-18"
+    },
+    {
+      "local_path": "/img/stories/1d731a7656475e16.jpg",
+      "md5": "1d731a7656475e16eab29cc7ee9a1d6e",
+      "size_bytes": 253851,
+      "used_on": [
+        "gulf-county-bay-nutrient-data.html"
+      ],
+      "story_context": "Gulf County commissioners meeting Nov 24 2026 - speaker at podium (red tide)",
+      "added": "2026-11-24"
+    },
+    {
+      "local_path": "/img/stories/3089720d938f7ea0.png",
+      "md5": "3089720d938f7ea01a94e4ae16f1183f",
+      "size_bytes": 1591170,
+      "used_on": [
+        "gulf-county-bay-nutrient-data.html"
+      ],
+      "story_context": "Historical Red Tide Events in St. Joseph Bay chart",
+      "added": "2026-11-24"
     }
   ],
-  "last_updated": "2026-11-18",
-  "total": 194
+  "last_updated": "2026-11-24",
+  "total": 196
 }
