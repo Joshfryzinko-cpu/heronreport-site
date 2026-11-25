@@ -1979,8 +1979,28 @@
       ],
       "story_context": "Historical Red Tide Events in St. Joseph Bay chart",
       "added": "2026-11-24"
+    },
+    {
+      "local_path": "/img/stories/1d731a7656475e16.jpg",
+      "md5": "1d731a7656475e16eab29cc7ee9a1d6e",
+      "size_bytes": 253851,
+      "used_on": [
+        "gulf-county-bay-update-nov25.html"
+      ],
+      "story_context": "Resident speaking at Nov 25 2026 Gulf County red tide update",
+      "added": "2026-11-25"
+    },
+    {
+      "local_path": "/img/stories/37ad54abfa4b398b.png",
+      "md5": "37ad54abfa4b398bfc971bfae6864e7b",
+      "size_bytes": 1591170,
+      "used_on": [
+        "gulf-county-bay-update-nov25.html"
+      ],
+      "story_context": "Historical Red Tide Events in St. Joseph Bay chart (Nov 25 update)",
+      "added": "2026-11-25"
     }
   ],
-  "last_updated": "2026-11-24",
-  "total": 196
+  "last_updated": "2026-11-25",
+  "total": 198
 }
